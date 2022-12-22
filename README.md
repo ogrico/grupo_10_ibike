@@ -4,19 +4,19 @@
 ## Contenido
 
 
-*[Título](#programación-web-full-stack)
+- [Título](#programación-web-full-stack)
 
-*[Integrantes](#integrantes)
+- [Integrantes](#integrantes)
 
-*[Tecnologias](#tecnologias-utilizadas)
+- [Tecnologias](#tecnologias-utilizadas)
 
-*[Descripción](#descripción)
+- [Descripción](#descripción)
 
-*[Funcionalidades](#hammer-funcionalidades-del-proyecto)
+- [Funcionalidades](#hammer-funcionalidades-del-proyecto)
 
-*[Wireframes](#wireframes)
+- [Wireframes](#wireframes)
 
-*[Compilación](#compilar-e-iniciar-el-proyecto)
+- [Compilación](#compilar-e-iniciar-el-proyecto)
 
 
 ## Integrantes
