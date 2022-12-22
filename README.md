@@ -12,9 +12,9 @@
 
 - [Descripción](#descripción)
 
-- [Funcionalidades](#hammer-funcionalidades-del-proyecto)
-
 - [Wireframes](#wireframes)
+
+- [Funcionalidades](#hammer-funcionalidades-del-proyecto)
 
 - [Compilación](#compilar-e-iniciar-el-proyecto)
 
@@ -43,13 +43,6 @@ Oscar Geovany Rico
 :construction: Proyecto en construcción :construction:
 
 
-## :hammer: Funcionalidades del proyecto
-
-
-- `Funcionalidad`: descripción de la funcionalidad
-- `Funcionalidad`: descripción de la funcionalidad
-
-
 ## Wireframes
 
 
@@ -59,6 +52,14 @@ Oscar Geovany Rico
 - <a href="https://drive.google.com/drive/folders/1TGU1ea-md7RgblYSQ603x-BeZuRYHEFV?usp=share_link" target="_blank">Formulario de registro</a>
 - <a href="https://drive.google.com/drive/folders/1TGU1ea-md7RgblYSQ603x-BeZuRYHEFV?usp=share_link" target="_blank">Formulario de login</a>
 - <a href="https://drive.google.com/drive/folders/1TGU1ea-md7RgblYSQ603x-BeZuRYHEFV?usp=share_link" target="_blank">Formulario de compra</a>
+
+
+## :hammer: Funcionalidades del proyecto
+
+
+- `Funcionalidad`: descripción de la funcionalidad
+- `Funcionalidad`: descripción de la funcionalidad
+
 
 
  ## Compilar e iniciar el proyecto
