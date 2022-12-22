@@ -5,11 +5,17 @@
 
 
 *[Título](#programación-web-full-stack)
+
 *[Integrantes](#integrantes)
+
 *[Tecnologias](#tecnologias-utilizadas)
+
 *[Descripción](#descripción)
+
 *[Funcionalidades](#hammer-funcionalidades-del-proyecto)
+
 *[Wireframes](#wireframes)
+
 *[Compilación](#compilar-e-iniciar-el-proyecto)
 
 
