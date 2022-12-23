@@ -25,6 +25,11 @@ Oscar Geovany Rico
 
 - Software Developer
 
+Andres Damian Reto
+
+- Abogado
+
+
 
 ## Tecnologias Utilizadas
 
