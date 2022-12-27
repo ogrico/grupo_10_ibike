@@ -1,6 +1,5 @@
 # <h1 align="center" > Curso Programación Web Full Stack Grupo #10 </h1>
 
-
 ****
 
 ## Contenido
@@ -75,6 +74,7 @@ Personas que toman este deporte como una forma de vida. Ofreciendoles una amplia
 > 4. https://komsportswear.com/
 > 5. https://www.goldenbike.com.ar/
 
+****
 
 :construction: Proyecto en construcción :construction:
 
