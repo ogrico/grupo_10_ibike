@@ -65,9 +65,7 @@ Genesis Mavare -
  
 > La temática de nuestra Market Place se enfoca en la venta de productos a los apasionados del ciclismo.
 Personas que toman este deporte como una forma de vida. Ofreciendoles una amplia gama de artículos, como bicicletas, indumentaria, repuestos, accesorios y suplementos de las mejores marcas del mercado nacional e internacional.
-
 Tomamos como refenrentes y ejemplos los siguientes comercios
-
 1. https://suarezclothing.com/
 2. https://www.specialized.com/co/en
 3. https://zonabike.mitiendanube.com/
@@ -93,14 +91,13 @@ Tomamos como refenrentes y ejemplos los siguientes comercios
 - `Funcionalidad`: descripción de la funcionalidad
 
 
-
 ## Compilar e iniciar el proyecto
 
 Clonar el repositorio o descargarlo en .zip/rar
 
-Se debe ejecutar `npm install` para instalar los modulos de Node utilizados para este proyecto. 
+Se debe ejecutar ``` npm install ``` para instalar los modulos de Node utilizados para este proyecto. 
 
-Para inicializar los servicios se debe ejecutar `npm start`.
+Para inicializar los servicios se debe ejecutar ``` npm start ```
 
 ```
 ## Scripts definidos
