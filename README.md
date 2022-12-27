@@ -1,6 +1,8 @@
 # <h1 align="center" > Curso Programación Web Full Stack Grupo #10 </h1>
 
 
+****
+
 ## Contenido
 
 
@@ -21,20 +23,6 @@
 
 ## Integrantes
 
-Oscar Geovany Rico - Software Developer
-
-```
-- Apacionado por el deporte
-- Tome este curso para parender sobre el diseño, desarrollo y manipulación del front para paginas web
-```
-
-Andres Damian Reto - Abogado
-
-```
-- 
-- 
-```
-
 Andres Verjhamn - 
 
 
@@ -49,6 +37,20 @@ Genesis Mavare -
 ```
 - 
 - 
+```
+
+Andres Damian Reto - Abogado
+
+```
+- 
+- 
+```
+
+Oscar Geovany Rico - Software Developer
+
+```
+- Apacionado por el deporte
+- Tome este curso para parender sobre el diseño, desarrollo y manipulación del front para paginas web
 ```
 
 
@@ -66,7 +68,7 @@ Genesis Mavare -
 > La temática de nuestra Market Place se enfoca en la venta de productos a los apasionados del ciclismo.
 Personas que toman este deporte como una forma de vida. Ofreciendoles una amplia gama de artículos, como bicicletas, indumentaria, repuestos, accesorios y suplementos de las mejores marcas del mercado nacional e internacional.
 >
-> Tomamos como refenrentes y ejemplos los siguientes comercios
+> Tomamos como refenrentes y ejemplos los siguientes comercios:
 > 1. https://suarezclothing.com/
 > 2. https://www.specialized.com/co/en
 > 3. https://zonabike.mitiendanube.com/
