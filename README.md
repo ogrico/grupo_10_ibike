@@ -44,7 +44,7 @@ Andres Damian Reto
 
 
 
-:construction: Proyecto en construcción :construction:
+**La temática de nuestra _Market Place_ se enfoca en la venta de productos a los apasionados del ciclismo. Personas que toman este deporte como una forma de vida. Equipamos a nuestros clientes con una amplia gama de artículos, los mismos abarcan tanto bicicletas, indumentaria, repuestos y accesorios de las mejores marcas del mercado nacionales e internacionales.**
 
 
 ## Wireframes
