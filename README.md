@@ -21,13 +21,35 @@
 
 ## Integrantes
 
-Oscar Geovany Rico
+Oscar Geovany Rico - Software Developer
 
-- Software Developer
+```
+- Apacionado por el deporte
+- Tome este curso para parender sobre el diseño, desarrollo y manipulación del front para paginas web
+```
 
-Andres Damian Reto
+Andres Damian Reto - Abogado
 
-- Abogado
+```
+- 
+- 
+```
+
+Andres Verjhamn - 
+
+
+```
+- 
+- 
+```
+
+Genesis Mavare - 
+
+
+```
+- 
+- 
+```
 
 
 ## Tecnologias Utilizadas
@@ -40,11 +62,9 @@ Andres Damian Reto
  - `React` <i class="fa-brands fa-react"></i>
 
  ## Descripción
-
-
-
-
-**La temática de nuestra _Market Place_ se enfoca en la venta de productos a los apasionados del ciclismo. Personas que toman este deporte como una forma de vida. Equipamos a nuestros clientes con una amplia gama de artículos, los mismos abarcan tanto bicicletas, indumentaria, repuestos y accesorios de las mejores marcas del mercado nacionales e internacionales.**
+ 
+> La temática de nuestra Market Place se enfoca en la venta de productos a los apasionados del ciclismo.
+Personas que toman este deporte como una forma de vida. Ofreciendoles una amplia gama de artículos, como bicicletas, indumentaria, repuestos, accesorios y suplementos de las mejores marcas del mercado nacional e internacional.
 
 
 ## Wireframes
@@ -66,7 +86,7 @@ Andres Damian Reto
 
 
 
- ## Compilar e iniciar el proyecto
+## Compilar e iniciar el proyecto
 
 Clonar el repositorio o descargarlo en .zip/rar
 
