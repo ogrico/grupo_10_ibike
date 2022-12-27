@@ -65,12 +65,13 @@ Genesis Mavare -
  
 > La temática de nuestra Market Place se enfoca en la venta de productos a los apasionados del ciclismo.
 Personas que toman este deporte como una forma de vida. Ofreciendoles una amplia gama de artículos, como bicicletas, indumentaria, repuestos, accesorios y suplementos de las mejores marcas del mercado nacional e internacional.
-Tomamos como refenrentes y ejemplos los siguientes comercios
-1. https://suarezclothing.com/
-2. https://www.specialized.com/co/en
-3. https://zonabike.mitiendanube.com/
-4. https://komsportswear.com/
-5. https://www.goldenbike.com.ar/
+
+> Tomamos como refenrentes y ejemplos los siguientes comercios
+> 1. https://suarezclothing.com/
+> 2. https://www.specialized.com/co/en
+> 3. https://zonabike.mitiendanube.com/
+> 4. https://komsportswear.com/
+> 5. https://www.goldenbike.com.ar/
 
 
 ## Wireframes
