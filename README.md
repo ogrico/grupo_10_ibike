@@ -41,8 +41,8 @@ Genesis Mavare -
 Andres Damian Reto - Abogado
 
 ```
-- 
-- 
+- Soy un entusiasta del desarrollo web.
+- Mi interés en el desarrollo web comenzó como un hobby y este curso lo inicie con el objetivo de ampliar mis conocimientos.
 ```
 
 Oscar Geovany Rico - Software Developer
