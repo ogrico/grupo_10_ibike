@@ -49,7 +49,7 @@ Oscar Geovany Rico - Software Developer
 
 ```
 - Apacionado por el deporte
-- Tome este curso para parender sobre el diseño, desarrollo y manipulación del front para paginas web
+- Tome este curso para aprender tecnologias y herramientas para el desarrollo web.
 ```
 
 
