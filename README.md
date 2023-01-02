@@ -22,12 +22,11 @@
 
 ## Integrantes
 
-Andres Verjhamn - 
+Andres Verjhamn - Software Developer
 
 
 ```
-- 
-- 
+- Estoy muy interesado en el desarrollo web usando react.js
 ```
 
 Genesis Mavare - 
