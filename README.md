@@ -47,7 +47,7 @@ Andres Damian Reto - Abogado
 Oscar Geovany Rico - Software Developer
 
 ```
-- Apacionado por el deporte
+- Apasionado por el deporte
 - Tome este curso para aprender tecnologias y herramientas para el desarrollo web.
 ```
 
