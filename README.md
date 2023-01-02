@@ -33,8 +33,8 @@ Genesis Mavare -
 
 
 ```
-- 
-- 
+- Actualmente trabajo como analista funcional sap
+- Comence este curso porque quiero dedicarme al desarrollo web
 ```
 
 Andres Damian Reto - Abogado
