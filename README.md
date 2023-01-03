@@ -82,13 +82,13 @@ Personas que toman este deporte como una forma de vida. Ofreciendoles una amplia
 ## Wireframes
 
 
-- <a href="https://drive.google.com/file/d/1V3ZypHoZPLfkAi_ZpDFeQ0ffXL1K1evL/view?usp=share_link" target="_blank">Home</a>
-- <a href="https://drive.google.com/drive/folders/1TGU1ea-md7RgblYSQ603x-BeZuRYHEFV?usp=share_link" target="_blank">Detalle de prodcuto</a>
-- <a href="https://drive.google.com/file/d/12qVChfEVlRnmnMNpeS4oLiRTaPFypAGP/view?usp=share_link" target="_blank">Carrito de compras</a>
-- <a href="https://drive.google.com/file/d/1Fy_qPe-Vw2OOoNLO9sfmsBMaTkZAXCaU/view?usp=share_link" target="_blank">Formulario de registro</a>
-- <a href="https://drive.google.com/file/d/1Fy_qPe-Vw2OOoNLO9sfmsBMaTkZAXCaU/view?usp=share_link" target="_blank">Formulario de login</a>
-- <a href="https://drive.google.com/file/d/1zX0Hpj8n9vEUn4qHxbwxuDEiTnfNn0dv/view?usp=share_link" target="_blank">Formulario de compra con registro</a>
-- <a href="https://drive.google.com/file/d/1SJphtAQdvaP0aX9bRyWc8LZLQN1mjuTj/view?usp=share_link" target="_blank">Formulario de compra sin registro</a>
+- <a href="https://drive.google.com/drive/folders/1TGU1ea-md7RgblYSQ603x-BeZuRYHEFV?usp=sharing" target="_blank">Home</a>
+- <a href="https://drive.google.com/drive/folders/1TGU1ea-md7RgblYSQ603x-BeZuRYHEFV?usp=sharing" target="_blank">Detalle de prodcuto</a>
+- <a href="https://drive.google.com/drive/folders/1TGU1ea-md7RgblYSQ603x-BeZuRYHEFV?usp=sharing" target="_blank">Carrito de compras</a>
+- <a href="https://drive.google.com/drive/folders/1TGU1ea-md7RgblYSQ603x-BeZuRYHEFV?usp=sharing" target="_blank">Formulario de registro</a>
+- <a href="https://drive.google.com/drive/folders/1TGU1ea-md7RgblYSQ603x-BeZuRYHEFV?usp=sharing" target="_blank">Formulario de login</a>
+- <a href="https://drive.google.com/drive/folders/1TGU1ea-md7RgblYSQ603x-BeZuRYHEFV?usp=sharing" target="_blank">Formulario de compra con registro</a>
+- <a href="https://drive.google.com/drive/folders/1TGU1ea-md7RgblYSQ603x-BeZuRYHEFV?usp=sharing" target="_blank">Formulario de compra sin registro</a>
 
 
 ## :hammer: Funcionalidades del proyecto
