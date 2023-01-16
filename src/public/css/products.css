@@ -1,0 +1,50 @@
+body {
+    background-color: #DCDCDC;
+    color: #414141;
+    font-family: Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+}
+
+.filters {
+    width: 20%;
+}
+
+.prodcuts {
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.prodcut {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    
+}
+
+.product .opt{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar #icons {
+    align-items: baseline;
+}
