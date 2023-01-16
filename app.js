@@ -12,7 +12,7 @@ app.get('/', (_ , res) => {
 })
 
 app.get('/home', (_ , res) => {
-    res.sendFile(path.resolve('src/views/home.html'))
+    res.sendFile(path.resolve('src/views/index.html'))
 })
 
 app.get('/forms', (_, res) => {
