@@ -7,11 +7,13 @@ const PORT = 3001
 
 app.use(express.static('src/public'))
 
-app.get('/home', (req , res) => {
-    res.sendFile(path.resolve(__dirname,'src/views/index.html'))
+app.get('/home', (_ , res) => {
+    res.sendFile(path.resolve('src/views/index.html'))
 })
 
-
+app.get('/forms', (_, res) => {
+    res.sendFile(path.resolve('src/views/forms.html'))
+})
 
 
 app.listen(PORT,()=>{
