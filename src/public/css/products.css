@@ -1,6 +1,10 @@
-* {
-    font-family: roboto;
-    size: 18px;
+body {
+    background-color: #DCDCDC;
+    color: #414141;
+    font-family: Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2;
 }
 
 img {
@@ -11,7 +15,6 @@ img {
 .main{
     width: 100%;
     display: flex;
-    background-color: #DCDCDC;
 }
 
 .filters {
