@@ -1,0 +1,140 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.4rem;
+    font-family:system-ui;
+    background-color: rgb(218, 215, 215);
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.titulo-1{
+    text-transform: uppercase;
+    margin: 10px;
+    text-align:center;
+    font-size: 17px;
+    text-decoration:none;
+    color: black;
+    font-weight: 700;
+}
+
+.titulo-2{
+    text-transform: uppercase;
+    margin: 10px;
+    text-align:center;
+    font-size: 17px;
+    text-decoration:none;
+    color: gray;
+    font-weight: 600;
+}
+
+.form{
+    width: 50%;
+    min-width: 300px;
+    background-color: #f0eded;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    color: black;
+    border-radius: 8px;
+}
+
+.imput-registro > input{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0px;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    font-size: 1.4rem;
+    border-bottom:1px solid #060607
+    
+}
+
+.checkbox-buttons{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+
+.checkbox{
+    text-transform: uppercase;
+    margin: 8px;
+    text-align:center;
+    font-size: 10px;
+    text-decoration:none;
+    color: black;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.btn > button{
+    background-color: #474747;
+    color: white;
+    padding: 8px 25px;
+    border-radius: 8px;
+    border: none;
+    text-decoration:none;
+    text-align:center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    outline: none;
+    cursor:pointer;
+
+}
+
+.btn > button:hover{
+    background: #5f5e5e;
+}
+
+
+.privacidad >p{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.2rem;   
+
+}
+
+.linea {
+    border-top: 1px solid black;
+    height: 2px;
+    max-width: 60%;
+    padding: 0;
+    margin: 10px auto 0 auto;
+  }
+
+.ingresar{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.ingresar > a{
+    text-decoration:none;
+    color: black;
+    
+}
+
