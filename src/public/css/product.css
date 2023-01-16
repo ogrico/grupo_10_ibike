@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar #icons {
+    align-items: baseline;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.main .product {
+    display: flex;
+}
+
+.main .product .img{
+    width: 70%;
+}
+
+.main .product .img{
+    display: flex;
+    flex-direction: column;
+}
+
+.main .product .about{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
