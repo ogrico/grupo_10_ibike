@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'ibike-dh'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F7F21B5454BF49C99AEFDFD4D56F3CF1 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D9905D1F35E44B4B83C14E9728F5C0CC }}
           package: .
