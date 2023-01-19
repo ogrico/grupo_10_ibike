@@ -23,4 +23,4 @@
 - Gestionar los avances y comentarios de la tarea
  
 ### Que se nos dificulta o demora avanzar :warning:
--Zona horaria (Colombia - Argentina)
+- Zona horaria (Colombia - Argentina)
