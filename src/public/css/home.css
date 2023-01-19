@@ -1,0 +1,126 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #DCDCDC;
+  color: #414141;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 2;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #2F2F2F;
+  border-radius: 10px;
+  margin: 10px 10px 0px 10px;
+
+}
+
+logo {
+  display: flex;
+  background-color: #DCDCDC;
+  border-radius: 50% 10%;
+  padding: 0px 4px 0px 0px;
+  margin-right: 6px;
+}
+
+logo h3 {
+  margin: 1px;
+}
+
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+nav ul li {
+  margin-right: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 12px;
+  font-weight: 600;
+
+}
+
+form {
+  display: flex;
+  align-items: center;
+
+}
+
+form input {
+  padding: 5px;
+  border: 1px solid rgb(246, 246, 246);
+  border-radius: 20px;
+  font-size: 10px;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+header div a {
+  margin-left: 20px;
+  font-size: 14px;
+  color: #ffff;
+  text-decoration: none;
+}
+
+header div img {
+  width: 30px;
+  height: 30px;
+}
+
+.hambuerger-icon {
+  color: #DCDCDC;
+}
+
+/* header END */
+
+/* main */
+
+main section img {
+  margin-left: -10px;
+  width: 100vw;
+  height: auto;
+}
+
+/* main END */
+
+
+
+/* Media Queries */
+
+/* header */
+@media only screen and (min-width: 600px) {
+
+  nav ul {
+    display: flex;
+  }
+
+  .hambuerger-icon {
+    display: none;
+  }
+}
+
+/* header END */

@@ -12,6 +12,15 @@ img {
     height: 300px;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar #icons {
+    align-items: baseline;
+}
+
 .main{
     width: 100%;
     display: flex;
@@ -21,30 +30,29 @@ img {
     width: 20%;
 }
 
-.prodcuts {
+.products {
     display: flex;
-    align-content: space-around;
     flex-wrap: wrap;
     width: 80%;
 }
 
+<<<<<<< HEAD
 .produt {
     display: flex;
     flex-direction: column;
     background-color: #ffff;
     
+=======
+.product {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffff;
+    width: 40%;
+    margin: auto;
+>>>>>>> 1ee385255c78a8ed5df7449e18d90d3e74f16a07
 }
 
 .product .opt{
     display: flex;
     justify-content: space-between;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-}
-
-.navbar #icons {
-    align-items: baseline;
 }
