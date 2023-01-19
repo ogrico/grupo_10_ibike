@@ -28,10 +28,10 @@ img {
     width: 80%;
 }
 
-.prodcut {
+.produt {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #ffff;
     
 }
 
