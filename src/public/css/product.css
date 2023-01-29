@@ -1,11 +1,100 @@
-.navbar {
-    display: flex;
-    justify-content: space-between;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.navbar #icons {
-    align-items: baseline;
+body {
+    background-color: #DCDCDC;
+    color: #414141;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2;
 }
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #2F2F2F;
+    border-radius: 10px;
+    margin: 10px 10px 0px 10px;
+
+}
+
+logo {
+    display: flex;
+    background-color: #DCDCDC;
+    border-radius: 50% 10%;
+    padding: 0px 4px 0px 0px;
+    margin-right: 6px;
+}
+
+logo h3 {
+    margin: 1px;
+}
+
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 12px;
+    font-weight: 600;
+
+}
+
+form {
+    display: flex;
+    align-items: center;
+
+}
+
+form input {
+    padding: 5px;
+    border: 1px solid rgb(246, 246, 246);
+    border-radius: 20px;
+    font-size: 10px;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header div a {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #ffff;
+    text-decoration: none;
+}
+
+header div img {
+    width: 30px;
+    height: 30px;
+}
+
+.hambuerger-icon {
+    color: #DCDCDC;
+}
+
+/* header END */
 
 .main {
     display: flex;
@@ -14,26 +103,137 @@
     margin: auto;
 }
 
+.main .comprar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 3;
+    position: sticky;
+    border-bottom: 1px solid #414141;
+}
+
+.main .comprar .navigate {
+    display: flex;
+    align-items: center;
+}
+
+.main .comprar .btn-top {
+    background-color: #2F2F2F;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 .main .product {
     display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
-.main .product .img{
-    width: 70%;
+.main .product .img {
+    width: 68%;
+    margin: auto;
+    flex-direction: column;
+    padding: 5px;
 }
 
-.main .product .img{
+.main .product .img img {
+    width: 100%;
+    border-radius: 8px
+}
+
+.main .product .about {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    margin: auto;
+    padding: 5px;
+}
+
+.main .product .about .size {
     display: flex;
     flex-direction: column;
 }
 
-.main .product .about{
-    width: 30%;
+.main .product .about .size .btns {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
 }
 
+.main .product .about .size .btns div {
+    padding: 5px;
+}
+
+.main .product .about .size .btns .btn-size {
+    background-color: #414141;
+    border: none;
+    color: white;
+    padding: 5px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    border-radius: 5px;
+}
+
+.main .product .about .btn-basket button {
+    background-color: #2F2F2F;
+    border: none;
+    color: white;
+    padding: 5px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.main .product .about p {
+    text-align: justify;
+}
+
+.main .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .info h6 {
+    font-size: 20px;
+}
+
+.main .info article span {
+    font-size: 16px;
+}
+
+.main .info article p {
+    width: 95%;
+    margin: auto;
+}
+
+
+/*
+
+Footer
+
+*/
+
+footer {
+    background-color: #2F2F2F;
+    padding: 20px;
+}
+
+footer p {
+    color: white;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
 
 /*
     Tablets en horizonal y escritorios normales
@@ -44,19 +244,10 @@
     Móviles en horizontal o tablets en vertical
 */
 
-@media (max-width: 767px) {
-}
+@media (max-width: 767px) {}
 
 /*
     Móviles en vertical
 */
 
-@media (max-width: 480px) {
-
-    .main .product {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-}
+@media (max-width: 480px) {}
