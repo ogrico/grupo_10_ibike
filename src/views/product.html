@@ -5,87 +5,89 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-    crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/5df417a647.js" crossorigin="anonymous"></script>
   <title>Product</title>
   <link rel="stylesheet" href="css/product.css">
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <header>
+    <logo>
+      <div>
+        <img src="img/IBike.png" alt="" srcset="">
+      </div>
+      <h3>
+        IBike
+      </h3>
+    </logo>
 
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">IBike</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Biciletas</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Equipamiento</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Suplementos</a>
-      </li>
-    </ul>
+    <div>
+      <i class="hambuerger-icon fa-solid fa-bars"></i>
+    </div>
 
-    <ul class="navbar-nav" id="icons">
-      <li class="nav-item">
-        <input class="form-control mr-sm-2 nav-link" type="search" placeholder="Buscar" aria-label="Search">
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart3"
-            viewBox="0 0 16 16">
-            <path
-              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-          </svg>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person-fill"
-            viewBox="0 0 16 16">
-            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-          </svg>
-        </a>
-      </li>
-    </ul>
+    <nav>
+      <ul>
+        <li><a href="#bicicletas">Bicicletas</a></li>
+        <li><a href="#equipamentos">Equipamentos</a></li>
+        <li><a href="#suplementos">Suplementos</a></li>
+      </ul>
+    </nav>
 
-  </nav>
+    <form>
+      <input type="text" placeholder="Buscar">
+    </form>
+    <div>
+      <a href="#carrito"><i class="fa-solid fa-cart-shopping"></i>
+      </a>
+      <a href="#login"><i class="fa-sharp fa-solid fa-user"></i></a>
+    </div>
+  </header>
 
-  <section class="main p-1">
+  <section class="main">
 
-    <section class="product p-1">
+    <section class="comprar">
 
-      <div class="img p-1">
+      <div class="navigate">
+        <span>
+          IBike / Bicicletas / Montaña / Fuse 27.5
+        </span>
+      </div>
+
+      <div class="btn-comprar-top">
+        <button class="btn-top">
+          Comprar
+        </button>
+      </div>
+
+    </section>
+
+    <section class="product">
+
+      <div class="img">
         <img src="img/products/bikes/Bike6.jpg" alt="">
         <img src="img/products/bikes/Bike7.jpg" alt="">
       </div>
 
-      <div class="about p-1">
+      <div class="about">
 
-        <h4>Fuse 27.5</h4>
+        <h2>Fuse 27.5</h2>
         <samp>Ref. No 700065</samp>
-        <h6>$ 1200.00</h6>
+        <samp>$ 1200.00</samp>
         <div class="size">
           <span>Size : L</span>
-          <div class="btns">
-            <button type="button" class="btn btn-dark btn-sm active">L</button>
-            <button type="button" class="btn btn-light btn-sm">M</button>
-          </div>
+          <article class="btns">
+            <div>
+              <button class="btn-size">L</button>
+            </div>
+            <div>
+              <button class="btn-size">M</button>
+            </div>
+          </article>
         </div>
         <div class="btn-basket">
-          <button type="button" class="btn btn-dark btn-lg">Agregar al carrito</button>
+          <button type="button" class="btn">Agregar al carrito</button>
         </div>
         <p>Tranquila bajo presión, pero hábil y precisa, la Fuse es un tipo de bicicleta rígida completamente diferente.
           Con un nuevo chasis más largo, más bajo y más ruidoso y ruedas y neumáticos de 27.5x2.3, el Fuse 27.5 maneja
@@ -94,9 +96,10 @@
 
     </section>
 
-    <section class="info p-1">
-      <h6 class="p-1">Especificaciones técnicas</h6>
-      <div class="p-1">
+    <section class="info">
+
+      <h6>Especificaciones técnicas</h6>
+      <article>
         <span>Marco</span>
         <p>
           Marco
@@ -107,20 +110,37 @@
           Carpeta de asiento
 
           Aleación, 38,6 mm</p>
-      </div>
+      </article>
       <hr>
-      <div class="p-1">
+      <article>
         <span>Suspensión</span>
         <p>
-          Tenedor
-
-          X-Fusion MIG 27.5, ajuste externo de rebote y compresión, muelle helicoidal, compensación de 46 mm, 130 mm de
+          Tenedor X-Fusion MIG 27.5, ajuste externo de rebote y compresión, muelle helicoidal, compensación de 46 mm,
+          130 mm de
           recorrido</p>
-      </div>
+      </article>
+      <hr>
+      <article>
+        <span>Frenos</span>
+        <p>
+          Freno frontal
+          Nivel SRAM, disco hidráulico, 180/160mm
+        </p>
+        <p>
+          Freno trasero
+          SRAM Level, pinza de 2 pistones, disco hidráulico, 180 mm
+        </p>
+      </article>
       <hr>
     </section>
 
   </section>
+
+  <footer>
+    <p>
+      © 2023 IBike Todos los derechos reservados.
+    </p>
+  </footer>
 
 </body>
 
