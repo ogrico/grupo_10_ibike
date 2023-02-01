@@ -37,6 +37,9 @@ header div.logo{
     padding: 10px;
 }
 
+
+
+
 /*nuevo*/
 
   /*bikes*/
@@ -53,6 +56,24 @@ header div.logo{
     width: 30%;
   }
 
+  /*nuevo para ocultar descripcion */
+
+  description{
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  h3,
+  .description{
+    color: #666;
+  }
+  
+  .description{
+    display: none;
+    margin-top: 20px;
+  }
+
+  /* nuevo*/
   /*main */
 
   
@@ -87,7 +108,7 @@ main{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items:baseline:
     border-top: 1px solid #ebebeb;
     position: relative;
     padding: 15px;
@@ -120,6 +141,9 @@ main section div.products article{
       width: 50%;
   }
 
+  
+    
+  }
 /*Desk*/
 @media (min-width: 769px){
     main section div.products article{
@@ -134,4 +158,5 @@ main section div.products article{
 .article-footer{
     width: 25vw;
 }
-  }
+
+
