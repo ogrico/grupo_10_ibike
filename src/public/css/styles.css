@@ -1,0 +1,85 @@
+/*
+Estilos para la sección de perfil de usuario
+*/
+
+main {
+    padding-top: 80px;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.profile div {
+    padding-bottom: 10px;
+}
+
+.div-img {
+    display: flex;
+    justify-content: center;
+}
+
+.div-img img {
+    width: 100px;
+}
+
+.profile h4 {
+    text-align: center;
+}
+
+.profile p {
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.sectionOpt {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.sectionOpt-main {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.sectionOpt-form {
+    display: flex;
+}
+
+.mail {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.mail h4 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.mail form .textArea {
+    padding-bottom: 5px;
+}
+
+.mail form .textArea textarea {
+    width: 100%;
+    border: 2px;
+}
+
+.mail form .btn {
+    width: 60%;
+    margin: auto;
+}
+
+.mail form .btn button {
+    width: 100%;
+}

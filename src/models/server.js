@@ -38,6 +38,7 @@ class Server {
         this.app.use(serviceRoutesBasket)
         this.app.use(serviceRoutesProducts)
         this.app.use(serviceRoutesProduct)
+        this.app.use(serviceRoutesProfile)
 
     }
 
