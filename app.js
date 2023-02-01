@@ -31,6 +31,12 @@ app.get('/products', (_, res) => {
     res.sendFile(path.resolve('src/views/products.html'))
 })
 
+// gene //
+
+app.get('/list', (_, res) => {
+    res.sendFile(path.resolve('src/views/list.html'))
+})
+
 app.listen(PORT,()=>{
     console.log(`Server on port ${PORT}`)
 })
