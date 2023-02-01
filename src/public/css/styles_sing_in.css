@@ -42,16 +42,6 @@ body{
     font-weight: 600;
 }
 
-.form{
-    width: 50%;
-    min-width: 300px;
-    background-color: #f0eded;
-    margin: auto;
-    margin-top: 50px;
-    padding: 20px;
-    color: black;
-    border-radius: 8px;
-}
 
 .imput-registro > input{
     width: 100%;

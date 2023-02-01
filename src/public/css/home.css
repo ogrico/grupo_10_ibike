@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* h2 {
+  font-size: .9em;
+}
+
+h3 {
+  font-size: .8em;
+}
+ */
+body {
+  background-color: #efefef;
+  color: #414141;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.1;
+  width: 100vw;
+}
+
+
+header {
+  width: 90%;
+  /* max-width: 900px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(47, 47, 47, 90%);
+  border-radius: 10px;
+  margin: 10px 2vw 0px 2vw;
+  position: fixed;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+.logo {
+  box-sizing: border-box;
+  height: 30px;
+  display: flex;
+}
+
+.conten-logo {
+  box-sizing: border-box;
+  width: 84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DCDCDC;
+  border-radius: 50% 10%;
+  padding: 0px 4px 0px 0px;
+  margin-right: 6px;
+}
+
+.conten-logo h2 {
+  margin: 1px;
+  font-size: 1.1em;
+}
+
+
+header nav {
+  display: flex;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+header nav ul li {
+  margin-right: 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 12px;
+  font-weight: 600;
+
+}
+
+header form {
+  display: flex;
+  align-items: center;
+
+}
+
+header form input {
+  padding: 5px;
+  border: 1px solid rgb(246, 246, 246);
+  border-radius: 20px;
+  font-size: 10px;
+  width: 20vw;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+header div a {
+  margin-left: 20px;
+  font-size: 14px;
+  color: #ffff;
+  text-decoration: none;
+}
+
+header div img {
+  width: 30px;
+  height: 30px;
+}
+
+.hambuerger-icon {
+  color: #DCDCDC;
+}
+
+/* header END */
+
+/* main */
+
+/* banner */
+
+.main-banner {
+  height: auto;
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+  
+}
+
+.main-banner img {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 350px;
+  object-position: top;
+  object-fit: cover;
+}
+
+.main-article {
+  background-color: rgba(47, 47, 47, 20%);
+  color: #DCDCDC;
+  box-sizing: border-box;
+  position: absolute;
+  border: solid 1px #DCDCDC;
+  border-radius: 10px;
+  width: 60vw;
+  max-width: 500px;
+  height: auto;
+  padding: 10px;
+  margin: 35px 35px 35px 15vw;
+  font-size: 0.8rem;
+  backdrop-filter: blur(1px);
+}
+
+
+/* banner END */
+
+/* main-section */
+.main-section {
+  text-align: center;
+  margin: 15px;
+  padding: 10px;
+
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin: 15px 0 15px 0;
+}
+
+.product {
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+
+}
+
+.product-img {
+  box-sizing: border-box;
+  object-fit: contain;
+  width: 100%;
+  height: 70%;
+}
+
+.product h3 {
+  text-align: center;
+}
+
+.product .price {
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.product .price h4 {
+  padding: 8px;
+}
+
+.product .price button {
+  padding: 8px;
+  color: #DCDCDC;
+  background-color: #414141;
+  border-radius: 5px;
+  border: none;
+}
+
+
+/* main-section END */
+
+/* main END */
+
+/* footer */
+
+.main-footer {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-footer h3{
+  box-sizing: border-box;
+  padding: 10px;
+
+}
+
+/* footer END */
+
+/* Media Queries */
+
+/* header */
+@media only screen and (min-width: 600px) {
+
+
+
+  header nav ul {
+    display: flex;
+  }
+
+  .hambuerger-icon {
+    display: none;
+  }
+
+  .main-banner {
+    align-items: center;
+  }
+
+  .main-banner img {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  header {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .main-banner img {
+    height: 700px;
+  }
+
+  .main-section {
+    margin: 0 5vw 0 5vw;
+  }
+}
+
+@media screen and (min-width: 1025px) {}
+
+
+/* header END */
