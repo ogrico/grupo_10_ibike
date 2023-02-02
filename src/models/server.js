@@ -1,4 +1,5 @@
 const express = require('express')
+const path = require('path')
 const config = require('../config')
 
 const serviceRoutesHome = require('../routes/home.routes')
@@ -14,7 +15,7 @@ class Server {
         this.app = express()
         this.app.set("port", config.port)   
         //Motor de plantillas
-        this.app.set('views', 'D:/WorkSpace/DigitalHouse/grupo_10_ibike/src/views/partials')
+        this.app.set('views', path.join(__dirname, '../views/partials'))
         this.app.set('view engine', 'ejs')
 
         //Carpeta publica

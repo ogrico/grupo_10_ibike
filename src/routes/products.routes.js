@@ -23,16 +23,6 @@ const dataProducts = [
         des:"bici ruta 4",
         price:"$40000",
         img:"img/products/bikes/bike3.jpg"
-    },
-    {
-        des:"bici ruta 5",
-        price:"$50000",
-        img:"img/products/bikes/bike2.jpg"
-    },
-    {
-        des:"bici ruta 6",
-        price:"$60000",
-        img:"img/products/bikes/bike3.jpg"
     }
 ]
 
