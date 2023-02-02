@@ -1,7 +1,40 @@
-<div >
-    <% for(let k =0; k < dataProducts.length; k++) { %>
-        <h1>
-            <%= dataProducts[k].name %>
-        </h1>
-    <% } %>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5df417a647.js" crossorigin="anonymous"></script>
+    <title>list</title>
+    <link rel="stylesheet" href="css/list.css">
+</head>
+
+<body>
+
+    <main>
+
+        <section class="bikes">
+            <h3>Bicicletas</h3>
+            <div class="products">
+                <% for(let k=0; k < dataProducts.length; k++) { %>
+                    <article>
+                        <img src="<%= dataProducts[k].img %>" alt="bike2" class="">
+                        <div class="main-article">
+                            <p class="price">
+                                <%= dataProducts[k].price %>
+                            </p>
+                            <h4 class="description">
+                                <%= dataProducts[k].des %>
+                            </h4>
+                        </div>
+                    </article>
+                    <% } %>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
