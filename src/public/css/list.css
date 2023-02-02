@@ -58,20 +58,20 @@ header div.logo{
 
   /*nuevo para ocultar descripcion */
 
-  description{
-    font-size: 16px;
-    font-weight: normal;
+  .description{
+    font-size: 18px;
+    font-weight:bolder
   }
   
   h3,
   .description{
-    color: #666;
+    color: black;
   }
   
-  .description{
+ /* .description{
     display: none;
     margin-top: 20px;
-  }
+  }*/
 
   /* nuevo*/
   /*main */
@@ -141,7 +141,10 @@ main section div.products article{
       width: 50%;
   }
 
-  
+  .main-article{
+    display: flex;
+    flex-direction: column;
+  }
     
   }
 /*Desk*/
