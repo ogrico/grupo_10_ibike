@@ -28,8 +28,9 @@ class Server {
 
     middlewares() {
 
+        this.app.use(express.urlencoded({extended: false}))
         //Lectura y parseo del body
-        this.app.use(express.json())       
+        this.app.use(express.json())        
 
     }
 
