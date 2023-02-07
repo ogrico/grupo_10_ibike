@@ -78,7 +78,12 @@ Personas que toman este deporte como una forma de vida. Ofreciendoles una amplia
 
 :construction: Proyecto en construcción :construction:
 
+## https://dhibike.azurewebsites.net
 
+```
+Se despliega el proyecto en un servicio PAS de tipo pasivo, la carga de la primera ejecución se demora
+luego las demas peticiones se realizan de manera normal
+```
 
 ## Wireframes
 
