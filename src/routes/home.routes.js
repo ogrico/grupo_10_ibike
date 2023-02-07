@@ -4,11 +4,11 @@ const path = require('path')
 const router = Router()
 
 router.get('/', (_ , res) => {
-    res.sendFile(path.resolve('src/views/index.html'))
+    res.render('index')
 })
 
 router.get('/home', (_ , res) => {
-    res.sendFile(path.resolve('src/views/index.html'))
+    res.render('index')
 })
 
 module.exports = router
