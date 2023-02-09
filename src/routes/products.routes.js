@@ -1,7 +1,5 @@
 const { Router } = require('express')
-const path = require('path')
 const productsController = require('../controllers/products.controller')
-
 
 const router = Router()
 

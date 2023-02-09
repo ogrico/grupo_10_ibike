@@ -36,7 +36,6 @@ logo h3 {
     margin: 1px;
 }
 
-
 nav {
     display: flex;
 }
@@ -96,14 +95,14 @@ header div img {
 
 /* header END */
 
-.main {
+.mainProdcut {
     display: flex;
     flex-direction: column;
     width: 90%;
     margin: auto;
 }
 
-.main .comprar {
+.mamainProdcut .comprar {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -112,12 +111,12 @@ header div img {
     border-bottom: 1px solid #414141;
 }
 
-.main .comprar .navigate {
+.mainProdcut .comprar .navigate {
     display: flex;
     align-items: center;
 }
 
-.main .comprar .btn-top {
+.mainProdcut .comprar .btn-top {
     background-color: #2F2F2F;
     color: white;
     padding: 15px 32px;
@@ -130,25 +129,25 @@ header div img {
     border-radius: 5px;
 }
 
-.main .product {
+.mainProdcut .product {
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
 }
 
-.main .product .img {
+.mainProdcut .product .img {
     width: 68%;
     margin: auto;
     flex-direction: column;
     padding: 5px;
 }
 
-.main .product .img img {
+.mainProdcut .product .img img {
     width: 100%;
     border-radius: 8px
 }
 
-.main .product .about {
+.mainProdcut .product .about {
     display: flex;
     flex-direction: column;
     width: 28%;
@@ -156,20 +155,20 @@ header div img {
     padding: 5px;
 }
 
-.main .product .about .size {
+.mainProdcut .product .about .size {
     display: flex;
     flex-direction: column;
 }
 
-.main .product .about .size .btns {
+.mainProdcut .product .about .size .btns {
     display: flex;
 }
 
-.main .product .about .size .btns div {
+.mainProdcut .product .about .size .btns div {
     padding: 5px;
 }
 
-.main .product .about .size .btns .btn-size {
+.mainProdcut .product .about .size .btns .btn-size {
     background-color: #414141;
     border: none;
     color: white;
@@ -181,7 +180,7 @@ header div img {
     border-radius: 5px;
 }
 
-.main .product .about .btn-basket button {
+.mainProdcut .product .about .btn-basket button {
     background-color: #2F2F2F;
     border: none;
     color: white;
@@ -194,24 +193,24 @@ header div img {
     border-radius: 5px;
 }
 
-.main .product .about p {
+.mainProdcut .product .about p {
     text-align: justify;
 }
 
-.main .info {
+.mainProdcut .info {
     display: flex;
     flex-direction: column;
 }
 
-.main .info h6 {
+.mainProdcut .info h6 {
     font-size: 20px;
 }
 
-.main .info article span {
+.mainProdcut .info article span {
     font-size: 16px;
 }
 
-.main .info article p {
+.mainProdcut .info article p {
     width: 95%;
     margin: auto;
 }
