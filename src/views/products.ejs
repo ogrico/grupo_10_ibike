@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/5df417a647.js" crossorigin="anonymous"></script>
-    <title>list</title>
-    <link rel="stylesheet" href="css/list.css">
-</head>
+<%- include('partials/head') %>
 
-<body>
+    <body>
 
-    <main>
+        <!-- Header -->
+        <%- include('partials/header') %>
 
-        <section class="bikes">
-            <h3>Bicicletas</h3>
-            <div class="products">
-                <% for(let k=0; k < dataProducts.length; k++) { %>
-                    <article>
-                        <img src="<%= dataProducts[k].img %>" alt="bike2" class="">
-                        <div class="main-article">
-                            <p class="price">
-                                <%= dataProducts[k].price %>
-                            </p>
-                            <h4 class="description">
-                                <%= dataProducts[k].des %>
-                            </h4>
-                        </div>
-                    </article>
-                    <% } %>
-            </div>
-        </section>
+            <!-- Main -->
+            <main>
 
-    </main>
-</body>
+                <section class="main-section">
+                    <h1>Productos Destacados</h1>
+                    <div class="products">
+                        <article class="product">
+                            <img class="product-img" src="/img/products/bikes/Bike2.jpg" alt="">
+                            <h3>Lorex ercitatio</h3>
+                            <div class="price">
+                                <h4>US $296</h4>
+                                <button type="submit">Comprar</button>
+                            </div>
+                        </article>
+
+                        <article class="product">
+                            <img class="product-img" src="/img/products/bikes/Bike3.jpg" alt="">
+                            <h3>Lorex ercitatio</h3>
+                            <div class="price">
+                                <h4>US $296</h4>
+                                <button type="submit">Comprar</button>
+                            </div>
+                        </article>
+
+                        <article class="product">
+                            <img class="product-img" src="/img/products/bikes/Bike3.jpg" alt="">
+                            <h3>Lorex ercitatio</h3>
+                            <div class="price">
+                                <h4>US $296</h4>
+                                <button type="submit">Comprar</button>
+                            </div>
+                        </article>
+
+                        <article class="product">
+                            <img class="product-img" src="/img/products/bikes/Bike5.jpg" alt="">
+                            <h3>Lorex ercitatio</h3>
+                            <div class="price">
+                                <h4>US $296</h4>
+                                <button type="submit">Comprar</button>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+            <!-- footer -->
+            <%- include('partials/footer') %>
+
+    </body>
 
 </html>

@@ -36,50 +36,20 @@
                 <section class="main-section">
                     <h1>Productos Destacados</h1>
                     <div class="products">
-                        <article class="product">
-                            <img class="product-img" src="/img/products/bikes/Bike2.jpg" alt="">
-                            <h3>Lorex ercitatio</h3>
-                            <div class="price">
-                                <h4>US $296</h4>
-                                <button type="submit">Comprar</button>
-                            </div>
-                        </article>
+                        <% bikes.forEach(element=> {%>
 
-                        <article class="product">
-                            <img class="product-img" src="/img/products/bikes/Bike3.jpg" alt="">
-                            <h3>Lorex ercitatio</h3>
-                            <div class="price">
-                                <h4>US $296</h4>
-                                <button type="submit">Comprar</button>
-                            </div>
-                        </article>
+                            <article class="product">
+                                <a href="/product/<%- element.referencia %>">
+                                    <img class="product-img" src="/img/products/bikes/<%- element.imagen1 %>" alt="">
+                                    <h3><%- element.nombre %></h3>
+                                    <div class="price">
+                                        <h4>US $<%- element.valor %></h4>
+                                        <button type="submit">Comprar</button>
+                                    </div>
+                                </a>
+                            </article>
 
-                        <article class="product">
-                            <img class="product-img" src="/img/products/bikes/Bike3.jpg" alt="">
-                            <h3>Lorex ercitatio</h3>
-                            <div class="price">
-                                <h4>US $296</h4>
-                                <button type="submit">Comprar</button>
-                            </div>
-                        </article>
-
-                        <article class="product">
-                            <img class="product-img" src="/img/products/bikes/Bike5.jpg" alt="">
-                            <h3>Lorex ercitatio</h3>
-                            <div class="price">
-                                <h4>US $296</h4>
-                                <button type="submit">Comprar</button>
-                            </div>
-                        </article>
-
-                        <article class="product">
-                            <img class="product-img" src="/img/products/bikes/Bike2.jpg" alt="">
-                            <h3>Lorex ercitatio</h3>
-                            <div class="price">
-                                <h4>US $296</h4>
-                                <button type="submit">Comprar</button>
-                            </div>
-                        </article>
+                            <%}); %>
                     </div>
 
                 </section>
