@@ -156,10 +156,36 @@ header div img {
 
 /* banner END */
 
-/* main-section */
+/* main-section products view*/
+
+.main-products-view{
+  padding-top: 100px;
+}
+
+.main-section-products {
+  display: flex;
+}
+
+.filter-products {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  margin: auto;
+  align-items: flex-start;
+}
+
+.filter-products article {
+  padding: 10px;
+}
+
+.filter-products article p {
+  padding-bottom: 5px;
+}
+
 .main-section {
+  width: 90%;
   text-align: center;
-  margin: 15px;
+  margin: auto;
   padding: 10px;
 
 }
