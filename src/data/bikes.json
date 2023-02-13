@@ -1,6 +1,6 @@
 [
-    {   
-        "id":"00001",
+    {
+        "id": "00001",
         "imagen1": "Bike6.jpg",
         "imagen2": "Bike7.jpg",
         "nombre": "Marlin 27.5",
@@ -29,8 +29,8 @@
             }
         ]
     },
-    {   
-        "id":"00001",
+    {
+        "id": "00001",
         "imagen1": "Bike6.jpg",
         "imagen2": "Bike7.jpg",
         "nombre": "Fuse 27.5",
@@ -56,6 +56,120 @@
             {
                 "nombre": "Frenos",
                 "descripcion": "Freno trasero SRAM Level, pinza de 2 pistones, disco hidráulico, 180 mm. Freno frontal Nivel SRAM, disco hidráulico, 180/160mm"
+            }
+        ]
+    },
+    {
+        "id": "00003",
+        "imagen1": "Bike8.jpg",
+        "imagen2": "Bike9.jpg",
+        "nombre": "Turbo Levo",
+        "tipo": "Eléctrica",
+        "modelo": "2022",
+        "referencia": "700066",
+        "valor": "5.000",
+        "descuento": "10%",
+        "talla": [
+            "S",
+            "M",
+            "L"
+        ],
+        "descripcion": "La bicicleta eléctrica Turbo Levo es una verdadera máquina de aventuras. Con su motor potente y su batería de larga duración, esta bicicleta te llevará a lugares que nunca imaginaste. Además, su diseño aerodinámico y sus frenos de disco hidráulicos te brindarán un control preciso en cualquier terreno.",
+        "espesificaiones": [
+            {
+                "nombre": "Motor",
+                "descripcion": "Motor Specialized 2.1, 250W, 70Nm, leva de pedal"
+            },
+            {
+                "nombre": "Batería",
+                "descripcion": "Batería Specialized M1-504, 504Wh, 36V, 14Ah"
+            },
+            {
+                "nombre": "Suspensión",
+                "descripcion": "Suspensión trasera Fox Float Performance, 150mm de recorrido, ajuste externo de compresión y rebote"
+            }
+        ]
+    },
+    {
+        "id": "00004",
+        "imagen1": "Bike10.jpg",
+        "imagen2": "Bike11.jpg",
+        "nombre": "Crosstrail",
+        "tipo": "Híbrida",
+        "modelo": "2022",
+        "referencia": "700067",
+        "valor": "900",
+        "descuento": "",
+        "talla": [
+            "S",
+            "M",
+            "L"
+        ],
+        "descripcion": "La Crosstrail es la compañera perfecta para tus aventuras en el camino. Con su combinación de suspensión y neumáticos anchos, te brindará una conducción suave y cómoda en cualquier terreno. Además, su marco ligero y su transmisión de 21 velocidades te permitirán acelerar con facilidad.",
+        "espesificaiones": [
+            {
+                "nombre": "Marco",
+                "descripcion": "Marco Specialized A1 Premium Aluminum, enrutamiento interno de cables"
+            },
+            {
+                "nombre": "Suspensión",
+                "descripcion": "Suspensión delantera Suntour NEX, 63mm de recorrido"
+            }
+        ]
+    },
+    {
+        "id": "00005",
+        "imagen1": "Bike11.jpg",
+        "imagen2": "Bike12.jpg",
+        "nombre": "Chisel",
+        "tipo": "Ruta",
+        "modelo": "2021",
+        "referencia": "700066",
+        "valor": "900",
+        "descuento": "",
+        "talla": [
+            "S",
+            "M"
+        ],
+        "descripcion": "La bicicleta de ruta Chisel es la compañera perfecta para las salidas rápidas y las aventuras de senderismo. Con un marco de aluminio ligeramente en forma de diamante y una horquilla de carbono, ofrece una combinación equilibrada de rigidez y comodidad en el camino.",
+        "espesificaiones": [
+            {
+                "nombre": "Marco",
+                "descripcion": "Marco de aluminio D'Aluisio Smartweld, tubo de dirección cónico, enrutamiento interno de cables Carpeta de asiento de carbono"
+            },
+            {
+                "nombre": "Suspensión",
+                "descripcion": "Horquilla de carbono Fact, 9 mm QR, tubo de dirección cónico, enrutamiento interno de cables"
+            },
+            {
+                "nombre": "Frenos",
+                "descripcion": "Freno trasero Shimano 105 R7070, disco hidráulico, 160 mm. Freno frontal Shimano 105 R7070, disco hidráulico, 160 mm"
+            }
+        ]
+    },
+    {
+        "id": "00006",
+        "imagen1": "Bike13.jpg",
+        "imagen2": "Bike14.jpg",
+        "nombre": "Roubaix",
+        "tipo": "Ruta",
+        "modelo": "2021",
+        "referencia": "700067",
+        "valor": "1.100",
+        "descuento": "20%",
+        "talla": [
+            "M",
+            "L"
+        ],
+        "descripcion": "El Roubaix es una bicicleta de ruta de alta gama diseñada para las largas aventuras y las carreras. Con un marco de carbono y una horquilla Future Shock, ofrece una conducción suave y cómoda en el camino.",
+        "espesificaiones": [
+            {
+                "nombre": "Marco",
+                "descripcion": "Marco de carbono FACT 11r, tubo de dirección cónico, enrutamiento interno de cables Carpeta de asiento de carbono"
+            },
+            {
+                "nombre": "Suspensión",
+                "descripcion": "Future Shock 1.5, ajuste de hidráulica de 20 mm"
             }
         ]
     }
