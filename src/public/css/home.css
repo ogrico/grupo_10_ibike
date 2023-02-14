@@ -2,7 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
 }
+
+a {
+  text-decoration: none;
+  color: #060607;
+}
+
+ul {
+  list-style-type: none;
+}
+
 
 body {
   background-color: #efefef;
@@ -16,8 +27,9 @@ body {
 
 
 header {
-  width: 90%;
-  /* max-width: 900px; */
+  /* width: 90%; */
+  box-sizing: border-box;
+  width: 96%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,7 +39,7 @@ header {
   margin: 10px 2vw 0px 2vw;
   position: fixed;
   z-index: 100;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 .logo {
@@ -122,7 +134,7 @@ header div img {
   display: flex;
   align-items: flex-end;
   box-sizing: border-box;
-  
+
 }
 
 .main-banner img {
@@ -151,10 +163,40 @@ header div img {
 
 /* banner END */
 
-/* main-section */
+/* main-section products view*/
+
+.main-products-view {
+  padding-top: 100px;
+}
+
+.main-section-products {
+  display: flex;
+}
+
+.filter-products {
+  display: flex;
+  min-width: 122px;
+  width: 20%;
+  margin-left: 2vw;
+  padding-left: 2vw;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.filter-products article {
+  padding: 10px;
+}
+
+.filter-products article p {
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
 .main-section {
+  width: 90%;
   text-align: center;
-  margin: 15px;
+  margin: auto;
   padding: 10px;
 
 }
@@ -255,7 +297,7 @@ header div img {
 }
 
 .mainProdcut .product .img {
-  width: 68%;
+  width: 50%;
   margin: auto;
   flex-direction: column;
   padding: 5px;
@@ -270,8 +312,9 @@ header div img {
   display: flex;
   flex-direction: column;
   width: 28%;
-  margin: auto;
+  /* margin: auto; */
   padding: 5px;
+  justify-content: flex-start;
 }
 
 .mainProdcut .product .about .size {
@@ -314,6 +357,7 @@ header div img {
 
 .mainProdcut .product .about p {
   text-align: justify;
+  margin-top: 15px;
 }
 
 .mainProdcut .info {
@@ -352,27 +396,27 @@ header div img {
   padding-bottom: 230px;
 }
 
-.main-sinIn .titulo-1{
+.main-sinIn .titulo-1 {
   text-transform: uppercase;
   margin: 10px;
-  text-align:center;
+  text-align: center;
   font-size: 17px;
-  text-decoration:none;
+  text-decoration: none;
   color: black;
   font-weight: 700;
 }
 
-.main-sinIn .titulo-2{
+.main-sinIn .titulo-2 {
   text-transform: uppercase;
   margin: 10px;
-  text-align:center;
+  text-align: center;
   font-size: 17px;
-  text-decoration:none;
+  text-decoration: none;
   color: gray;
   font-weight: 600;
 }
 
-.main-sinIn .imput-registro > input{
+.main-sinIn .imput-registro>input {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
@@ -380,60 +424,59 @@ header div img {
   outline: none;
   resize: none;
   border: 0px;
-  font-family:'Montserrat',sans-serif;
-  transition:all .3s;
+  font-family: 'Montserrat', sans-serif;
+  transition: all .3s;
   font-size: 1.4rem;
-  border-bottom:1px solid #060607
-  
+  border-bottom: 1px solid #060607
 }
 
-.main-sinIn .checkbox-buttons{
+.main-sinIn .checkbox-buttons {
   padding-bottom: 20px;
   padding-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
- 
+
 }
 
-.main-sinIn .checkbox{
+.main-sinIn .checkbox {
   text-transform: uppercase;
   margin: 8px;
-  text-align:center;
+  text-align: center;
   font-size: 10px;
-  text-decoration:none;
+  text-decoration: none;
   color: black;
 }
 
-.main-sinIn .btn{
+.main-sinIn .btn {
   display: flex;
   justify-content: center;
 }
 
-.main-sinIn .btn > button{
+.main-sinIn .btn>button {
   background-color: #474747;
   color: white;
   padding: 8px 25px;
   border-radius: 8px;
   border: none;
-  text-decoration:none;
-  text-align:center;
+  text-decoration: none;
+  text-align: center;
   font-size: 1.4rem;
   text-transform: uppercase;
   outline: none;
-  cursor:pointer;
+  cursor: pointer;
 
 }
 
-.main-sinIn .btn > button:hover{
+.main-sinIn .btn>button:hover {
   background: #5f5e5e;
 }
 
-.main-sinIn .privacidad >p{
+.main-sinIn .privacidad>p {
   padding-bottom: 20px;
   padding-top: 20px;
   text-align: center;
-  font-size: 1.2rem;   
+  font-size: 1.2rem;
 
 }
 
@@ -445,16 +488,16 @@ header div img {
   margin: 10px auto 0 auto;
 }
 
-.main-sinIn .ingresar{
+.main-sinIn .ingresar {
   text-align: center;
   padding-bottom: 20px;
   padding-top: 20px;
 }
 
-.main-sinIn .ingresar > a{
-  text-decoration:none;
+.main-sinIn .ingresar>a {
+  text-decoration: none;
   color: black;
-  
+
 }
 
 /* main singIn END */
@@ -465,13 +508,15 @@ header div img {
 
 .main-footer {
   box-sizing: border-box;
+  margin: auto;
   background-color: #ffffff;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.main-footer h3{
+
+.main-footer h3 {
   box-sizing: border-box;
   padding: 10px;
 
@@ -515,7 +560,7 @@ header div img {
   }
 
   .main-section {
-    margin: 0 5vw 0 5vw;
+    margin: 0 5vw 0 0;
   }
 }
 
