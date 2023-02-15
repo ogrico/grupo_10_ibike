@@ -1,6 +1,7 @@
 [
     {
         "id": "00001",
+        "destacado": true,
         "imagen1": "Mount-FUSE1.jpg",
         "imagen2": "Mount-FUSE2.jpg",
         "nombre": "Marlin 27.5",
@@ -29,8 +30,9 @@
             }
         ]
     },
-    {   
-        "id":"00002",
+    {
+        "id": "00002",
+        "destacado": true,
         "imagen1": "DIVERGE-STR1.jpg",
         "imagen2": "DIVERGE-STR2.jpg",
         "nombre": "Fuse 27.5",
@@ -61,12 +63,13 @@
     },
     {
         "id": "00001",
+        "destacado": true,
         "imagen1": "Gravel-DIVERGE1.jpg",
         "imagen2": "Gravel-DIVERGE2.jpg",
         "nombre": "Marlin 27.5",
         "tipo": "Montaña",
         "modelo": "2022",
-        "referencia": "700064",
+        "referencia": "700066",
         "valor": "1.200",
         "descuento": "",
         "talla": [
@@ -89,14 +92,15 @@
             }
         ]
     },
-    {   
-        "id":"00002",
+    {
+        "id": "00002",
+        "destacado": true,
         "imagen1": "Gravel-DIVERGE-COMP.jpg",
-        "imagen2": "Gravel-DIVERGE-COM2.jpg",
+        "imagen2": "Gravel-DIVERGE-COMP2.jpg",
         "nombre": "Fuse 27.5",
         "tipo": "Montaña",
         "modelo": "2022",
-        "referencia": "700065",
+        "referencia": "700067",
         "valor": "1.200",
         "descuento": "",
         "talla": [
@@ -121,12 +125,13 @@
     },
     {
         "id": "00001",
+        "destacado": false,
         "imagen1": "Gravel-DIVERGE-SW1.jpg",
         "imagen2": "Gravel-DIVERGE-SW2.jpg",
         "nombre": "Marlin 27.5",
         "tipo": "Montaña",
         "modelo": "2022",
-        "referencia": "700064",
+        "referencia": "700068",
         "valor": "1.200",
         "descuento": "",
         "talla": [
@@ -149,14 +154,15 @@
             }
         ]
     },
-    {   
-        "id":"00002",
+    {
+        "id": "00002",
+        "destacado": false,
         "imagen1": "Mount-CHISEL1.jpg",
         "imagen2": "Mount-CHISEL2.jpg",
         "nombre": "Fuse 27.5",
         "tipo": "Montaña",
         "modelo": "2022",
-        "referencia": "700065",
+        "referencia": "700069",
         "valor": "1.200",
         "descuento": "",
         "talla": [
@@ -181,12 +187,13 @@
     },
     {
         "id": "00001",
+        "destacado": false,
         "imagen1": "Mount-EPIC-HT-SW1.jpg",
         "imagen2": "Mount-EPIC-HT-SW2.jpg",
         "nombre": "Marlin 27.5",
         "tipo": "Montaña",
         "modelo": "2022",
-        "referencia": "700064",
+        "referencia": "700070",
         "valor": "1.200",
         "descuento": "",
         "talla": [
@@ -209,14 +216,15 @@
             }
         ]
     },
-    {   
-        "id":"00002",
+    {
+        "id": "00002",
+        "destacado": false,
         "imagen1": "Mount-ROCKHOPPER1.jpg",
         "imagen2": "Mount-ROCKHOPPER2.jpg",
         "nombre": "Fuse 27.5",
         "tipo": "Montaña",
         "modelo": "2022",
-        "referencia": "700065",
+        "referencia": "700071",
         "valor": "1.200",
         "descuento": "",
         "talla": [
@@ -241,12 +249,13 @@
     },
     {
         "id": "00001",
+        "destacado": false,
         "imagen1": "Roat-AETHOS1.jpg",
         "imagen2": "Roat-AETHOS2.jpg",
         "nombre": "Marlin 27.5",
         "tipo": "Montaña",
         "modelo": "2022",
-        "referencia": "700064",
+        "referencia": "700072",
         "valor": "1.200",
         "descuento": "",
         "talla": [
@@ -269,14 +278,15 @@
             }
         ]
     },
-    {   
-        "id":"00002",
+    {
+        "id": "00002",
+        "destacado": false,
         "imagen1": "Roat-ALLEZ1.jpg",
         "imagen2": "Roat-ALLEZ2.jpg",
         "nombre": "Fuse 27.5",
         "tipo": "Montaña",
         "modelo": "2022",
-        "referencia": "700065",
+        "referencia": "700073",
         "valor": "1.200",
         "descuento": "",
         "talla": [
@@ -301,12 +311,13 @@
     },
     {
         "id": "00001",
+        "destacado": false,
         "imagen1": "Roat-DIVERGE-E51.jpg",
         "imagen2": "Roat-DIVERGE-E52.jpg",
         "nombre": "Marlin 27.5",
         "tipo": "Montaña",
         "modelo": "2022",
-        "referencia": "700064",
+        "referencia": "700074",
         "valor": "1.200",
         "descuento": "",
         "talla": [
@@ -329,14 +340,139 @@
             }
         ]
     },
-    {   
-        "id":"00002",
+    {
+        "id": "00002",
+        "destacado": false,
         "imagen1": "Roat-TARMAC-SL6-1.jpg",
         "imagen2": "Roat-TARMAC-SL6-2.jpg",
         "nombre": "Fuse 27.5",
         "tipo": "Montaña",
         "modelo": "2022",
-        "referencia": "700065",
+        "referencia": "700075",
+        "valor": "1.200",
+        "descuento": "",
+        "talla": [
+            "M",
+            "L"
+        ],
+        "descripcion": "Tranquila bajo presión, pero hábil y precisa, la Fuse es un tipo de bicicleta rígida completamente diferente. Con un nuevo chasis más largo, más bajo y más ruidoso y ruedas y neumáticos de 27.5x2.3, el Fuse 27.5 maneja descensos abruptos y complicados y subidas empinadas y técnicas con absoluta confianza",
+        "espesificaiones": [
+            {
+                "nombre": "Marco",
+                "descripcion": "Marco Specialized A1 Premium Aluminum, eje pasante de 148 mm, tubo de dirección cónico, enrutamiento interno de cables Carpeta de asiento Aleación, 38,6 mm"
+            },
+            {
+                "nombre": "Suspensión",
+                "descripcion": "Tenedor X-Fusion MIG 27.5, ajuste externo de rebote y compresión, muelle helicoidal, compensación de 46 mm, 130 mm de recorrido"
+            },
+            {
+                "nombre": "Frenos",
+                "descripcion": "Freno trasero SRAM Level, pinza de 2 pistones, disco hidráulico, 180 mm. Freno frontal Nivel SRAM, disco hidráulico, 180/160mm"
+            }
+        ]
+    },
+    {
+        "id": "00001",
+        "destacado": false,
+        "imagen1": "Mount-FUSE1.jpg",
+        "imagen2": "Mount-FUSE2.jpg",
+        "nombre": "Marlin 27.5",
+        "tipo": "Montaña",
+        "modelo": "2022",
+        "referencia": "700076",
+        "valor": "1.200",
+        "descuento": "",
+        "talla": [
+            "M",
+            "L"
+        ],
+        "descripcion": "Tranquila bajo presión, pero hábil y precisa, la Fuse es un tipo de bicicleta rígida completamente diferente. Con un nuevo chasis más largo, más bajo y más ruidoso y ruedas y neumáticos de 27.5x2.3, el Fuse 27.5 maneja descensos abruptos y complicados y subidas empinadas y técnicas con absoluta confianza",
+        "espesificaiones": [
+            {
+                "nombre": "Marco",
+                "descripcion": "Marco Specialized A1 Premium Aluminum, eje pasante de 148 mm, tubo de dirección cónico, enrutamiento interno de cables Carpeta de asiento Aleación, 38,6 mm"
+            },
+            {
+                "nombre": "Suspensión",
+                "descripcion": "Tenedor X-Fusion MIG 27.5, ajuste externo de rebote y compresión, muelle helicoidal, compensación de 46 mm, 130 mm de recorrido"
+            },
+            {
+                "nombre": "Frenos",
+                "descripcion": "Freno trasero SRAM Level, pinza de 2 pistones, disco hidráulico, 180 mm. Freno frontal Nivel SRAM, disco hidráulico, 180/160mm"
+            }
+        ]
+    },
+    {
+        "id": "00002",
+        "destacado": false,
+        "imagen1": "DIVERGE-STR1.jpg",
+        "imagen2": "DIVERGE-STR2.jpg",
+        "nombre": "Fuse 27.5",
+        "tipo": "Montaña",
+        "modelo": "2022",
+        "referencia": "700077",
+        "valor": "1.200",
+        "descuento": "",
+        "talla": [
+            "M",
+            "L"
+        ],
+        "descripcion": "Tranquila bajo presión, pero hábil y precisa, la Fuse es un tipo de bicicleta rígida completamente diferente. Con un nuevo chasis más largo, más bajo y más ruidoso y ruedas y neumáticos de 27.5x2.3, el Fuse 27.5 maneja descensos abruptos y complicados y subidas empinadas y técnicas con absoluta confianza",
+        "espesificaiones": [
+            {
+                "nombre": "Marco",
+                "descripcion": "Marco Specialized A1 Premium Aluminum, eje pasante de 148 mm, tubo de dirección cónico, enrutamiento interno de cables Carpeta de asiento Aleación, 38,6 mm"
+            },
+            {
+                "nombre": "Suspensión",
+                "descripcion": "Tenedor X-Fusion MIG 27.5, ajuste externo de rebote y compresión, muelle helicoidal, compensación de 46 mm, 130 mm de recorrido"
+            },
+            {
+                "nombre": "Frenos",
+                "descripcion": "Freno trasero SRAM Level, pinza de 2 pistones, disco hidráulico, 180 mm. Freno frontal Nivel SRAM, disco hidráulico, 180/160mm"
+            }
+        ]
+    },
+    {
+        "id": "00001",
+        "destacado": false,
+        "imagen1": "Mount-FUSE1.jpg",
+        "imagen2": "Mount-FUSE2.jpg",
+        "nombre": "Marlin 27.5",
+        "tipo": "Montaña",
+        "modelo": "2022",
+        "referencia": "700078",
+        "valor": "1.200",
+        "descuento": "",
+        "talla": [
+            "M",
+            "L"
+        ],
+        "descripcion": "Tranquila bajo presión, pero hábil y precisa, la Fuse es un tipo de bicicleta rígida completamente diferente. Con un nuevo chasis más largo, más bajo y más ruidoso y ruedas y neumáticos de 27.5x2.3, el Fuse 27.5 maneja descensos abruptos y complicados y subidas empinadas y técnicas con absoluta confianza",
+        "espesificaiones": [
+            {
+                "nombre": "Marco",
+                "descripcion": "Marco Specialized A1 Premium Aluminum, eje pasante de 148 mm, tubo de dirección cónico, enrutamiento interno de cables Carpeta de asiento Aleación, 38,6 mm"
+            },
+            {
+                "nombre": "Suspensión",
+                "descripcion": "Tenedor X-Fusion MIG 27.5, ajuste externo de rebote y compresión, muelle helicoidal, compensación de 46 mm, 130 mm de recorrido"
+            },
+            {
+                "nombre": "Frenos",
+                "descripcion": "Freno trasero SRAM Level, pinza de 2 pistones, disco hidráulico, 180 mm. Freno frontal Nivel SRAM, disco hidráulico, 180/160mm"
+            }
+        ]
+    },
+    {
+        "id": "00002",
+        "destacado": false,
+        "imagen1": "DIVERGE-STR1.jpg",
+        "imagen2": "DIVERGE-STR2.jpg",
+        "nombre": "Fuse 27.5",
+        "tipo": "Montaña",
+        "modelo": "2022",
+        "referencia": "700079",
         "valor": "1.200",
         "descuento": "",
         "talla": [
