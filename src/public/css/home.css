@@ -42,6 +42,11 @@ header {
   /* box-sizing: border-box; */
 }
 
+span {
+
+font-weight: 800;
+}
+
 .logo {
   box-sizing: border-box;
   height: 30px;
@@ -198,7 +203,6 @@ header div img {
   text-align: center;
   margin: auto;
   padding: 10px;
-
 }
 
 .main-section .products {
@@ -256,6 +260,7 @@ header div img {
 
 .mainProdcut {
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
   width: 90%;
   margin: auto;
@@ -292,12 +297,12 @@ header div img {
 
 .mainProdcut .product {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   padding: 10px;
 }
 
 .mainProdcut .product .img {
-  width: 50%;
+  width: 100%;
   margin: auto;
   flex-direction: column;
   padding: 5px;
@@ -311,10 +316,10 @@ header div img {
 .mainProdcut .product .about {
   display: flex;
   flex-direction: column;
-  width: 28%;
-  /* margin: auto; */
+  width: 100%;
+  margin: auto;
   padding: 5px;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .mainProdcut .product .about .size {
@@ -356,13 +361,14 @@ header div img {
 }
 
 .mainProdcut .product .about p {
-  text-align: justify;
+  /* text-align: justify; */
   margin-top: 15px;
 }
 
 .mainProdcut .info {
   display: flex;
   flex-direction: column;
+  padding: 15px;
 }
 
 .mainProdcut .info h6 {
@@ -380,9 +386,9 @@ header div img {
 }
 
 .mainProdcut .info article p {
-  width: 95%;
+  /* width: 95%; */
   margin: auto;
-  padding: 5px;
+  margin-top: 5px;
 }
 
 /* main product END */
@@ -508,6 +514,7 @@ header div img {
 
 .main-footer {
   box-sizing: border-box;
+  width: 100%;
   margin: auto;
   background-color: #ffffff;
   height: 100px;
@@ -519,7 +526,7 @@ header div img {
 .main-footer h3 {
   box-sizing: border-box;
   padding: 10px;
-
+  text-align: center;
 }
 
 /* footer END */
@@ -546,6 +553,23 @@ header div img {
   .main-banner img {
     height: 500px;
   }
+
+  .mainProdcut .product {
+   flex-direction: row;
+  }
+
+  .mainProdcut .product .about {
+    width: 38%;
+    padding: 28px;
+  }
+
+  .mainProdcut .product .img{
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+  }
+
+
 }
 
 @media screen and (min-width: 768px) {
@@ -560,11 +584,11 @@ header div img {
   }
 
   .main-section {
-    margin: 0 5vw 0 0;
+    margin: 0 5vw 0 5vw;
   }
 }
 
 @media screen and (min-width: 1025px) {}
 
 
-/* header END */
+/* header END */ 

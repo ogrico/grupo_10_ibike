@@ -1,8 +1,9 @@
 [
     {
         "id": "00001",
-        "imagen1": "Bike6.jpg",
-        "imagen2": "Bike7.jpg",
+        "destacado": true,
+        "imagen1": "Mount-FUSE1.png",
+        "imagen2": "Mount-FUSE2.png",
         "nombre": "Marlin 27.5",
         "tipo": "Montaña",
         "modelo": "2022",
@@ -29,10 +30,11 @@
             }
         ]
     },
-    {   
-        "id":"00002",
-        "imagen1": "Bike6.jpg",
-        "imagen2": "Bike7.jpg",
+    {
+        "id": "00002",
+        "destacado": true,
+        "imagen1": "DIVERGE-STR1.png",
+        "imagen2": "DIVERGE-STR2.png",
         "nombre": "Fuse 27.5",
         "tipo": "Montaña",
         "modelo": "2022",
@@ -60,116 +62,436 @@
         ]
     },
     {
-        "id": "00003",
-        "imagen1": "Bike8.jpg",
-        "imagen2": "Bike9.jpg",
-        "nombre": "Turbo Levo",
-        "tipo": "Eléctrica",
+        "id": "00001",
+        "destacado": true,
+        "imagen1": "Gravel-DIVERGE1.png",
+        "imagen2": "Gravel-DIVERGE2.png",
+        "nombre": "Marlin 27.5",
+        "tipo": "Montaña",
         "modelo": "2022",
         "referencia": "700066",
-        "valor": "5.000",
-        "descuento": "10%",
+        "valor": "1.200",
+        "descuento": "",
         "talla": [
-            "S",
             "M",
             "L"
         ],
-        "descripcion": "La bicicleta eléctrica Turbo Levo es una verdadera máquina de aventuras. Con su motor potente y su batería de larga duración, esta bicicleta te llevará a lugares que nunca imaginaste. Además, su diseño aerodinámico y sus frenos de disco hidráulicos te brindarán un control preciso en cualquier terreno.",
-        "espesificaiones": [
-            {
-                "nombre": "Motor",
-                "descripcion": "Motor Specialized 2.1, 250W, 70Nm, leva de pedal"
-            },
-            {
-                "nombre": "Batería",
-                "descripcion": "Batería Specialized M1-504, 504Wh, 36V, 14Ah"
-            },
-            {
-                "nombre": "Suspensión",
-                "descripcion": "Suspensión trasera Fox Float Performance, 150mm de recorrido, ajuste externo de compresión y rebote"
-            }
-        ]
-    },
-    {
-        "id": "00004",
-        "imagen1": "Bike10.jpg",
-        "imagen2": "Bike11.jpg",
-        "nombre": "Crosstrail",
-        "tipo": "Híbrida",
-        "modelo": "2022",
-        "referencia": "700067",
-        "valor": "900",
-        "descuento": "",
-        "talla": [
-            "S",
-            "M",
-            "L"
-        ],
-        "descripcion": "La Crosstrail es la compañera perfecta para tus aventuras en el camino. Con su combinación de suspensión y neumáticos anchos, te brindará una conducción suave y cómoda en cualquier terreno. Además, su marco ligero y su transmisión de 21 velocidades te permitirán acelerar con facilidad.",
+        "descripcion": "Tranquila bajo presión, pero hábil y precisa, la Fuse es un tipo de bicicleta rígida completamente diferente. Con un nuevo chasis más largo, más bajo y más ruidoso y ruedas y neumáticos de 27.5x2.3, el Fuse 27.5 maneja descensos abruptos y complicados y subidas empinadas y técnicas con absoluta confianza",
         "espesificaiones": [
             {
                 "nombre": "Marco",
-                "descripcion": "Marco Specialized A1 Premium Aluminum, enrutamiento interno de cables"
+                "descripcion": "Marco Specialized A1 Premium Aluminum, eje pasante de 148 mm, tubo de dirección cónico, enrutamiento interno de cables Carpeta de asiento Aleación, 38,6 mm"
             },
             {
                 "nombre": "Suspensión",
-                "descripcion": "Suspensión delantera Suntour NEX, 63mm de recorrido"
-            }
-        ]
-    },
-    {
-        "id": "00005",
-        "imagen1": "Bike11.jpg",
-        "imagen2": "Bike12.jpg",
-        "nombre": "Chisel",
-        "tipo": "Ruta",
-        "modelo": "2021",
-        "referencia": "700066",
-        "valor": "900",
-        "descuento": "",
-        "talla": [
-            "S",
-            "M"
-        ],
-        "descripcion": "La bicicleta de ruta Chisel es la compañera perfecta para las salidas rápidas y las aventuras de senderismo. Con un marco de aluminio ligeramente en forma de diamante y una horquilla de carbono, ofrece una combinación equilibrada de rigidez y comodidad en el camino.",
-        "espesificaiones": [
-            {
-                "nombre": "Marco",
-                "descripcion": "Marco de aluminio D'Aluisio Smartweld, tubo de dirección cónico, enrutamiento interno de cables Carpeta de asiento de carbono"
-            },
-            {
-                "nombre": "Suspensión",
-                "descripcion": "Horquilla de carbono Fact, 9 mm QR, tubo de dirección cónico, enrutamiento interno de cables"
+                "descripcion": "Tenedor X-Fusion MIG 27.5, ajuste externo de rebote y compresión, muelle helicoidal, compensación de 46 mm, 130 mm de recorrido"
             },
             {
                 "nombre": "Frenos",
-                "descripcion": "Freno trasero Shimano 105 R7070, disco hidráulico, 160 mm. Freno frontal Shimano 105 R7070, disco hidráulico, 160 mm"
+                "descripcion": "Freno trasero SRAM Level, pinza de 2 pistones, disco hidráulico, 180 mm. Freno frontal Nivel SRAM, disco hidráulico, 180/160mm"
             }
         ]
     },
     {
-        "id": "00006",
-        "imagen1": "Bike13.jpg",
-        "imagen2": "Bike14.jpg",
-        "nombre": "Roubaix",
-        "tipo": "Ruta",
-        "modelo": "2021",
+        "id": "00002",
+        "destacado": true,
+        "imagen1": "Gravel-DIVERGE-COMP1.png",
+        "imagen2": "Gravel-DIVERGE-COMP2.png",
+        "nombre": "Fuse 27.5",
+        "tipo": "Montaña",
+        "modelo": "2022",
         "referencia": "700067",
-        "valor": "1.100",
-        "descuento": "20%",
+        "valor": "1.200",
+        "descuento": "",
         "talla": [
             "M",
             "L"
         ],
-        "descripcion": "El Roubaix es una bicicleta de ruta de alta gama diseñada para las largas aventuras y las carreras. Con un marco de carbono y una horquilla Future Shock, ofrece una conducción suave y cómoda en el camino.",
+        "descripcion": "Tranquila bajo presión, pero hábil y precisa, la Fuse es un tipo de bicicleta rígida completamente diferente. Con un nuevo chasis más largo, más bajo y más ruidoso y ruedas y neumáticos de 27.5x2.3, el Fuse 27.5 maneja descensos abruptos y complicados y subidas empinadas y técnicas con absoluta confianza",
         "espesificaiones": [
             {
                 "nombre": "Marco",
-                "descripcion": "Marco de carbono FACT 11r, tubo de dirección cónico, enrutamiento interno de cables Carpeta de asiento de carbono"
+                "descripcion": "Marco Specialized A1 Premium Aluminum, eje pasante de 148 mm, tubo de dirección cónico, enrutamiento interno de cables Carpeta de asiento Aleación, 38,6 mm"
             },
             {
                 "nombre": "Suspensión",
-                "descripcion": "Future Shock 1.5, ajuste de hidráulica de 20 mm"
+                "descripcion": "Tenedor X-Fusion MIG 27.5, ajuste externo de rebote y compresión, muelle helicoidal, compensación de 46 mm, 130 mm de recorrido"
+            },
+            {
+                "nombre": "Frenos",
+                "descripcion": "Freno trasero SRAM Level, pinza de 2 pistones, disco hidráulico, 180 mm. Freno frontal Nivel SRAM, disco hidráulico, 180/160mm"
+            }
+        ]
+    },
+    {
+        "id": "00001",
+        "destacado": false,
+        "imagen1": "Gravel-DIVERGE-SW1.png",
+        "imagen2": "Gravel-DIVERGE-SW2.png",
+        "nombre": "Marlin 27.5",
+        "tipo": "Montaña",
+        "modelo": "2022",
+        "referencia": "700068",
+        "valor": "1.200",
+        "descuento": "",
+        "talla": [
+            "M",
+            "L"
+        ],
+        "descripcion": "Tranquila bajo presión, pero hábil y precisa, la Fuse es un tipo de bicicleta rígida completamente diferente. Con un nuevo chasis más largo, más bajo y más ruidoso y ruedas y neumáticos de 27.5x2.3, el Fuse 27.5 maneja descensos abruptos y complicados y subidas empinadas y técnicas con absoluta confianza",
+        "espesificaiones": [
+            {
+                "nombre": "Marco",
+                "descripcion": "Marco Specialized A1 Premium Aluminum, eje pasante de 148 mm, tubo de dirección cónico, enrutamiento interno de cables Carpeta de asiento Aleación, 38,6 mm"
+            },
+            {
+                "nombre": "Suspensión",
+                "descripcion": "Tenedor X-Fusion MIG 27.5, ajuste externo de rebote y compresión, muelle helicoidal, compensación de 46 mm, 130 mm de recorrido"
+            },
+            {
+                "nombre": "Frenos",
+                "descripcion": "Freno trasero SRAM Level, pinza de 2 pistones, disco hidráulico, 180 mm. Freno frontal Nivel SRAM, disco hidráulico, 180/160mm"
+            }
+        ]
+    },
+    {
+        "id": "00002",
+        "destacado": false,
+        "imagen1": "Mount-CHISEL1.png",
+        "imagen2": "Mount-CHISEL2.png",
+        "nombre": "Fuse 27.5",
+        "tipo": "Montaña",
+        "modelo": "2022",
+        "referencia": "700069",
+        "valor": "1.200",
+        "descuento": "",
+        "talla": [
+            "M",
+            "L"
+        ],
+        "descripcion": "Tranquila bajo presión, pero hábil y precisa, la Fuse es un tipo de bicicleta rígida completamente diferente. Con un nuevo chasis más largo, más bajo y más ruidoso y ruedas y neumáticos de 27.5x2.3, el Fuse 27.5 maneja descensos abruptos y complicados y subidas empinadas y técnicas con absoluta confianza",
+        "espesificaiones": [
+            {
+                "nombre": "Marco",
+                "descripcion": "Marco Specialized A1 Premium Aluminum, eje pasante de 148 mm, tubo de dirección cónico, enrutamiento interno de cables Carpeta de asiento Aleación, 38,6 mm"
+            },
+            {
+                "nombre": "Suspensión",
+                "descripcion": "Tenedor X-Fusion MIG 27.5, ajuste externo de rebote y compresión, muelle helicoidal, compensación de 46 mm, 130 mm de recorrido"
+            },
+            {
+                "nombre": "Frenos",
+                "descripcion": "Freno trasero SRAM Level, pinza de 2 pistones, disco hidráulico, 180 mm. Freno frontal Nivel SRAM, disco hidráulico, 180/160mm"
+            }
+        ]
+    },
+    {
+        "id": "00001",
+        "destacado": false,
+        "imagen1": "Mount-EPIC-HT-SW1.png",
+        "imagen2": "Mount-EPIC-HT-SW2.png",
+        "nombre": "Marlin 27.5",
+        "tipo": "Montaña",
+        "modelo": "2022",
+        "referencia": "700070",
+        "valor": "1.200",
+        "descuento": "",
+        "talla": [
+            "M",
+            "L"
+        ],
+        "descripcion": "Tranquila bajo presión, pero hábil y precisa, la Fuse es un tipo de bicicleta rígida completamente diferente. Con un nuevo chasis más largo, más bajo y más ruidoso y ruedas y neumáticos de 27.5x2.3, el Fuse 27.5 maneja descensos abruptos y complicados y subidas empinadas y técnicas con absoluta confianza",
+        "espesificaiones": [
+            {
+                "nombre": "Marco",
+                "descripcion": "Marco Specialized A1 Premium Aluminum, eje pasante de 148 mm, tubo de dirección cónico, enrutamiento interno de cables Carpeta de asiento Aleación, 38,6 mm"
+            },
+            {
+                "nombre": "Suspensión",
+                "descripcion": "Tenedor X-Fusion MIG 27.5, ajuste externo de rebote y compresión, muelle helicoidal, compensación de 46 mm, 130 mm de recorrido"
+            },
+            {
+                "nombre": "Frenos",
+                "descripcion": "Freno trasero SRAM Level, pinza de 2 pistones, disco hidráulico, 180 mm. Freno frontal Nivel SRAM, disco hidráulico, 180/160mm"
+            }
+        ]
+    },
+    {
+        "id": "00002",
+        "destacado": false,
+        "imagen1": "Mount-ROCKHOPPER1.png",
+        "imagen2": "Mount-ROCKHOPPER2.png",
+        "nombre": "Fuse 27.5",
+        "tipo": "Montaña",
+        "modelo": "2022",
+        "referencia": "700071",
+        "valor": "1.200",
+        "descuento": "",
+        "talla": [
+            "M",
+            "L"
+        ],
+        "descripcion": "Tranquila bajo presión, pero hábil y precisa, la Fuse es un tipo de bicicleta rígida completamente diferente. Con un nuevo chasis más largo, más bajo y más ruidoso y ruedas y neumáticos de 27.5x2.3, el Fuse 27.5 maneja descensos abruptos y complicados y subidas empinadas y técnicas con absoluta confianza",
+        "espesificaiones": [
+            {
+                "nombre": "Marco",
+                "descripcion": "Marco Specialized A1 Premium Aluminum, eje pasante de 148 mm, tubo de dirección cónico, enrutamiento interno de cables Carpeta de asiento Aleación, 38,6 mm"
+            },
+            {
+                "nombre": "Suspensión",
+                "descripcion": "Tenedor X-Fusion MIG 27.5, ajuste externo de rebote y compresión, muelle helicoidal, compensación de 46 mm, 130 mm de recorrido"
+            },
+            {
+                "nombre": "Frenos",
+                "descripcion": "Freno trasero SRAM Level, pinza de 2 pistones, disco hidráulico, 180 mm. Freno frontal Nivel SRAM, disco hidráulico, 180/160mm"
+            }
+        ]
+    },
+    {
+        "id": "00001",
+        "destacado": false,
+        "imagen1": "Roat-AETHOS1.png",
+        "imagen2": "Roat-AETHOS2.png",
+        "nombre": "Marlin 27.5",
+        "tipo": "Montaña",
+        "modelo": "2022",
+        "referencia": "700072",
+        "valor": "1.200",
+        "descuento": "",
+        "talla": [
+            "M",
+            "L"
+        ],
+        "descripcion": "Tranquila bajo presión, pero hábil y precisa, la Fuse es un tipo de bicicleta rígida completamente diferente. Con un nuevo chasis más largo, más bajo y más ruidoso y ruedas y neumáticos de 27.5x2.3, el Fuse 27.5 maneja descensos abruptos y complicados y subidas empinadas y técnicas con absoluta confianza",
+        "espesificaiones": [
+            {
+                "nombre": "Marco",
+                "descripcion": "Marco Specialized A1 Premium Aluminum, eje pasante de 148 mm, tubo de dirección cónico, enrutamiento interno de cables Carpeta de asiento Aleación, 38,6 mm"
+            },
+            {
+                "nombre": "Suspensión",
+                "descripcion": "Tenedor X-Fusion MIG 27.5, ajuste externo de rebote y compresión, muelle helicoidal, compensación de 46 mm, 130 mm de recorrido"
+            },
+            {
+                "nombre": "Frenos",
+                "descripcion": "Freno trasero SRAM Level, pinza de 2 pistones, disco hidráulico, 180 mm. Freno frontal Nivel SRAM, disco hidráulico, 180/160mm"
+            }
+        ]
+    },
+    {
+        "id": "00002",
+        "destacado": false,
+        "imagen1": "Roat-ALLEZ1.png",
+        "imagen2": "Roat-ALLEZ2.png",
+        "nombre": "Fuse 27.5",
+        "tipo": "Montaña",
+        "modelo": "2022",
+        "referencia": "700073",
+        "valor": "1.200",
+        "descuento": "",
+        "talla": [
+            "M",
+            "L"
+        ],
+        "descripcion": "Tranquila bajo presión, pero hábil y precisa, la Fuse es un tipo de bicicleta rígida completamente diferente. Con un nuevo chasis más largo, más bajo y más ruidoso y ruedas y neumáticos de 27.5x2.3, el Fuse 27.5 maneja descensos abruptos y complicados y subidas empinadas y técnicas con absoluta confianza",
+        "espesificaiones": [
+            {
+                "nombre": "Marco",
+                "descripcion": "Marco Specialized A1 Premium Aluminum, eje pasante de 148 mm, tubo de dirección cónico, enrutamiento interno de cables Carpeta de asiento Aleación, 38,6 mm"
+            },
+            {
+                "nombre": "Suspensión",
+                "descripcion": "Tenedor X-Fusion MIG 27.5, ajuste externo de rebote y compresión, muelle helicoidal, compensación de 46 mm, 130 mm de recorrido"
+            },
+            {
+                "nombre": "Frenos",
+                "descripcion": "Freno trasero SRAM Level, pinza de 2 pistones, disco hidráulico, 180 mm. Freno frontal Nivel SRAM, disco hidráulico, 180/160mm"
+            }
+        ]
+    },
+    {
+        "id": "00001",
+        "destacado": false,
+        "imagen1": "Roat-DIVERGE-E51.png",
+        "imagen2": "Roat-DIVERGE-E52.png",
+        "nombre": "Marlin 27.5",
+        "tipo": "Montaña",
+        "modelo": "2022",
+        "referencia": "700074",
+        "valor": "1.200",
+        "descuento": "",
+        "talla": [
+            "M",
+            "L"
+        ],
+        "descripcion": "Tranquila bajo presión, pero hábil y precisa, la Fuse es un tipo de bicicleta rígida completamente diferente. Con un nuevo chasis más largo, más bajo y más ruidoso y ruedas y neumáticos de 27.5x2.3, el Fuse 27.5 maneja descensos abruptos y complicados y subidas empinadas y técnicas con absoluta confianza",
+        "espesificaiones": [
+            {
+                "nombre": "Marco",
+                "descripcion": "Marco Specialized A1 Premium Aluminum, eje pasante de 148 mm, tubo de dirección cónico, enrutamiento interno de cables Carpeta de asiento Aleación, 38,6 mm"
+            },
+            {
+                "nombre": "Suspensión",
+                "descripcion": "Tenedor X-Fusion MIG 27.5, ajuste externo de rebote y compresión, muelle helicoidal, compensación de 46 mm, 130 mm de recorrido"
+            },
+            {
+                "nombre": "Frenos",
+                "descripcion": "Freno trasero SRAM Level, pinza de 2 pistones, disco hidráulico, 180 mm. Freno frontal Nivel SRAM, disco hidráulico, 180/160mm"
+            }
+        ]
+    },
+    {
+        "id": "00002",
+        "destacado": false,
+        "imagen1": "Roat-TARMAC-SL6-1.png",
+        "imagen2": "Roat-TARMAC-SL6-2.png",
+        "nombre": "Fuse 27.5",
+        "tipo": "Montaña",
+        "modelo": "2022",
+        "referencia": "700075",
+        "valor": "1.200",
+        "descuento": "",
+        "talla": [
+            "M",
+            "L"
+        ],
+        "descripcion": "Tranquila bajo presión, pero hábil y precisa, la Fuse es un tipo de bicicleta rígida completamente diferente. Con un nuevo chasis más largo, más bajo y más ruidoso y ruedas y neumáticos de 27.5x2.3, el Fuse 27.5 maneja descensos abruptos y complicados y subidas empinadas y técnicas con absoluta confianza",
+        "espesificaiones": [
+            {
+                "nombre": "Marco",
+                "descripcion": "Marco Specialized A1 Premium Aluminum, eje pasante de 148 mm, tubo de dirección cónico, enrutamiento interno de cables Carpeta de asiento Aleación, 38,6 mm"
+            },
+            {
+                "nombre": "Suspensión",
+                "descripcion": "Tenedor X-Fusion MIG 27.5, ajuste externo de rebote y compresión, muelle helicoidal, compensación de 46 mm, 130 mm de recorrido"
+            },
+            {
+                "nombre": "Frenos",
+                "descripcion": "Freno trasero SRAM Level, pinza de 2 pistones, disco hidráulico, 180 mm. Freno frontal Nivel SRAM, disco hidráulico, 180/160mm"
+            }
+        ]
+    },
+    {
+        "id": "00001",
+        "destacado": false,
+        "imagen1": "Mount-FUSE1.png",
+        "imagen2": "Mount-FUSE2.png",
+        "nombre": "Marlin 27.5",
+        "tipo": "Montaña",
+        "modelo": "2022",
+        "referencia": "700076",
+        "valor": "1.200",
+        "descuento": "",
+        "talla": [
+            "M",
+            "L"
+        ],
+        "descripcion": "Tranquila bajo presión, pero hábil y precisa, la Fuse es un tipo de bicicleta rígida completamente diferente. Con un nuevo chasis más largo, más bajo y más ruidoso y ruedas y neumáticos de 27.5x2.3, el Fuse 27.5 maneja descensos abruptos y complicados y subidas empinadas y técnicas con absoluta confianza",
+        "espesificaiones": [
+            {
+                "nombre": "Marco",
+                "descripcion": "Marco Specialized A1 Premium Aluminum, eje pasante de 148 mm, tubo de dirección cónico, enrutamiento interno de cables Carpeta de asiento Aleación, 38,6 mm"
+            },
+            {
+                "nombre": "Suspensión",
+                "descripcion": "Tenedor X-Fusion MIG 27.5, ajuste externo de rebote y compresión, muelle helicoidal, compensación de 46 mm, 130 mm de recorrido"
+            },
+            {
+                "nombre": "Frenos",
+                "descripcion": "Freno trasero SRAM Level, pinza de 2 pistones, disco hidráulico, 180 mm. Freno frontal Nivel SRAM, disco hidráulico, 180/160mm"
+            }
+        ]
+    },
+    {
+        "id": "00002",
+        "destacado": false,
+        "imagen1": "DIVERGE-STR1.png",
+        "imagen2": "DIVERGE-STR2.png",
+        "nombre": "Fuse 27.5",
+        "tipo": "Montaña",
+        "modelo": "2022",
+        "referencia": "700077",
+        "valor": "1.200",
+        "descuento": "",
+        "talla": [
+            "M",
+            "L"
+        ],
+        "descripcion": "Tranquila bajo presión, pero hábil y precisa, la Fuse es un tipo de bicicleta rígida completamente diferente. Con un nuevo chasis más largo, más bajo y más ruidoso y ruedas y neumáticos de 27.5x2.3, el Fuse 27.5 maneja descensos abruptos y complicados y subidas empinadas y técnicas con absoluta confianza",
+        "espesificaiones": [
+            {
+                "nombre": "Marco",
+                "descripcion": "Marco Specialized A1 Premium Aluminum, eje pasante de 148 mm, tubo de dirección cónico, enrutamiento interno de cables Carpeta de asiento Aleación, 38,6 mm"
+            },
+            {
+                "nombre": "Suspensión",
+                "descripcion": "Tenedor X-Fusion MIG 27.5, ajuste externo de rebote y compresión, muelle helicoidal, compensación de 46 mm, 130 mm de recorrido"
+            },
+            {
+                "nombre": "Frenos",
+                "descripcion": "Freno trasero SRAM Level, pinza de 2 pistones, disco hidráulico, 180 mm. Freno frontal Nivel SRAM, disco hidráulico, 180/160mm"
+            }
+        ]
+    },
+    {
+        "id": "00001",
+        "destacado": false,
+        "imagen1": "Mount-FUSE1.png",
+        "imagen2": "Mount-FUSE2.png",
+        "nombre": "Marlin 27.5",
+        "tipo": "Montaña",
+        "modelo": "2022",
+        "referencia": "700078",
+        "valor": "1.200",
+        "descuento": "",
+        "talla": [
+            "M",
+            "L"
+        ],
+        "descripcion": "Tranquila bajo presión, pero hábil y precisa, la Fuse es un tipo de bicicleta rígida completamente diferente. Con un nuevo chasis más largo, más bajo y más ruidoso y ruedas y neumáticos de 27.5x2.3, el Fuse 27.5 maneja descensos abruptos y complicados y subidas empinadas y técnicas con absoluta confianza",
+        "espesificaiones": [
+            {
+                "nombre": "Marco",
+                "descripcion": "Marco Specialized A1 Premium Aluminum, eje pasante de 148 mm, tubo de dirección cónico, enrutamiento interno de cables Carpeta de asiento Aleación, 38,6 mm"
+            },
+            {
+                "nombre": "Suspensión",
+                "descripcion": "Tenedor X-Fusion MIG 27.5, ajuste externo de rebote y compresión, muelle helicoidal, compensación de 46 mm, 130 mm de recorrido"
+            },
+            {
+                "nombre": "Frenos",
+                "descripcion": "Freno trasero SRAM Level, pinza de 2 pistones, disco hidráulico, 180 mm. Freno frontal Nivel SRAM, disco hidráulico, 180/160mm"
+            }
+        ]
+    },
+    {
+        "id": "00002",
+        "destacado": false,
+        "imagen1": "DIVERGE-STR1.png",
+        "imagen2": "DIVERGE-STR2.png",
+        "nombre": "Fuse 27.5",
+        "tipo": "Montaña",
+        "modelo": "2022",
+        "referencia": "700079",
+        "valor": "1.200",
+        "descuento": "",
+        "talla": [
+            "M",
+            "L"
+        ],
+        "descripcion": "Tranquila bajo presión, pero hábil y precisa, la Fuse es un tipo de bicicleta rígida completamente diferente. Con un nuevo chasis más largo, más bajo y más ruidoso y ruedas y neumáticos de 27.5x2.3, el Fuse 27.5 maneja descensos abruptos y complicados y subidas empinadas y técnicas con absoluta confianza",
+        "espesificaiones": [
+            {
+                "nombre": "Marco",
+                "descripcion": "Marco Specialized A1 Premium Aluminum, eje pasante de 148 mm, tubo de dirección cónico, enrutamiento interno de cables Carpeta de asiento Aleación, 38,6 mm"
+            },
+            {
+                "nombre": "Suspensión",
+                "descripcion": "Tenedor X-Fusion MIG 27.5, ajuste externo de rebote y compresión, muelle helicoidal, compensación de 46 mm, 130 mm de recorrido"
+            },
+            {
+                "nombre": "Frenos",
+                "descripcion": "Freno trasero SRAM Level, pinza de 2 pistones, disco hidráulico, 180 mm. Freno frontal Nivel SRAM, disco hidráulico, 180/160mm"
             }
         ]
     }

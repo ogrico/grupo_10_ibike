@@ -59,14 +59,14 @@
             <div>
                 <h4>Bienvenido, Geovany Rico </h4>
             </div>
-            
+
             <div>
                 <p>
                     Aqui puedes revisar tu infomarción de perfil y acualizarla,
                     así como ver el historial de tus pedidos,
                     metodos de pago agregados y gestionar tu contraseña de acceso
                 </p>
-            </div>            
+            </div>
 
             <div class="options">
 
@@ -76,12 +76,28 @@
                         <span>
                             Datos personales
                         </span>
-                        <i class="fa-sharp fa-solid fa-arrow-down"></i>
+                        <i class="fa-sharp fa-solid fa-arrow-down" id="dp"></i>
                     </div>
-                    <div class="sectionOpt-form">
+                    <div class="sectionOpt-form" id="personales">
+
+                        <article>
+                            <input type="text" name="inputname" value="Nombres" disabled>
+                        </article>
+                        <article>
+                            <input type="text" name="inputname" value="Apellidos" disabled>
+                        </article>
+                        <article>
+                            <input type="text" name="inputname" value="Rol" disabled>
+                        </article>
+                        <article>
+                            <input type="text" name="inputname" value="Correo" disabled>
+                        </article>
+                        <article>
+                            <input type="text" name="inputname" value="contraseña" disabled>
+                        </article>
 
                     </div>
-                    
+
                 </article>
 
                 <article class="sectionOpt">
@@ -90,12 +106,16 @@
                         <span>
                             Datos de facturación
                         </span>
-                        <i class="fa-sharp fa-solid fa-arrow-down"></i>
+                        <i class="fa-sharp fa-solid fa-arrow-down" id="df"></i>
                     </div>
-                    <div class="sectionOpt-form">
+                    <div class="sectionOpt-form" id="facturacion">
+
+                        <input type="text" name="inputname" value="Documento 564654855" disabled>
+                        <input type="text" name="inputname" value="Calle XXXX D Bis #73-55" disabled>
+                        <input type="text" name="inputname" value="Tarjeta # 7754" disabled>
 
                     </div>
-                    
+
                 </article>
 
                 <article class="sectionOpt">
@@ -104,13 +124,20 @@
                         <span>
                             Historial de pedidos
                         </span>
-                        <i class="fa-sharp fa-solid fa-arrow-down"></i>
+                        <i class="fa-sharp fa-solid fa-arrow-down" id="hp"></i>
                     </div>
-                    <div class="sectionOpt-form">
+                    <div class="sectionOpt-form" id="pedidos">
+
+                        <ul>
+                            <li>Pedido #7577 - $ 750</li>
+                            <li>Pedido #7578 - $ 640</li>
+                            <li>Pedido #7579 - $ 200</li>
+                            <li>Pedido #7580 - $ 1200</li>
+                        </ul>
 
                     </div>
-                    
-                </article>                
+
+                </article>
 
             </div>
 
@@ -125,14 +152,14 @@
                 <div class="textArea">
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5">
                     </textarea>
-                  </div>
+                </div>
 
-                  <div class="btn">
+                <div class="btn">
                     <button>
                         Envia tus comentarios
                     </button>
-                  </div>
-                
+                </div>
+
 
             </form>
 
