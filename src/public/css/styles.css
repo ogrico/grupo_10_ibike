@@ -4,7 +4,7 @@ Estilos para la sección de perfil de usuario
 
 main {
     padding-top: 80px;
-    width: 50%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -52,11 +52,29 @@ main {
 
 .sectionOpt-form {
     display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.sectionOpt-form article{
+    width: 95%;
+    margin: auto;
+}
+
+.sectionOpt-form input{
+    margin: 5px 0 5px 0;
+    padding: 5px;
+}
+
+.sectionOpt-form ul {
+    background: #fff;
+}
+
+.sectionOpt-form ul li{
+    padding: 5px;
 }
 
 .mail {
-    width: 60%;
-    margin: auto;
     display: flex;
     flex-direction: column;
 }
