@@ -13,14 +13,12 @@ const serviceRoutesLogin = require('../routes/sing_in_up.routes')
 class Server {
 
     constructor() {
-        
+
         this.app = express()
-        this.app.set("port", config.port)   
+        this.app.set("port", config.port)
         //Motor de plantillas
         this.app.set('views', path.join(__dirname, '../views'))
         this.app.set('view engine', 'ejs')
-        //Carpeta publica
-        this.app.use(express.static('src/public'))
 
         this.middlewares()
         this.routes()
@@ -28,10 +26,12 @@ class Server {
     }
 
     middlewares() {
-        
-        this.app.use(express.urlencoded({extended: false}))
+
+        this.app.use(express.urlencoded({ extended: false }))
         //Lectura y parseo del body
-        this.app.use(express.json())            
+        this.app.use(express.json())
+        //Carpeta publica
+        this.app.use(express.static('src/public'))
 
     }
 

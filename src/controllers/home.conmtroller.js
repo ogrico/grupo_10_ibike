@@ -6,10 +6,14 @@ const bikes = JSON.parse(fs.readFileSync(bikesFilePath, 'utf-8'))
 
 const home = {
 
-    home: (_, res) => {
+  home: (_, res) => {
     let bikesDes = bikes.filter(bike => bike.destacado === true)
-		res.render('index', { bikesDes })
-    }
+    res.render('index', { bikesDes })
+  },
+
+  error: (_, res) => {
+    res.redirect('/home')
+  }
 
 }
 
