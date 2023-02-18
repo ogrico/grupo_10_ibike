@@ -44,7 +44,7 @@ header {
 
 span {
 
-font-weight: 800;
+  font-weight: 800;
 }
 
 .logo {
@@ -188,6 +188,20 @@ header div img {
   flex-direction: column;
   justify-content: flex-start;
 }
+
+.filter-products button {
+
+  padding: 8px;
+  color: #DCDCDC;
+  background-color: #414141;
+  border-radius: 5px;
+  border: none;
+}
+.filter-products button a{
+  color: #DCDCDC;
+}
+
+
 
 .filter-products article {
   padding: 10px;
@@ -555,7 +569,7 @@ header div img {
   }
 
   .mainProdcut .product {
-   flex-direction: row;
+    flex-direction: row;
   }
 
   .mainProdcut .product .about {
@@ -563,7 +577,7 @@ header div img {
     padding: 28px;
   }
 
-  .mainProdcut .product .img{
+  .mainProdcut .product .img {
     width: 50%;
     margin: auto;
     padding: 5px;
@@ -591,4 +605,4 @@ header div img {
 @media screen and (min-width: 1025px) {}
 
 
-/* header END */ 
+/* header END */
