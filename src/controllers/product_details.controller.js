@@ -10,7 +10,6 @@ const product = {
     detail: (req, res) => {
 		// Do the magic
 		let bike = bikes.filter(element => element.referencia == req.params.referencia)
-		console.log(bike[0])
 		res.render('product', { bike })
 	}
 

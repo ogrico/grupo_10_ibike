@@ -61,7 +61,7 @@
                             </select><br>
                             <label>Descripción</label>
                             <textarea
-                              name="descripcion" value="<%= bike[0].descripcion %>"></textarea>" ></textarea><br>
+                              name="descripcion" value=""><%= bike[0].descripcion %></textarea><br>
                               <% if (locals.errors && errors.descripcion) { %>
                                 <p style="color: red;">
                                   <%= errors.descripcion.msg %>
