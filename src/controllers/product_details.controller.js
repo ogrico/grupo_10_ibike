@@ -1,8 +1,8 @@
 const fs = require('fs')
 const path = require('path')
 
-const bikesFilePath = path.join(__dirname, '../data/bikes.json');
-const bikes = JSON.parse(fs.readFileSync(bikesFilePath, 'utf-8'));
+const bikesFilePath = path.join(__dirname, '../data/bikes.json')
+const bikes = JSON.parse(fs.readFileSync(bikesFilePath, 'utf-8'))
 
 
 const product = {
@@ -10,6 +10,7 @@ const product = {
     detail: (req, res) => {
 		// Do the magic
 		let bike = bikes.filter(element => element.referencia == req.params.referencia)
+		console.log(bike)
 		res.render('product', { bike })
 	}
 

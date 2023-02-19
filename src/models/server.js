@@ -8,6 +8,7 @@ const serviceRoutesProducts = require('../routes/products.routes')
 const serviceRoutesProduct = require('../routes/product_details.routes')
 const serviceRoutesProfile = require('../routes/profile.routes')
 const serviceRoutesLogin = require('../routes/sing_in_up.routes')
+const serviceRoutesCreate = require('../routes/crud.routes')
 
 
 class Server {
@@ -27,7 +28,7 @@ class Server {
 
     middlewares() {
 
-        this.app.use(express.urlencoded({ extended: false }))
+        this.app.use(express.urlencoded({ extended: true }))
         //Lectura y parseo del body
         this.app.use(express.json())
         //Carpeta publica
@@ -43,6 +44,7 @@ class Server {
         this.app.use(serviceRoutesProduct)
         this.app.use(serviceRoutesProfile)
         this.app.use(serviceRoutesLogin)
+        this.app.use(serviceRoutesCreate)
 
     }
 

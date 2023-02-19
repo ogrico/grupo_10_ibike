@@ -1,14 +1,16 @@
 <form method="POST" action="/crud/create" enctype="multipart/form-data">
   <label>Imagen 1</label>
-  <input type="file" name="imagen1" value=""><br>
-
-  <label>Imagen 2</label>
-  <input type="file" name="imagen2" value=""><br>
+  <input type="file" name="imagenes" multiple><br>
+  <% if (locals.errors && errors.imagenes) { %>
+    <p style="color: red;">
+      <%= errors.imagenes.msg %>
+    </p>
+    <% } %>
 
   <label>Nombre</label>
   <input type="text" name="nombre" value="<%= locals.oldBody && oldBody.nombre? oldBody.nombre: "" %>"><br>
   <% if (locals.errors && errors.nombre) { %>
-    <p>
+    <p style="color: red;">
       <%= errors.nombre.msg %>
     </p>
     <% } %>
@@ -16,7 +18,7 @@
       <label>Tipo</label>
       <input type="text" name="tipo" value="<%= locals.oldBody && oldBody.tipo? oldBody.tipo: "" %>"><br>
       <% if (locals.errors && errors.tipo) { %>
-        <p>
+        <p style="color: red;">
           <%= errors.tipo.msg %>
         </p>
         <% } %>
@@ -24,7 +26,7 @@
           <label>Modelo</label>
           <input type="text" name="modelo" value="<%= locals.oldBody && oldBody.modelo? oldBody.modelo: "" %>"><br>
           <% if (locals.errors && errors.modelo) { %>
-            <p>
+            <p style="color: red;">
               <%= errors.modelo.msg %>
             </p>
             <% } %>
@@ -33,7 +35,7 @@
               <input type="text" name="referencia"
                 value="<%= locals.oldBody && oldBody.referencia? oldBody.referencia: "" %>"><br>
               <% if (locals.errors && errors.referencia) { %>
-                <p>
+                <p style="color: red;">
                   <%= errors.referencia.msg %>
                 </p>
                 <% } %>
@@ -41,7 +43,7 @@
                   <label>Valor</label>
                   <input type="text" name="valor" value="<%= locals.oldBody && oldBody.valor? oldBody.valor: "" %>"><br>
                   <% if (locals.errors && errors.valor) { %>
-                    <p>
+                    <p style="color: red;">
                       <%= errors.valor.msg %>
                     </p>
                     <% } %>
@@ -50,37 +52,41 @@
                       <input type="text" name="descuento"
                         value="<%= locals.oldBody && oldBody.descuento? oldBody.descuento: "" %>"><br>
                       <% if (locals.errors && errors.descuento) { %>
-                        <p>
+                        <p style="color: red;">
                           <%= errors.descuento.msg %>
                         </p>
                         <% } %>
 
                           <label>Talla</label>
                           <select name="talla">
-                            <option value="">XS</option>
-                            <option value="">S</option>
-                            <option value="">M</option>
-                            <option value="">L</option>
-                            <option value="">XL</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
                           </select><br>
                           <label>Descripción</label>
                           <textarea
-                            name="descripcion">Tranquila bajo presión, pero hábil y precisa, la Fuse es un tipo de bicicleta rígida completamente diferente. Con un nuevo chasis más largo, más bajo y más ruidoso y ruedas y neumáticos de 27.5x2.3, el Fuse 27.5 maneja descensos abruptos y complicados y subidas empinadas y técnicas con absoluta confianza</textarea><br>
+                            name="descripcion" value="<%= locals.oldBody && oldBody.descripcion? oldBody.descripcion: "" %></textarea>" ></textarea><br>
+                            <% if (locals.errors && errors.descripcion) { %>
+                              <p style="color: red;">
+                                <%= errors.descripcion.msg %>
+                              </p>
+                              <% } %>
 
                           <label>Especificaciones</label>
                           <ul>
                             <li>Nombre: <input type="text" name="esp_nombre"
                                 value="<%= locals.oldBody && oldBody.esp_nombre? oldBody.esp_nombre: "" %>">
                               <% if (locals.errors && errors.esp_nombre) { %>
-                                <p>
+                                <p style="color: red;">
                                   <%= errors.esp_nombre.msg %>
                                 </p>
                                 <% } %>
                             </li>
-                            <li>Descripción: <input type="text" name="esp_descripcion"
-                                value="<%= locals.oldBody && oldBody.esp_descripcion? oldBody.esp_descripcion: "" %>">
+                            <li>Descripción: <input type="text" name="esp_descripcion" value="<%= locals.oldBody && oldBody.esp_descripcion? oldBody.esp_descripcion: "" %>">
                               <% if (locals.errors && errors.esp_descripcion) { %>
-                                <p>
+                                <p style="color: red;">
                                   <%= errors.esp_descripcion.msg %>
                                 </p>
                                 <% } %>
@@ -88,7 +94,7 @@
                             <li>Nombre: <input type="text" name="esp_nombre2"
                                 value="<%= locals.oldBody && oldBody.esp_nombre2? oldBody.esp_nombre2: "" %>">
                               <% if (locals.errors && errors.esp_nombre2) { %>
-                                <p>
+                                <p style="color: red;">
                                   <%= errors.esp_nombre2.msg %>
                                 </p>
                                 <% } %>
@@ -96,7 +102,7 @@
                             <li>Descripción: <input type="text" name="esp_descripcion2"
                                 value="<%= locals.oldBody && oldBody.esp_descripcion2? oldBody.esp_descripcion2: "" %>">
                               <% if (locals.errors && errors.esp_descripcion2) { %>
-                                <p>
+                                <p style="color: red;">
                                   <%= errors.esp_descripcion2.msg %>
                                 </p>
                                 <% } %>
@@ -104,7 +110,7 @@
                             <li>Nombre: <input type="text" name="esp_nombre3"
                                 value="<%= locals.oldBody && oldBody.esp_nombre3? oldBody.esp_nombre3: "" %>">
                               <% if (locals.errors && errors.esp_nombre3) { %>
-                                <p>
+                                <p style="color: red;">
                                   <%= errors.esp_nombre3.msg %>
                                 </p>
                                 <% } %>
@@ -112,7 +118,7 @@
                             <li>Descripción: <input type="text" name="esp_descripcion3"
                                 value="<%= locals.oldBody && oldBody.esp_descripcion3? oldBody.esp_descripcion3: "" %>">
                               <% if (locals.errors && errors.esp_descripcion3) { %>
-                                <p>
+                                <p style="color: red;">
                                   <%= errors.esp_descripcion3.msg %>
                                 </p>
                                 <% } %>
