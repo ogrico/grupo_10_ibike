@@ -57,7 +57,12 @@ const curd = {
             res.render('create')
         }
 
+    },
+    formUpdateProduct:(req,res) =>{
+        let bike = bikes.filter(bike => bike.referencia == req.params.id)
+        res.render('put',{bike})
     }
+
 
 }
 

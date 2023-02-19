@@ -1,6 +1,7 @@
 const express = require('express')
 const path = require('path')
 const config = require('../config')
+const methodOverride = require('method-override')
 
 const serviceRoutesHome = require('../routes/home.routes')
 const serviceRoutesBasket = require('../routes/basket.routes')
@@ -9,6 +10,7 @@ const serviceRoutesProduct = require('../routes/product_details.routes')
 const serviceRoutesProfile = require('../routes/profile.routes')
 const serviceRoutesLogin = require('../routes/sing_in_up.routes')
 const serviceRoutesCreate = require('../routes/crud.routes')
+
 
 
 class Server {
@@ -33,6 +35,7 @@ class Server {
         this.app.use(express.json())
         //Carpeta publica
         this.app.use(express.static('src/public'))
+        this.app.use(methodOverride('_method'))
 
     }
 
