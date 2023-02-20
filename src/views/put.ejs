@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('partials/head')%>
+
+  <body>
+
+    <!-- Header -->
+    <%- include('partials/header') %>
+
+      <!-- Main -->
+      <section style="padding-top: 80px;">
+        <form method="POST" action="/crud/<%- bike[0].id %>/update?_method=PUT">
+
+
+          <label>Nombre</label>
+          <input type="text" name="nombre" value="<%= bike[0].nombre%>"><br>
+          <% if (locals.errors && errors.nombre) { %>
+            <p style="color: red;">
+              <%= errors.nombre.msg %>
+            </p>
+            <% } %>
+
+              <label>Tipo</label>
+              <input type="text" name="tipo" value="<%= bike[0].tipo %>"><br>
+              <% if (locals.errors && errors.tipo) { %>
+                <p style="color: red;">
+                  <%= errors.tipo.msg %>
+                </p>
+                <% } %>
+
+                  <label>Modelo</label>
+                  <input type="text" name="modelo" value="<%= bike[0].modelo %>"><br>
+                  <% if (locals.errors && errors.modelo) { %>
+                    <p style="color: red;">
+                      <%= errors.modelo.msg %>
+                    </p>
+                    <% } %>
+
+                      <label>Referencia</label>
+                      <input type="text" name="referencia" value="<%= bike[0].referencia %>"><br>
+                      <% if (locals.errors && errors.referencia) { %>
+                        <p style="color: red;">
+                          <%= errors.referencia.msg %>
+                        </p>
+                        <% } %>
+
+                          <label>Valor</label>
+                          <input type="text" name="valor" value="<%= bike[0].valor %>"><br>
+                          <% if (locals.errors && errors.valor) { %>
+                            <p style="color: red;">
+                              <%= errors.valor.msg %>
+                            </p>
+                            <% } %>
+
+                              <label>Descuento</label>
+                              <input type="text" name="descuento" value="<%= bike[0].descuento %>"><br>
+                              <% if (locals.errors && errors.descuento) { %>
+                                <p style="color: red;">
+                                  <%= errors.descuento.msg %>
+                                </p>
+                                <% } %>
+
+                                  <label>Talla</label>
+                                  <select name="talla">
+                                    <option value="XS">XS</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                  </select><br>
+                                  <label>Descripción</label>
+                                  <textarea name="descripcion" value=""><%= bike[0].descripcion %></textarea><br>
+                                  <% if (locals.errors && errors.descripcion) { %>
+                                    <p style="color: red;">
+                                      <%= errors.descripcion.msg %>
+                                    </p>
+                                    <% } %>
+
+                                      <label>Especificaciones</label>
+                                      <ul>
+                                        <li>Nombre: <input type="text" name="esp_nombre"
+                                            value="<%= bike[0].especificaciones[0].nombre %>">
+                                          <% if (locals.errors && errors.esp_nombre) { %>
+                                            <p style="color: red;">
+                                              <%= errors.esp_nombre.msg %>
+                                            </p>
+                                            <% } %>
+                                        </li>
+                                        <li>Descripción: <input type="text" name="esp_descripcion"
+                                            value="<%= bike[0].especificaciones[0].descripcion%>">
+                                          <% if (locals.errors && errors.esp_descripcion) { %>
+                                            <p style="color: red;">
+                                              <%= errors.esp_descripcion.msg %>
+                                            </p>
+                                            <% } %>
+                                        </li>
+                                        <li>Nombre: <input type="text" name="esp_nombre2"
+                                            value="<%= bike[0].especificaciones[1].nombre %>">
+                                          <% if (locals.errors && errors.esp_nombre2) { %>
+                                            <p style="color: red;">
+                                              <%= errors.esp_nombre2.msg %>
+                                            </p>
+                                            <% } %>
+                                        </li>
+                                        <li>Descripción: <input type="text" name="esp_descripcion2"
+                                            value="<%= bike[0].especificaciones[1].descripcion%>">
+                                          <% if (locals.errors && errors.esp_descripcion2) { %>
+                                            <p style="color: red;">
+                                              <%= errors.esp_descripcion2.msg %>
+                                            </p>
+                                            <% } %>
+                                        </li>
+                                        <li>Nombre: <input type="text" name="esp_nombre3"
+                                            value="<%= bike[0].especificaciones[2].nombre %>">
+                                          <% if (locals.errors && errors.esp_nombre3) { %>
+                                            <p style="color: red;">
+                                              <%= errors.esp_nombre3.msg %>
+                                            </p>
+                                            <% } %>
+                                        </li>
+                                        <li>Descripción: <input type="text" name="esp_descripcion3"
+                                            value="<%= bike[0].especificaciones[2].descripcion %>">
+                                          <% if (locals.errors && errors.esp_descripcion3) { %>
+                                            <p style="color: red;">
+                                              <%= errors.esp_descripcion3.msg %>
+                                            </p>
+                                            <% } %>
+                                        </li>
+
+
+                                      </ul>
+
+                                      <input type="submit" value="Actualizar">
+        </form>
+      </section>
+
+      <!-- footer -->
+      <%- include('partials/footer') %>
+
+  </body>
+
+</html>

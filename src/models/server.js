@@ -1,6 +1,7 @@
 const express = require('express')
 const path = require('path')
 const config = require('../config')
+const methodOverride = require('method-override')
 
 const serviceRoutesHome = require('../routes/home.routes')
 const serviceRoutesBasket = require('../routes/basket.routes')
@@ -8,19 +9,19 @@ const serviceRoutesProducts = require('../routes/products.routes')
 const serviceRoutesProduct = require('../routes/product_details.routes')
 const serviceRoutesProfile = require('../routes/profile.routes')
 const serviceRoutesLogin = require('../routes/sing_in_up.routes')
+const serviceRoutesCreate = require('../routes/crud.routes')
+
 
 
 class Server {
 
     constructor() {
-        
+
         this.app = express()
-        this.app.set("port", config.port)   
+        this.app.set("port", config.port)
         //Motor de plantillas
         this.app.set('views', path.join(__dirname, '../views'))
         this.app.set('view engine', 'ejs')
-        //Carpeta publica
-        this.app.use(express.static('src/public'))
 
         this.middlewares()
         this.routes()
@@ -28,10 +29,13 @@ class Server {
     }
 
     middlewares() {
-        
-        this.app.use(express.urlencoded({extended: false}))
+
+        this.app.use(express.urlencoded({ extended: true }))
         //Lectura y parseo del body
-        this.app.use(express.json())            
+        this.app.use(express.json())
+        //Carpeta publica
+        this.app.use(express.static('src/public'))
+        this.app.use(methodOverride('_method'))
 
     }
 
@@ -43,6 +47,7 @@ class Server {
         this.app.use(serviceRoutesProduct)
         this.app.use(serviceRoutesProfile)
         this.app.use(serviceRoutesLogin)
+        this.app.use(serviceRoutesCreate)
 
     }
 
