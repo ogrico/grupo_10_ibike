@@ -37,8 +37,6 @@ const createBikeValidator = [
         let body = req.body
         let errors = validationResult(req)
 
-        console.log(req.files)
-
         if (!errors.isEmpty()) {
             console.log('Errores : ', errors.mapped())
             if (req.files) {

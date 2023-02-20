@@ -54,14 +54,14 @@ const curd = {
     }
   },
   formUpdateProduct: (req, res) => {
-    let bike = bikes.filter((bike) => bike.id == req.params.id)
+    let bike = bikes.filter(bike => bike.referencia == req.params.id)
     res.render("put", { bike })
   },
   updateProduct: (req, res) => {
 
     console.log(req.body)
 
-    let temp = bikes.filter(bike => bike.id == req.params.id),
+    let temp = bikes.filter(bike => bike.referencia == req.params.id),
       bike = {
         "id": temp[0].id,
         "destacado": temp[0].destacado,
@@ -90,15 +90,14 @@ const curd = {
           }
         ]
       },
-      newBikes = bikes.filter(bike => bike.id != req.params.id)
+      newBikes = bikes.filter(bike => bike.referencia != req.params.id)
 
     newBikes.push(bike)
 
     try {
       fs.writeFileSync(bikesDataPath, JSON.stringify(newBikes))
       console.log("Todo Ok", '\n', bike)
-      let bikesDes = bikes.filter(bike => bike.destacado === true)
-      res.render('index', { bikesDes })
+      res.redirect('/home')
     } catch (error) {
       console.log(error)
       res.render('products', { bikes })
