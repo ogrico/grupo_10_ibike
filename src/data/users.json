@@ -1,4 +1,5 @@
-[{
+[
+  {
     "id": 1,
     "firstName": "nulla",
     "lastName": "justo pellentesque",
@@ -6,7 +7,8 @@
     "password": "rRwrXBX79uFv",
     "type": "Admin",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 2,
     "firstName": "eleifend quam",
     "lastName": "nulla neque",
@@ -14,7 +16,8 @@
     "password": "z9ZNT4my",
     "type": "Customer",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 3,
     "firstName": "nunc",
     "lastName": "ultrices",
@@ -22,7 +25,8 @@
     "password": "FWWsqtYdL",
     "type": "Admin",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 4,
     "firstName": "turpis",
     "lastName": "et eros",
@@ -30,7 +34,8 @@
     "password": "cPiLY86ea",
     "type": "Customer",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 5,
     "firstName": "nunc vestibulum",
     "lastName": "nisl aenean",
@@ -38,7 +43,8 @@
     "password": "jo9I3eiG2x",
     "type": "Admin",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 6,
     "firstName": "quam",
     "lastName": "donec",
@@ -46,7 +52,8 @@
     "password": "yiTaM8",
     "type": "Admin",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 7,
     "firstName": "morbi",
     "lastName": "mauris lacinia",
@@ -54,7 +61,8 @@
     "password": "Nl8eYPIl",
     "type": "Admin",
     "avatar": ""
-  }, {
+  },
+  {
     "id": 8,
     "firstName": "pellentesque viverra",
     "lastName": "ligula in",
@@ -62,7 +70,8 @@
     "password": "jTyjrJ5h",
     "type": "Admin",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 9,
     "firstName": "semper porta",
     "lastName": "tortor",
@@ -70,7 +79,8 @@
     "password": "kVKsdge",
     "type": "Customer",
     "avatar": ""
-  }, {
+  },
+  {
     "id": 10,
     "firstName": "consectetuer",
     "lastName": "ligula",
@@ -78,7 +88,8 @@
     "password": "2DijMV",
     "type": "Admin",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 11,
     "firstName": "mauris",
     "lastName": "eu",
@@ -86,7 +97,8 @@
     "password": "uCKBStP1IV87",
     "type": "Customer",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 12,
     "firstName": "dis",
     "lastName": "in",
@@ -94,7 +106,8 @@
     "password": "1LS1q9eCoO",
     "type": "Customer",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 13,
     "firstName": "sem",
     "lastName": "dapibus nulla",
@@ -102,7 +115,8 @@
     "password": "hMnHDfxv5dB",
     "type": "Customer",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 14,
     "firstName": "tincidunt nulla",
     "lastName": "felis",
@@ -110,7 +124,8 @@
     "password": "Xgz6OV",
     "type": "Admin",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 15,
     "firstName": "integer pede",
     "lastName": "tortor",
@@ -118,7 +133,8 @@
     "password": "94Drh3n",
     "type": "Admin",
     "avatar": "userProfile"
-  }, {
+  },
+  {
     "id": 16,
     "firstName": "donec",
     "lastName": "sapien cum",
@@ -126,7 +142,8 @@
     "password": "ApxUR721",
     "type": "Admin",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 17,
     "firstName": "aliquet",
     "lastName": "sit",
@@ -134,7 +151,8 @@
     "password": "8FBoxwwPwDyU",
     "type": "Admin",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 18,
     "firstName": "nonummy maecenas",
     "lastName": "phasellus in",
@@ -142,7 +160,8 @@
     "password": "qbxQGQfR7O0G",
     "type": "Admin",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 19,
     "firstName": "in",
     "lastName": "primis in",
@@ -150,7 +169,8 @@
     "password": "45mE5LO",
     "type": "Customer",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 20,
     "firstName": "sociis natoque",
     "lastName": "gravida sem",
@@ -158,7 +178,8 @@
     "password": "3Woe6z",
     "type": "Customer",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 21,
     "firstName": "curae",
     "lastName": "interdum",
@@ -166,7 +187,8 @@
     "password": "Nf4B662p",
     "type": "Admin",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 22,
     "firstName": "quisque",
     "lastName": "dapibus duis",
@@ -174,7 +196,8 @@
     "password": "Dis8YpOq08",
     "type": "Customer",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 23,
     "firstName": "nulla justo",
     "lastName": "libero",
@@ -182,7 +205,8 @@
     "password": "B42ikiRhYx",
     "type": "Admin",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 24,
     "firstName": "cubilia",
     "lastName": "at",
@@ -190,7 +214,8 @@
     "password": "6DglhV2QBdi",
     "type": "Customer",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 25,
     "firstName": "varius",
     "lastName": "eleifend luctus",
@@ -198,7 +223,8 @@
     "password": "LuUkX1SArWjC",
     "type": "Customer",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 26,
     "firstName": "nulla",
     "lastName": "arcu adipiscing",
@@ -206,7 +232,8 @@
     "password": "xUkS4M5VAQN",
     "type": "Admin",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 27,
     "firstName": "nonummy integer",
     "lastName": "ut blandit",
@@ -214,7 +241,8 @@
     "password": "ZnxF3HxWks8",
     "type": "Customer",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 28,
     "firstName": "sed justo",
     "lastName": "consequat",
@@ -222,7 +250,8 @@
     "password": "zi1qss7I7fi3",
     "type": "Customer",
     "avatar": "userProfile.png"
-  }, {
+  },
+  {
     "id": 29,
     "firstName": "quam turpis",
     "lastName": "posuere felis",
@@ -230,7 +259,8 @@
     "password": "Gl9JTj2aD",
     "type": "Customer",
     "avatar": ""
-  }, {
+  },
+  {
     "id": 30,
     "firstName": "diam",
     "lastName": "lectus",
@@ -238,4 +268,5 @@
     "password": "zYAMx0ws2B2",
     "type": "Admin",
     "avatar": "userProfile.png"
-  }]
+  }
+]
