@@ -1,22 +1,30 @@
-const express = require('express')
-const path = require('path')
-const config = require('../config')
-const methodOverride = require('method-override')
+const express = require('express'),
+    path = require('path'),
+    config = require('../config'),
+    methodOverride = require('method-override')
 
-const serviceRoutesHome = require('../routes/home.routes')
-const serviceRoutesBasket = require('../routes/basket.routes')
-const serviceRoutesProducts = require('../routes/products.routes')
-const serviceRoutesProduct = require('../routes/product_details.routes')
-const serviceRoutesProfile = require('../routes/profile.routes')
-const serviceRoutesLogin = require('../routes/sing_in_up.routes')
-const serviceRoutesCreate = require('../routes/crud.routes')
+/**
+ * Se importan los mudulos de las rutas para el servidor
+ */
+const serviceRoutesHome = require('../routes/home.routes'),
+    serviceRoutesBasket = require('../routes/basket.routes'),
+    serviceRoutesProducts = require('../routes/products.routes'),
+    serviceRoutesProduct = require('../routes/product_details.routes'),
+    serviceRoutesProfile = require('../routes/profile.routes'),
+    serviceRoutesLogin = require('../routes/sing_in_up.routes'),
+    serviceRoutesCreate = require('../routes/crud.routes')
 
 
-
+/**
+ * Se realiza la representación
+ */
 class Server {
 
+    /**
+     * Constructor para inicializar el Servidor 
+     */
     constructor() {
-
+ 
         this.app = express()
         this.app.set("port", config.port)
         //Motor de plantillas
@@ -41,6 +49,7 @@ class Server {
 
     routes() {
 
+        // Se inicializan las rutas
         this.app.use(serviceRoutesHome)
         this.app.use(serviceRoutesBasket)
         this.app.use(serviceRoutesProducts)
