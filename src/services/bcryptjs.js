@@ -15,7 +15,7 @@ const bcrypt = {
            que es el nivel de elevación del algoritmo (n^x) que usa para encriptar la contraseña
        */
         let passEncrypted = pass.bcrypt.hashSync(pass, 12)
-        return pass
+        return passEncrypted
 
     },
     /**
