@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('partials/head') %>
+
+
+  <body>
+
+    <!-- Header -->
+    <%- include('partials/header') %>
+
+      <!-- Main -->
+      <div class="main-sinUp">
+
+        <form action="/createUser" class="form" method="POST">
+          <div class="imput-registro">
+            <input type="text" name="nombre" id="nombre" placeholder="Nombres" value="" />
+          </div>
+          <div class="imput-registro">
+            <input type="text" name="apellido" id="apellido" placeholder="Apellidos" value="" />
+          </div>
+          <div class="imput-registro">
+            <input type="email" name="email" id="correo" placeholder="Correo electronico" />
+          </div>
+          <div class="imput-registro">
+            <input type="password" name="contrasena" id="password" placeholder="Contraseña" />
+          </div>
+          <div class="imput-registro">
+            <input type="password" name="contrasena2" id="password2" placeholder="Confirmar contraseña" />
+          </div>
+          <div class="imput-registro">
+            <input type="file" name="perfil" id="perfil" />
+          </div>
+          <div class="checkbox-buttons">
+            <input class="checkbox" type="checkbox" name="ofertas" id="recibir-ofertas" value="" />
+            <label class="checkbox" for="recibir-ofertas">Quiere recibir ofertas</label>
+          </div>
+          <div class="btn">
+            <button type="submit" class="registrar" value="registrar">
+              Regístrar
+            </button>
+          </div>
+          <div class="privacidad">
+            <p>
+              <b>Al registarme acepto las condiciones de uso y la politica de privacidad</b>
+            </p>
+          </div>
+          <div class="linea"></div>
+          <div class="ingresar">
+            <label>¿Ya tienes cuenta?</label>
+            <a href="/singIn"><b>Ingresar</b></a>
+          </div>
+        </form>
+      </div>
+
+      <!-- footer -->
+      <%- include('partials/footer') %>
+
+  </body>
+
+</html>

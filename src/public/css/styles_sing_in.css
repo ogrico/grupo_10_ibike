@@ -1,5 +1,5 @@
 
-.main-sinIn .titulo-1{
+.main-sinUp .titulo-1{
     text-transform: uppercase;
     margin: 10px;
     text-align:center;
@@ -9,7 +9,7 @@
     font-weight: 700;
 }
 
-.main-sinIn .titulo-2{
+.main-sinUp .titulo-2{
     text-transform: uppercase;
     margin: 10px;
     text-align:center;
@@ -19,7 +19,7 @@
     font-weight: 600;
 }
 
-.main-sinIn .imput-registro > input{
+.main-sinUp .imput-registro > input{
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -34,7 +34,7 @@
     
 }
 
-.main-sinIn .checkbox-buttons{
+.main-sinUp .checkbox-buttons{
     padding-bottom: 20px;
     padding-top: 20px;
     display: flex;
@@ -43,7 +43,7 @@
    
 }
 
-.main-sinIn .checkbox{
+.main-sinUp .checkbox{
     text-transform: uppercase;
     margin: 8px;
     text-align:center;
@@ -52,12 +52,12 @@
     color: black;
 }
 
-.main-sinIn .btn{
+.main-sinUp .btn{
     display: flex;
     justify-content: center;
 }
 
-.main-sinIn .btn > button{
+.main-sinUp .btn > button{
     background-color: #474747;
     color: white;
     padding: 8px 25px;
@@ -72,11 +72,11 @@
 
 }
 
-.main-sinIn .btn > button:hover{
+.main-sinUp .btn > button:hover{
     background: #5f5e5e;
 }
 
-.main-sinIn .privacidad >p{
+.main-sinUp .privacidad >p{
     padding-bottom: 20px;
     padding-top: 20px;
     text-align: center;
@@ -84,7 +84,7 @@
 
 }
 
-.main-sinIn .linea {
+.main-sinUp .linea {
     border-top: 1px solid black;
     height: 2px;
     max-width: 60%;
@@ -92,13 +92,13 @@
     margin: 10px auto 0 auto;
   }
 
-.main-sinIn .ingresar{
+.main-sinUp .ingresar{
     text-align: center;
     padding-bottom: 20px;
     padding-top: 20px;
 }
 
-.main-sinIn .ingresar > a{
+.main-sinUp .ingresar > a{
     text-decoration:none;
     color: black;
     
