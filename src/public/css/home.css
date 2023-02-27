@@ -408,35 +408,14 @@ header div img {
 /* main product END */
 
 
-/* main singIn */
-.main-sinIn {
+/* main singUp */
+.main-sinUp {
+  padding-top: 80px;
   width: 60%;
   margin: auto;
-  padding-top: 100px;
-  padding-bottom: 230px;
 }
 
-.main-sinIn .titulo-1 {
-  text-transform: uppercase;
-  margin: 10px;
-  text-align: center;
-  font-size: 17px;
-  text-decoration: none;
-  color: black;
-  font-weight: 700;
-}
-
-.main-sinIn .titulo-2 {
-  text-transform: uppercase;
-  margin: 10px;
-  text-align: center;
-  font-size: 17px;
-  text-decoration: none;
-  color: gray;
-  font-weight: 600;
-}
-
-.main-sinIn .imput-registro>input {
+.main-sinUp .imput-registro > input{
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
@@ -444,63 +423,64 @@ header div img {
   outline: none;
   resize: none;
   border: 0px;
-  font-family: 'Montserrat', sans-serif;
-  transition: all .3s;
+  font-family:'Montserrat',sans-serif;
+  transition:all .3s;
   font-size: 1.4rem;
-  border-bottom: 1px solid #060607
+  border-bottom:1px solid #060607
+  
 }
 
-.main-sinIn .checkbox-buttons {
+.main-sinUp .checkbox-buttons{
   padding-bottom: 20px;
   padding-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-
+ 
 }
 
-.main-sinIn .checkbox {
+.main-sinUp .checkbox{
   text-transform: uppercase;
   margin: 8px;
-  text-align: center;
+  text-align:center;
   font-size: 10px;
-  text-decoration: none;
+  text-decoration:none;
   color: black;
 }
 
-.main-sinIn .btn {
+.main-sinUp .btn{
   display: flex;
   justify-content: center;
 }
 
-.main-sinIn .btn>button {
+.main-sinUp .btn > button{
   background-color: #474747;
   color: white;
   padding: 8px 25px;
   border-radius: 8px;
   border: none;
-  text-decoration: none;
-  text-align: center;
+  text-decoration:none;
+  text-align:center;
   font-size: 1.4rem;
   text-transform: uppercase;
   outline: none;
-  cursor: pointer;
+  cursor:pointer;
 
 }
 
-.main-sinIn .btn>button:hover {
+.main-sinUp .btn > button:hover{
   background: #5f5e5e;
 }
 
-.main-sinIn .privacidad>p {
+.main-sinUp .privacidad >p{
   padding-bottom: 20px;
   padding-top: 20px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.2rem;   
 
 }
 
-.main-sinIn .linea {
+.main-sinUp .linea {
   border-top: 1px solid black;
   height: 2px;
   max-width: 60%;
@@ -508,16 +488,23 @@ header div img {
   margin: 10px auto 0 auto;
 }
 
-.main-sinIn .ingresar {
+.main-sinUp .ingresar{
   text-align: center;
   padding-bottom: 20px;
   padding-top: 20px;
 }
 
-.main-sinIn .ingresar>a {
-  text-decoration: none;
+.main-sinUp .ingresar > a{
+  text-decoration:none;
   color: black;
+  
+}
+/* main singUn END */
 
+/* main singIn */
+
+.main-singIn {
+  padding-top: 80px;
 }
 
 /* main singIn END */

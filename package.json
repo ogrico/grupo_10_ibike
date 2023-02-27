@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ogrico/grupo_10_ibike#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
     "express": "^4.18.2",

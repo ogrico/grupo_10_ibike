@@ -1,8 +1,8 @@
 const { Router } = require('express'),
     crudController = require('../controllers/crud.controller'),
-    createBikeValidator = require('../middlewares/createBikeValidator'),
-    updateBikeValidator = require('../middlewares/updateBikeValidator'),
-    bikeImagValidator = require('../middlewares/bikeImgMulter')
+    createBikeValidator = require('../middlewares/express-validator/createBikeValidator'),
+    updateBikeValidator = require('../middlewares/express-validator/updateBikeValidator'),
+    bikeImagValidator = require('../middlewares/multer/bikeImgMulter')
 
 const router = Router()
 
