@@ -1,6 +1,6 @@
 const { check, validationResult } = require('express-validator'),
     fs = require('fs'),
-    path = require('path'), bikesDataPath = path.join(__dirname, "../data/bikes.json")
+    path = require('path'), bikesDataPath = path.join(__dirname, "../../data/bikes.json")
 
 let bikes = JSON.parse(fs.readFileSync(bikesDataPath, "utf-8"))
 
