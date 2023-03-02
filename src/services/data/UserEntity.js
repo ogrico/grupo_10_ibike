@@ -1,4 +1,6 @@
-const fs = require('fs')
+const fs = require('fs'),
+    path = require("path"),
+    userDataPath = path.join(__dirname, "../../data/users.json")
 
 
 /**
@@ -7,22 +9,19 @@ const fs = require('fs')
  */
 const User = {
 
-    //  propiedad con la ruta del archivo Json de usuarios
-    fielName: '../../data/users.json',
-
     /**
      * Metodo para leer el contenido del Json
      * @returns 
      */
-    getData: () => {
-        return JSON.parse(fs.readFileSync(this.fielName, 'utf-8'))
+    getData: function () {
+        return JSON.parse(fs.readFileSync(userDataPath, 'utf-8'))
     },
 
     /**
      * Metodo para recuperar el ultimo id del JSON y enviar un valor mayor
      * @returns 
      */
-    generateId: () => {
+    generateId: function () {
         let allUsers = this.getData(),
             lassUser = allUsers.pop()
         if (lassUser) return lassUser.id + 1
@@ -33,7 +32,7 @@ const User = {
      * Metodo para devolver el listado de usuarios
      * @returns 
      */
-    findAll: () => {
+    findAll: function () {
         return this.getData()
     },
 
@@ -42,7 +41,7 @@ const User = {
      * @param {*} id 
      * @returns 
      */
-    finByPk: (id) => {
+    finByPk: function (id) {
         let allUsers = this.getData(),
             result = allUsers.filter(user => user.id === id)
         return result
@@ -54,7 +53,7 @@ const User = {
      * @param {*} value 
      * @returns 
      */
-    finByField: (field, value) => {
+    finByField: function (field, value) {
         let allUsers = this.getData(),
             result = allUsers.filter(user => user[field] === value)
         return result
@@ -65,15 +64,48 @@ const User = {
      * @param {*} user 
      * @returns 
      */
-    create: (user) => {
-        let allUsers = this.getData()
-        newUser = {
-            id: this.generateId(),
-            ...user
-        }
+    create: function (user) {
+        let allUsers = this.getData(),
+            newUser = {
+                id: this.generateId,
+                ...user
+            }
         allUsers.push(newUser)
         try {
-            fs.writeFileSync(this.fielName, JSON.stringify(allUsers, null, ' '))
+            fs.writeFileSync(userDataPath, JSON.stringify(allUsers, null, ' '))
+            return true
+        } catch (error) {
+            console.log('Error en la creación del archivo ', error)
+            return false
+        }
+
+    },
+
+    update: function (id, user) {
+
+        let allUsers = this.finByPk(id),
+            newUser = {
+                id: this.generateId,
+                ...user
+            }
+        allUsers.push(newUser)
+        try {
+            fs.writeFileSync(userDataPath, JSON.stringify(allUsers, null, ' '))
+            return true
+        } catch (error) {
+            console.log('Error en la creación del archivo ', error)
+            return false
+        }
+
+    },
+
+    delete: function (id) {
+
+        let allUsers = this.getData(),
+            result = allUsers.filter(user => user[id] === value)
+
+        try {
+            fs.writeFileSync(userDataPath, JSON.stringify(result, null, ' '))
             return true
         } catch (error) {
             console.log('Error en la creación del archivo ', error)
@@ -81,6 +113,7 @@ const User = {
         }
 
     }
+
 }
 
 module.exports = User

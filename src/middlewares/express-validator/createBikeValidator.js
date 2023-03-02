@@ -11,14 +11,19 @@ const { check, validationResult } = require('express-validator'),
 const createBikeValidator = [
     check('imagenes').custom((value, { req }) => {
         // Se rrecorre al array con la información de los archivos cargados
-        req.files.forEach(element => {
-            // Se valida que exista el archivo y su extension
-            if (!req.files || !element.originalname.match(/.(jpg|jpeg|png|gif|png)$/)) {
-                throw new Error('Por favor sube una imagen en formato JPG, JPEG, PNG o GIF')
-            }
-        })
+        if (req.files > 1){
+            req.files.forEach(element => {
+                // Se valida que exista el archivo y su extension
+                if (!req.files || !element.originalname.match(/.(jpg|jpeg|png|gif|png)$/)) {
+                    throw new Error('Por favor sube una imagen en formato JPG, JPEG, PNG o GIF')
+                }
+            })
+    
+            return true;
+        }
 
-        return true;
+        throw new Error('Se deben cargar minimo dos imagenes')
+        
     }),
     check('nombre').notEmpty().withMessage('Nombre vacio'),
     check('tipo').notEmpty().withMessage('Tipo vacio'),

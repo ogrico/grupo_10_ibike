@@ -1,20 +1,20 @@
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 
 /**
  * Objeto literar usado para representar la funcinalidad de bcrypt 
  * para encriptar y comparar una contraseña
  */
-const bcrypt = {
+const bcryptEntity = {
     /** 
      * @param {*} pass 
      */
-    hashSync: (pass) => {
+    hashSync: function (pass) {
         /*
            Se crea una variable passEncrypted para encriptar la contraseña
            al metodo hashSync se le pasa la contraseña a codificar y el salt
            que es el nivel de elevación del algoritmo (n^x) que usa para encriptar la contraseña
        */
-        let passEncrypted = pass.bcrypt.hashSync(pass, 12)
+        let passEncrypted = bcrypt.hashSync(pass, 12)
         return passEncrypted
 
     },
@@ -23,7 +23,7 @@ const bcrypt = {
      * @param {*} pass 
      * @param {*} passEncrypted 
      */
-    compareSync: (pass, passEncrypted) => {
+    compareSync: function (pass, passEncrypted) {
         /*
             Se crea la variable check para validar una contraseña encriptda
             se compara que la contraseña almacenada encriptada sea igual a la ingresada por el usuario 
@@ -33,4 +33,4 @@ const bcrypt = {
     }
 }
 
-module.exports = bcrypt
+module.exports = bcryptEntity
