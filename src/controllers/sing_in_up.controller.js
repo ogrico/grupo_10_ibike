@@ -3,16 +3,14 @@ const path = require('path'),
     bcryptEntity = require('../services/bcryptjs')
 
 // Objeto literar para definir los metodos a usar para la autenticación y regtistro de usuarios
-var login = {
+const login = {
 
     singIn: (_, res) => {
         res.render('sing_in')
     },
-
     singUp: (_, res) => {
         res.render('sing_up')
     },
-
     createUser: (req, res) => {
         /**
          * Se crean las variebales para capturar los datos enviados en el formulario
@@ -32,7 +30,7 @@ var login = {
         // Se instancia la entidad userEntity y se utiliza el metodo para crear un usuario
         let register = userEntity.create(newUser)
         if (register) console.log('Usuario registrado')
-        res.redirect('/home')        
+        res.redirect('/home')
     }
 
 }

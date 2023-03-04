@@ -6,7 +6,7 @@ const multer = require('multer'),
  * y asiganrles un nombre
  */
 const storage = multer.diskStorage({
-    destination: path.join(__dirname, '../../public/img/products/bikes'),
+    destination: path.join(__dirname, '../../public/img/users'),
     filename: (_, file, cb) => {
         cb(null, file.originalname)
     }
@@ -18,7 +18,7 @@ const storage = multer.diskStorage({
  */
 const upload = multer({
     storage,
-    dest: path.join(__dirname, '../../public/img/products/bikes')
-}).array('imagenes')
+    dest: path.join(__dirname, '../../public/img/users')
+}).array('avatar')
 
 module.exports = upload

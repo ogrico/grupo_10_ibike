@@ -10,12 +10,22 @@
   "state": true
  },
  {
+  "id": 2,
   "firstName": "Geovany",
   "lastName": "Rico",
   "email": "correo@correo.com",
   "password": "$2a$12$8vwxLcrhk5u6QqMDlqG0EuYOb6qyiP1OLFmz0/I4AN2tjXi4M8FsS",
   "admin": false,
-  "avatar": "geovanyRico.jpg",
+  "avatar": "userProfile.png",
   "state": true
+ },
+ {
+  "id": 3,
+  "firstName": "paco",
+  "lastName": "paco",
+  "email": "paco@correo.com",
+  "password": "$2a$12$OGMmR7iHLYh1XMB6P1l9CeYeovz59eNbmXjODpIXxtfidU.RADmHy",
+  "admin": false,
+  "avatar": "userTest.png"
  }
 ]
