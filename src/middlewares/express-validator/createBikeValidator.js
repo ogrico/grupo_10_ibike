@@ -11,7 +11,7 @@ const { check, validationResult } = require('express-validator'),
 const createBikeValidator = [
     check('imagenes').custom((value, { req }) => {
         // Se rrecorre al array con la información de los archivos cargados
-        if (req.files > 1){
+        if (req.files.length > 1){
             req.files.forEach(element => {
                 // Se valida que exista el archivo y su extension
                 if (!req.files || !element.originalname.match(/.(jpg|jpeg|png|gif|png)$/)) {
@@ -19,10 +19,10 @@ const createBikeValidator = [
                 }
             })
     
-            return true;
-        }
-
-        throw new Error('Se deben cargar minimo dos imagenes')
+            return true
+        } else {
+            throw new Error('Se deben cargar minimo dos imagenes')
+        }        
         
     }),
     check('nombre').notEmpty().withMessage('Nombre vacio'),
@@ -67,7 +67,7 @@ const createBikeValidator = [
              */
             if (req.files) {
                 req.files.forEach(element => {
-                    let imagen = path.join(__dirname, '../public/img/products/bikes/')
+                    let imagen = path.join(__dirname, '../../public/img/products/bikes/')
                         + element.originalname
                     fs.unlinkSync(imagen)
                 })

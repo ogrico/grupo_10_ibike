@@ -12,24 +12,54 @@
       <!-- Main -->
       <div class="main-sinUp">
 
-        <form action="/createUser" class="form" method="POST">
+        <form action="/createUser" class="form" method="POST" enctype="multipart/form-data">
           <div class="imput-registro">
-            <input type="text" name="nombre" id="nombre" placeholder="Nombres" value="" />
+            <input type="text" name="nombre" id="nombre" placeholder="Nombres" value="<%= locals.oldBody && oldBody.nombre? oldBody.nombre: "" %>" />
+            <% if (locals.errors && errors.nombre) { %>
+              <p style="color: red;">
+                <%= errors.nombre.msg %>
+              </p>
+              <% } %>
           </div>
           <div class="imput-registro">
-            <input type="text" name="apellido" id="apellido" placeholder="Apellidos" value="" />
+            <input type="text" name="apellido" id="apellido" placeholder="Apellidos" value="<%= locals.oldBody && oldBody.nombre? oldBody.apellido: "" %>" />
+            <% if (locals.errors && errors.apellido) { %>
+              <p style="color: red;">
+                <%= errors.apellido.msg %>
+              </p>
+              <% } %>
           </div>
           <div class="imput-registro">
-            <input type="email" name="email" id="correo" placeholder="Correo electronico" />
+            <input type="email" name="email" id="correo" placeholder="Correo electronico" value="<%= locals.oldBody && oldBody.nombre? oldBody.email: "" %>"/>
+            <% if (locals.errors && errors.email) { %>
+              <p style="color: red;">
+                <%= errors.email.msg %>
+              </p>
+              <% } %>
           </div>
           <div class="imput-registro">
             <input type="password" name="contrasena" id="password" placeholder="Contraseña" />
+            <% if (locals.errors && errors.contrasena) { %>
+              <p style="color: red;">
+                <%= errors.contrasena.msg %>
+              </p>
+              <% } %>
           </div>
           <div class="imput-registro">
             <input type="password" name="contrasena2" id="password2" placeholder="Confirmar contraseña" />
+            <% if (locals.errors && errors.contrasena2) { %>
+              <p style="color: red;">
+                <%= errors.contrasena2.msg %>
+              </p>
+              <% } %>
           </div>
           <div class="imput-registro">
             <input type="file" name="avatar" id="avatar" />
+            <% if (locals.errors && errors.avatar) { %>
+              <p style="color: red;">
+                <%= errors.avatar.msg %>
+              </p>
+              <% } %>
           </div>
           <div class="checkbox-buttons">
             <input class="checkbox" type="checkbox" name="ofertas" id="recibir-ofertas" value="" />
