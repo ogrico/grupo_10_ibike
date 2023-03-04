@@ -14,11 +14,11 @@ const storage = multer.diskStorage({
 
 /**
  * Metodo para realizar la carga de imagenes desde un fomrulario
- * se cargan desde el imput files name ="imagenes"
+ * se cargan desde el imput files name ="avatar"
  */
 const upload = multer({
     storage,
-    dest: path.join(__dirname, '../../public/img/users')
-}).array('avatar')
+    dest: path.join(__dirname, '../public/img/users')
+}).single('avatar')
 
 module.exports = upload

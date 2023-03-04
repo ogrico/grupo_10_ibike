@@ -21,10 +21,10 @@
  },
  {
   "id": 3,
-  "firstName": "paco",
-  "lastName": "paco",
-  "email": "paco@correo.com",
-  "password": "$2a$12$OGMmR7iHLYh1XMB6P1l9CeYeovz59eNbmXjODpIXxtfidU.RADmHy",
+  "firstName": "pedro",
+  "lastName": "pablo",
+  "email": "pablo@correo.com",
+  "password": "$2a$12$iOc38SN.5k6bpwIL9e7wa.6qRe6.jqhJEdeidkdWC5sWtxhVJpfN.",
   "admin": false,
   "avatar": "userTest.png"
  }

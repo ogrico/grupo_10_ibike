@@ -19,7 +19,7 @@ const createBikeValidator = [
                 }
             })
     
-            return true;
+            return true
         } else {
             throw new Error('Se deben cargar minimo dos imagenes')
         }        

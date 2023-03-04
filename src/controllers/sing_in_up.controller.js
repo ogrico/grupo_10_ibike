@@ -16,7 +16,7 @@ const login = {
          * Se crean las variebales para capturar los datos enviados en el formulario
          * Se crea un objeto literal para representar al usuario y registrarlo
          */
-        let { nombre, apellido, email, contrasena, avatar } = req.body,
+        let { nombre, apellido, email, contrasena } = req.body,
             passEncrypted = bcryptEntity.hashSync(contrasena),
             newUser = {
                 "firstName": nombre,
@@ -24,7 +24,7 @@ const login = {
                 "email": email,
                 "password": passEncrypted,
                 "admin": false,
-                "avatar": avatar
+                "avatar": req.file.originalname
             }
 
         // Se instancia la entidad userEntity y se utiliza el metodo para crear un usuario

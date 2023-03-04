@@ -12,7 +12,7 @@
       <!-- Main -->
       <div class="main-sinUp">
 
-        <form action="/createUser" class="form" method="POST" >
+        <form action="/createUser" class="form" method="POST" enctype="multipart/form-data">
           <div class="imput-registro">
             <input type="text" name="nombre" id="nombre" placeholder="Nombres" value="<%= locals.oldBody && oldBody.nombre? oldBody.nombre: "" %>" />
             <% if (locals.errors && errors.nombre) { %>

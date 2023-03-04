@@ -17,7 +17,7 @@ const createUsrValidator = [
     check('email').notEmpty().withMessage('Email vacio').isEmail().withMessage('El campo debe ser de tipo email').custom(value => {
 
         let emailCheck = userEntity.finByField('email', value)
-        if (emailCheck.length > 0){
+        if (emailCheck.length > 0) {
             throw new Error('Email ya registrado')
         }
         return true
@@ -30,7 +30,16 @@ const createUsrValidator = [
         return true
 
     }),
-    check('avatar').notEmpty().withMessage('Imagen de usuario requerida'),
+    check('avatar').custom((value, { req }) => {
+
+        // Se valida que exista el archivo y su extension
+        if (!req.file || !req.file.originalname.match(/.(jpg|jpeg|png|gif|png)$/)) {
+            throw new Error('Por favor sube una imagen en formato JPG, JPEG, PNG o GIF')
+        }
+
+        return true
+
+    }),
     /**
      * Funcion para validar los errores
      * @param {*} req 
@@ -50,12 +59,11 @@ const createUsrValidator = [
              * Se validan los archivos cargados en el formulario
              * Y se eliminan al existir errores
              */
-            if (req.files) {
-                req.files.forEach(element => {
-                    let imagen = path.join(__dirname, '../../public/img/users/')
-                        + element.originalname
-                    fs.unlinkSync(imagen)
-                })
+            if (req.file) {
+                let imagen = path.join(__dirname, '../../public/img/users/')
+                    + req.file.originalname
+                fs.unlinkSync(imagen)
+
 
             }
             res.render('sing_up', {
