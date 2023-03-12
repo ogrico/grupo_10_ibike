@@ -6,7 +6,9 @@ const path = require('path'),
 const login = {
 
     singIn: (_, res) => {
-        res.render('sing_in')
+        res.render('sing_in', {
+            error: ""
+        })
     },
     singUp: (_, res) => {
         res.render('sing_up')
@@ -32,23 +34,23 @@ const login = {
         if (register) console.log('Usuario registrado')
         res.redirect('/home')
     },
-    login: (req,res) => {
-        let {usuario,contrasena } = req.body,
-        user = userEntity.finByField('email',usuario),
-        error = 'usuario o contraseña incorrectos'
+    login: (req, res) => {
+        let { usuario, contrasena } = req.body,
+            user = userEntity.finByField('email', usuario),
+            error = 'usuario o contraseña incorrectos'
         passverificada = bcryptEntity.compareSync(contrasena, user[0].password)
-        if (user[0].email === usuario && passverificada){
-           return res.redirect('/')
+        if (user[0].email === usuario && passverificada) {
+            return res.redirect('/')
         }
- res.render('sing_in', {
-    oldBody : req.body,
-    error
-   
- })
-        
+        res.render('sing_in', {
+            oldBody: req.body,
+            error
+
+        })
+
 
     }
-    
+
 }
 
 

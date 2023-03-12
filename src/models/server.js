@@ -4,16 +4,18 @@ const express = require('express'),
     methodOverride = require('method-override'),
     session = require('express-session');
 
-    
+
 
 /**
  * Se importan los mudulos de las rutas para el servidor
  */
 const serviceRoutesHome = require('../routes/home.routes'),
     serviceRoutesBasket = require('../routes/basket.routes'),
+    serviceRoutesProducts = require('../routes/products.routes'),
     serviceRoutesProduct = require('../routes/product_details.routes'),
     serviceRoutesProfile = require('../routes/profile.routes'),
-    serviceRoutesLogin = require('../routes/sing_in_up.routes')
+    serviceRoutesLogin = require('../routes/sing_in_up.routes'),
+    serviceRoutesCreate = require('../routes/crud.routes')
 
 
 /**
@@ -25,7 +27,7 @@ class Server {
      * Constructor para inicializar el Servidor 
      */
     constructor() {
- 
+
         this.app = express()
         this.app.set("port", config.port)
         //Motor de plantillas
@@ -45,7 +47,11 @@ class Server {
         //Carpeta publica
         this.app.use(express.static('src/public'))
         this.app.use(methodOverride('_method'))
-        this.app.use(session({secret : "new session"}));
+        this.app.use(session({
+            secret: "new session",
+            resave: true,
+            saveUninitialized: true
+        }))
 
     }
 
@@ -54,12 +60,14 @@ class Server {
         // Se inicializan las rutas
         this.app.use(serviceRoutesHome)
         this.app.use(serviceRoutesBasket)
+        this.app.use(serviceRoutesProducts)
         this.app.use(serviceRoutesProduct)
         this.app.use(serviceRoutesProfile)
         this.app.use(serviceRoutesLogin)
-        this.app.use((_,res) =>{
-            res.status(404).redirect('/');
-        })    
+        this.app.use(serviceRoutesCreate)
+        this.app.use((_, res) => {
+            res.status(404).redirect('/')
+        })
 
     }
 
