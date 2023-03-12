@@ -1,7 +1,10 @@
 const express = require('express'),
     path = require('path'),
     config = require('../config'),
-    methodOverride = require('method-override')
+    methodOverride = require('method-override'),
+    session = require('express-session');
+
+
 
 /**
  * Se importan los mudulos de las rutas para el servidor
@@ -24,7 +27,7 @@ class Server {
      * Constructor para inicializar el Servidor 
      */
     constructor() {
- 
+
         this.app = express()
         this.app.set("port", config.port)
         //Motor de plantillas
@@ -44,6 +47,11 @@ class Server {
         //Carpeta publica
         this.app.use(express.static('src/public'))
         this.app.use(methodOverride('_method'))
+        this.app.use(session({
+            secret: "new session",
+            resave: true,
+            saveUninitialized: true
+        }))
 
     }
 
@@ -57,6 +65,9 @@ class Server {
         this.app.use(serviceRoutesProfile)
         this.app.use(serviceRoutesLogin)
         this.app.use(serviceRoutesCreate)
+        this.app.use((_, res) => {
+            res.status(404).redirect('/')
+        })
 
     }
 

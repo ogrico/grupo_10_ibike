@@ -9,7 +9,8 @@ const curd = {
     res.render("create")
   },
   createProduct: (req, res) => {
-    console.log(req.file)
+
+    
 
     let newBody = {
       imagen1: req.files[0].originalname,
