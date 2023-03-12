@@ -1,3 +1,4 @@
+const session = require('express-session');
 const path = require('path'),
     userEntity = require('../services/data/UserEntity'),
     bcryptEntity = require('../services/bcryptjs')
@@ -5,7 +6,7 @@ const path = require('path'),
 // Objeto literar para definir los metodos a usar para la autenticación y regtistro de usuarios
 const login = {
 
-    singIn: (_, res) => {
+    singIn: (req, res) => {
         res.render('sing_in', {
             error: ""
         })
@@ -35,20 +36,22 @@ const login = {
         res.redirect('/home')
     },
     login: (req, res) => {
+
         let { usuario, contrasena } = req.body,
             user = userEntity.finByField('email', usuario),
             error = 'usuario o contraseña incorrectos'
-        passverificada = bcryptEntity.compareSync(contrasena, user[0].password)
-        if (user[0].email === usuario && passverificada) {
-            return res.redirect('/')
+        passVerified = bcryptEntity.compareSync(contrasena, user[0].password)
+        if (user[0].email === usuario && passVerified) {
+            delete user[0].id
+            delete user[0].password
+            req.session.userLogged = user[0]
+            return res.redirect('/acount')
         }
         res.render('sing_in', {
             oldBody: req.body,
             error
 
         })
-
-
     }
 
 }

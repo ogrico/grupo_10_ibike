@@ -2,10 +2,10 @@ const ProductEntiry = require('../services/data/ProductEntity')
 
 const home = {
 
-  home: (_, res) => {
+  home: (req, res) => {
 
     let allBikes = ProductEntiry.finByField('destacado','true')
-    
+
     res.render('index', { allBikes })
   }
 

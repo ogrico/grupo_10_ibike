@@ -53,11 +53,11 @@
         <section class="profile">
 
             <div class="div-img">
-                <img src="/img/userProfile.png" alt="Imagen de usuario">
+                <img src="/img/users/<%= user.avatar %>" alt="Imagen de usuario">
             </div>
 
             <div>
-                <h4>Bienvenido, Geovany Rico </h4>
+                <h4>Bienvenido, <%- user.firstName %>  <%- user.lastName %></h4>
             </div>
 
             <div>

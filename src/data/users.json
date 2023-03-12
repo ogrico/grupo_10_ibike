@@ -36,5 +36,14 @@
   "password": "$2a$12$QJ3YLG9KlnnaweF3hLuyTu1HjJBG7ROYWtHpQGPunB/2wNX/uUmw.",
   "admin": false,
   "avatar": "userTest.png"
+ },
+ {
+  "id": 5,
+  "firstName": "ANDRES",
+  "lastName": "VERJHAMN URIAN",
+  "email": "anfeuver@gmail.com",
+  "password": "$2a$12$Rou..Frm1qpjvt6vUYPVZ..Ms5XpC/WGWV/ZcX.XS2ehrsCvIbD9i",
+  "admin": false,
+  "avatar": "LOGO_SIN_TEXTO.png"
  }
 ]
