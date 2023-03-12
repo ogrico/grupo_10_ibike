@@ -31,8 +31,25 @@ const login = {
         let register = userEntity.create(newUser)
         if (register) console.log('Usuario registrado')
         res.redirect('/home')
-    }
+    },
+    login: (req,res) => {
+        let {usuario,contrasena } = req.body,
+        user = userEntity.finByField('email',usuario),
+        error = 'usuario o contraseña incorrectos'
+        passverificada = bcryptEntity.compareSync(contrasena, user[0].password)
+        if (user[0].email === usuario && passverificada){
+           return res.redirect('/')
+        }
+ res.render('sing_in', {
+    oldBody : req.body,
+    error
+   
+ })
+        
 
+    }
+    
 }
+
 
 module.exports = login

@@ -14,9 +14,33 @@
       <section class="main-singIn">
 
         <div class="container">
-          <form action="/login" class="form">
-
-
+          <% if (error != '') { %>
+            <p style="color: red;">
+              <%= error %>
+            </p>
+            <% } %>
+          <form action="/login" class="form" method="POST">
+            <div class="imput-registro">
+              <input type="email" name="usuario" id="usuario" placeholder="Ingresar email" value="<%= locals.oldBody && oldBody.usuario? oldBody.usuario: "" %>" />
+              <% if (locals.errors && errors.usuario) { %>
+                <p style="color: red;">
+                  <%= errors.usuario.msg %>
+                </p>
+                <% } %>
+            </div>
+            <div class="imput-registro">
+              <input type="password" name="contrasena" id="contrasena" placeholder="Ingresar contraseña" value="<%= locals.oldBody && oldBody.contrasena? oldBody.contrasena: "" %>" />
+              <% if (locals.errors && errors.contrasena) { %>
+                <p style="color: red;">
+                  <%= errors.contrasena.msg %>
+                </p>
+                <% } %>
+            </div>
+            <div class="btn">
+              <button type="submit" class="login" value="login">
+                Ingresar
+              </button>
+            </div>
           </form>
           <div class="olv-contraseña">
             <a href="#">¿Olvidaste tu contraseña?</a>
