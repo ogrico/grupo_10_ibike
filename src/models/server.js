@@ -1,7 +1,10 @@
 const express = require('express'),
     path = require('path'),
     config = require('../config'),
-    methodOverride = require('method-override')
+    methodOverride = require('method-override'),
+    session = require('express-session');
+
+    
 
 /**
  * Se importan los mudulos de las rutas para el servidor
@@ -44,6 +47,7 @@ class Server {
         //Carpeta publica
         this.app.use(express.static('src/public'))
         this.app.use(methodOverride('_method'))
+        this.app.use(session({secret : "new session"}));
 
     }
 
@@ -57,8 +61,14 @@ class Server {
         this.app.use(serviceRoutesProfile)
         this.app.use(serviceRoutesLogin)
         this.app.use(serviceRoutesCreate)
+        this.app.use((req,res,next) =>{
+            res.status(404).redirect('/');
+        })
+      
 
     }
+
+
 
     listen() {
 
