@@ -1,13 +1,9 @@
-const fs = require('fs')
-const path = require('path')
-
-const bikesFilePath = path.join(__dirname, '../data/bikes.json')
-const bikes = JSON.parse(fs.readFileSync(bikesFilePath, 'utf-8'))
+const ProductEntiry = require('../services/data/ProductEntity')
 
 var products = {
 
     getProducts: (_, res) => {
-
+        let bikes = ProductEntiry.findAll()
         res.render('products', {bikes})
 
     }

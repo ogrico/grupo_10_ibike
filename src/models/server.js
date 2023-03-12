@@ -11,11 +11,9 @@ const express = require('express'),
  */
 const serviceRoutesHome = require('../routes/home.routes'),
     serviceRoutesBasket = require('../routes/basket.routes'),
-    serviceRoutesProducts = require('../routes/products.routes'),
     serviceRoutesProduct = require('../routes/product_details.routes'),
     serviceRoutesProfile = require('../routes/profile.routes'),
-    serviceRoutesLogin = require('../routes/sing_in_up.routes'),
-    serviceRoutesCreate = require('../routes/crud.routes')
+    serviceRoutesLogin = require('../routes/sing_in_up.routes')
 
 
 /**
@@ -56,19 +54,14 @@ class Server {
         // Se inicializan las rutas
         this.app.use(serviceRoutesHome)
         this.app.use(serviceRoutesBasket)
-        this.app.use(serviceRoutesProducts)
         this.app.use(serviceRoutesProduct)
         this.app.use(serviceRoutesProfile)
         this.app.use(serviceRoutesLogin)
-        this.app.use(serviceRoutesCreate)
-        this.app.use((req,res,next) =>{
+        this.app.use((_,res) =>{
             res.status(404).redirect('/');
-        })
-      
+        })    
 
     }
-
-
 
     listen() {
 

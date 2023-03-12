@@ -22,7 +22,7 @@
               <% } %>
           </div>
           <div class="imput-registro">
-            <input type="text" name="apellido" id="apellido" placeholder="Apellidos" value="<%= locals.oldBody && oldBody.nombre? oldBody.apellido: "" %>" />
+            <input type="text" name="apellido" id="apellido" placeholder="Apellidos" value="<%= locals.oldBody && oldBody.apellido? oldBody.apellido: "" %>" />
             <% if (locals.errors && errors.apellido) { %>
               <p style="color: red;">
                 <%= errors.apellido.msg %>
@@ -30,7 +30,7 @@
               <% } %>
           </div>
           <div class="imput-registro">
-            <input type="email" name="email" id="correo" placeholder="Correo electronico" value="<%= locals.oldBody && oldBody.nombre? oldBody.email: "" %>"/>
+            <input type="email" name="email" id="correo" placeholder="Correo electronico" value="<%= locals.oldBody && oldBody.email? oldBody.email: "" %>"/>
             <% if (locals.errors && errors.email) { %>
               <p style="color: red;">
                 <%= errors.email.msg %>
