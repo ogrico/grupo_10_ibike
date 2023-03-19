@@ -78,6 +78,10 @@ Personas que toman este deporte como una forma de vida. Ofreciendoles una amplia
 
 :construction: Proyecto en construcción :construction:
 
+## Base de datos
+
+![image](https://user-images.githubusercontent.com/55674843/226210405-24016b81-65bd-46d7-b827-fa8274b77612.png)
+
 ## Wireframes
 
 
