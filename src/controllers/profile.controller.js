@@ -2,8 +2,12 @@ const userEntity = require('../services/data/UserEntity')
 
 const profile = {
 
-  getProfile: function (_, res) {
-    res.render('profile')
+  getProfile:  (req, res) => {
+    console.log(req.session)
+    console.log(req.session.userLogged)
+    res.render('profile', { 
+      user: req.session.userLogged 
+    })
   },
   updateProfile: function (req, res) {
 
