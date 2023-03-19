@@ -81,9 +81,9 @@ const User = {
 
     },
 
-    update: function (id, user) {
+    update: function (user) {
 
-        let allUsers = this.finByPk(id),
+        let allUsers = this.getData(),
             newUser = {
                 id: this.generateId,
                 ...user

@@ -9,7 +9,6 @@ const profile = {
       user: req.session.userLogged 
     })
   },
-
   updateProfile: function (req, res) {
 
     try {
@@ -41,7 +40,6 @@ const profile = {
     }
 
   },
-
   deleteProfile: function (_, res) {
 
     try {

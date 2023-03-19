@@ -1,8 +1,5 @@
 const { check, validationResult } = require('express-validator'),
-    fs = require('fs'),
-    path = require('path'), bikesDataPath = path.join(__dirname, "../../data/bikes.json")
-
-let bikes = JSON.parse(fs.readFileSync(bikesDataPath, "utf-8"))
+    ProductEntity = require('../../services/data/ProductEntity')
 
 /**
  * Objeto literal para realizar las validaciones del formulario para la información de una bicicleta
@@ -31,7 +28,7 @@ const updateBikeValidator = [
     check('esp_descripcion2').notEmpty().withMessage('Tipo vacio'),
     check('esp_nombre3').notEmpty().withMessage('Tipo vacio'),
     check('esp_descripcion3').notEmpty().withMessage('Tipo vacio'),
-   
+
     /**
      * Funcion para validar los errores
      * @param {*} req 
@@ -43,13 +40,11 @@ const updateBikeValidator = [
         let body = req.body
         let errors = validationResult(req)
 
-        console.log(req.body, '\n')
-        
         // Se valida si existen errores luego de ejecutar las validaciones en de express-validator
         if (!errors.isEmpty()) {
             console.log('Errores : ', errors.mapped(), '\n')
-            let bike = bikes.filter((bike) => bike.id == req.params.id)
-            res.render('put', {
+            let bike = ProductEntity.finByField('referencia', req.params.referencia)
+            res.render('editProduct', {
                 errors: errors.mapped(),
                 oldBody: body,
                 bike

@@ -73,7 +73,7 @@ const createBikeValidator = [
                 })
 
             }
-            res.render('create', {
+            res.render('createProduct', {
                 errors: errors.mapped(),
                 oldBody: body
             })

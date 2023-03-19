@@ -21,7 +21,7 @@
 
           <div class="btn-comprar-top">
             <button class="btn-top">
-              <a href="/crud/<%- bike[0].referencia %>/update">Editar</a>
+              <a href="/<%- bike[0].referencia %>/update">Editar</a>
             </button>
             <button class="btn-top">
               Comprar
@@ -41,9 +41,9 @@
 
             <h2><%- bike[0].nombre %></h2>
             <samp>Ref. No <%- bike[0].referencia %> </samp>
-            <samp>$ 1200.00</samp>
+            <samp>$ <%- bike[0].valor %></samp>
             <div class="size">
-              <span>Size : L</span>
+              <span>Size : <%- bike[0].talla %></span>
               <article class="btns">
                 <div>
                   <button class="btn-size">L</button>
@@ -56,11 +56,7 @@
             <div class="btn-basket">
               <button type="button" class="btn">Agregar al carrito</button>
             </div>
-            <p>Tranquila bajo presión, pero hábil y precisa, la Fuse es un tipo de bicicleta rígida completamente
-              diferente.
-              Con un nuevo chasis más largo, más bajo y más ruidoso y ruedas y neumáticos de 27.5x2.3, el Fuse 27.5
-              maneja
-              descensos abruptos y complicados y subidas empinadas y técnicas con absoluta confianza</p>
+            <p><%- bike[0].descripcion %></p>
           </div>
 
         </section>
