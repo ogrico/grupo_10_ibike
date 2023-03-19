@@ -5,7 +5,6 @@ const profile = {
   getProfile: function (_, res) {
     res.render('profile')
   },
-
   updateProfile: function (req, res) {
 
     try {
@@ -37,7 +36,6 @@ const profile = {
     }
 
   },
-
   deleteProfile: function (_, res) {
 
     try {

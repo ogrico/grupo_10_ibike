@@ -81,16 +81,17 @@ const Product = {
 
     },
 
-    update: function (id, product) {
+    update: function (field, value,product) {
 
-        let allProducts = this.finByPk(id),
+        let allProducts = this.getData(),
+            result = allProducts.filter(product => product[field] != value),
             newProduct = {
-                id: this.generateId,
+                id: this.generateId(),
                 ...product
             }
-        allProducts.push(newProduct)
+            result.push(newProduct)
         try {
-            fs.writeFileSync(userDataPath, JSON.stringify(allProducts, null, ' '))
+            fs.writeFileSync(userDataPath, JSON.stringify(result, null, ' '))
             return true
         } catch (error) {
             console.log('Error en la creación del archivo ', error)
@@ -102,7 +103,7 @@ const Product = {
     delete: function (id) {
 
         let allProducts = this.getData(),
-            result = allProducts.filter(product => product[id] === value)
+            result = allProducts.filter(product => product[id] != value)
 
         try {
             fs.writeFileSync(userDataPath, JSON.stringify(result, null, ' '))
