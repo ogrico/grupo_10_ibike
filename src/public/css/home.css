@@ -271,6 +271,93 @@ header div img {
 
 /* main-section END */
 
+
+
+/* logIn */
+.main-signin {
+  background-color: #f5f5f5;
+  padding: 30px 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #444;
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 1px solid;
+  font-size: 16px;
+  color: #444;
+  background-color: #f5f5f5;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px #00a8ff;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #00a8ff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0077b6;
+}
+
+.forgot-password,
+.signup {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.forgot-password a,
+.signup a {
+  color: #444;
+  font-weight: bold;
+}
+
+.signup p {
+  display: inline-block;
+  margin-right: 5
+}
+/* logIn End*/
+
+
 /* main product */
 
 .mainProdcut {
@@ -308,6 +395,9 @@ header div img {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 5px;
+}
+.mainProdcut .comprar .btn-top a {
+  color: #ffffff;
 }
 
 .mainProdcut .product {
@@ -426,7 +516,7 @@ header div img {
   border: 0px;
   font-family: 'Montserrat', sans-serif;
   transition: all .3s;
-  font-size: 1.4rem;
+  font-size: 1rem;
   border-bottom: 1px solid #060607
 }
 
@@ -461,11 +551,10 @@ header div img {
   border: none;
   text-decoration: none;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1rem;
   text-transform: uppercase;
   outline: none;
   cursor: pointer;
-
 }
 
 .main-sinUp .btn>button:hover {
@@ -476,8 +565,7 @@ header div img {
   padding-bottom: 20px;
   padding-top: 20px;
   text-align: center;
-  font-size: 1.2rem;
-
+  font-size: 1rem;
 }
 
 .main-sinUp .linea {
@@ -512,6 +600,29 @@ header div img {
 
 
 
+/* footer */
+
+.main-footer {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #ffffff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-footer h3 {
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+
+/* footer END */
+
+
+
 /*edit form*/
 
 /* Mobile */
@@ -534,8 +645,9 @@ textarea {
   display: block;
   width: 100%;
   padding: 5px;
+  border: none;
   border-radius: 5px;
-  border: 1px solid #d3d3d3;
+  border-bottom: 1px solid #a0a0a0;
   /* margin-bottom: 20px; */
   box-sizing: border-box;
   font-size: 15px;
@@ -606,13 +718,13 @@ input[type="submit"] {
   }
 
   input[type="submit"] {
-    padding: 15px 30px;
-    font-size: 24px;
+    padding: 7px 19px;
+    font-size: 17px;
   }
 }
 
 
-/* footer END */
+
 
 /* Media Queries */
 
