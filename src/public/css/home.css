@@ -197,7 +197,8 @@ header div img {
   border-radius: 5px;
   border: none;
 }
-.filter-products button a{
+
+.filter-products button a {
   color: #DCDCDC;
 }
 
@@ -415,7 +416,7 @@ header div img {
   margin: auto;
 }
 
-.main-sinUp .imput-registro > input{
+.main-sinUp .imput-registro>input {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
@@ -423,60 +424,59 @@ header div img {
   outline: none;
   resize: none;
   border: 0px;
-  font-family:'Montserrat',sans-serif;
-  transition:all .3s;
+  font-family: 'Montserrat', sans-serif;
+  transition: all .3s;
   font-size: 1.4rem;
-  border-bottom:1px solid #060607
-  
+  border-bottom: 1px solid #060607
 }
 
-.main-sinUp .checkbox-buttons{
+.main-sinUp .checkbox-buttons {
   padding-bottom: 20px;
   padding-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
- 
+
 }
 
-.main-sinUp .checkbox{
+.main-sinUp .checkbox {
   text-transform: uppercase;
   margin: 8px;
-  text-align:center;
+  text-align: center;
   font-size: 10px;
-  text-decoration:none;
+  text-decoration: none;
   color: black;
 }
 
-.main-sinUp .btn{
+.main-sinUp .btn {
   display: flex;
   justify-content: center;
 }
 
-.main-sinUp .btn > button{
+.main-sinUp .btn>button {
   background-color: #474747;
   color: white;
   padding: 8px 25px;
   border-radius: 8px;
   border: none;
-  text-decoration:none;
-  text-align:center;
+  text-decoration: none;
+  text-align: center;
   font-size: 1.4rem;
   text-transform: uppercase;
   outline: none;
-  cursor:pointer;
+  cursor: pointer;
 
 }
 
-.main-sinUp .btn > button:hover{
+.main-sinUp .btn>button:hover {
   background: #5f5e5e;
 }
 
-.main-sinUp .privacidad >p{
+.main-sinUp .privacidad>p {
   padding-bottom: 20px;
   padding-top: 20px;
   text-align: center;
-  font-size: 1.2rem;   
+  font-size: 1.2rem;
 
 }
 
@@ -488,17 +488,18 @@ header div img {
   margin: 10px auto 0 auto;
 }
 
-.main-sinUp .ingresar{
+.main-sinUp .ingresar {
   text-align: center;
   padding-bottom: 20px;
   padding-top: 20px;
 }
 
-.main-sinUp .ingresar > a{
-  text-decoration:none;
+.main-sinUp .ingresar>a {
+  text-decoration: none;
   color: black;
-  
+
 }
+
 /* main singUn END */
 
 /* main singIn */
@@ -509,26 +510,107 @@ header div img {
 
 /* main singIn END */
 
-/* main END */
 
-/* footer */
 
-.main-footer {
-  box-sizing: border-box;
+/*edit form*/
+
+/* Mobile */
+.formulario {
+  padding-top: 80px;
+  margin: 0 10vw 20px 10vw;
+}
+.formulario li {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+select,
+textarea {
+  display: block;
   width: 100%;
-  margin: auto;
-  background-color: #ffffff;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+  /* margin-bottom: 20px; */
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.main-footer h3 {
-  box-sizing: border-box;
-  padding: 10px;
-  text-align: center;
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent url('data:image/svg+xml;utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path d="M3.125 8.125h23.75l-11.875 13.75zm0 0"></path></svg>') no-repeat center right;
+  background-size: 12px;
 }
+
+input[type="submit"] {
+  background-color: #3e3e3e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .formulario {
+    padding-top: 120px;
+  }
+
+  label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  select,
+  textarea {
+    /* font-size: 18px; */
+    /* padding: 12px; */
+    /* margin-bottom: 30px; */
+  }
+
+  input[type="submit"] {
+    padding: 12px 24px;
+    font-size: 18px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .formulario {
+    padding-top: 150px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  label {
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  select,
+  textarea {
+    /* font-size: 24px; */
+    /* padding: 15px; */
+    /* margin-bottom: 40px; */
+  }
+
+  input[type="submit"] {
+    padding: 15px 30px;
+    font-size: 24px;
+  }
+}
+
 
 /* footer END */
 
@@ -570,6 +652,11 @@ header div img {
     padding: 5px;
   }
 
+  /* edit Form */
+
+
+
+/* edit Form END*/
 
 }
 
@@ -588,6 +675,12 @@ header div img {
     margin: 0 5vw 0 5vw;
   }
 }
+
+/* edit Form */
+
+
+
+/* edit Form END*/
 
 @media screen and (min-width: 1025px) {}
 

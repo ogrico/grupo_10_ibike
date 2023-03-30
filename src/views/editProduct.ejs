@@ -9,7 +9,7 @@
     <%- include('partials/header') %>
 
       <!-- Main -->
-      <section style="padding-top: 80px;">
+      <section class="formulario" style="padding-top: 80px;">
         <form method="POST" action="/<%- bike[0].referencia %>/update?_method=PUT">
 
 
@@ -79,7 +79,7 @@
 
                                       <label>Especificaciones</label>
                                       <ul>
-                                        <li>Nombre: <input type="text" name="esp_nombre"
+                                        <li> <label>Nombre</label> <input type="text" name="esp_nombre"
                                             value="<%= bike[0].especificaciones[0].nombre %>">
                                           <% if (locals.errors && errors.esp_nombre) { %>
                                             <p style="color: red;">
@@ -87,15 +87,16 @@
                                             </p>
                                             <% } %>
                                         </li>
-                                        <li>Descripción: <input type="text" name="esp_descripcion"
-                                            value="<%= bike[0].especificaciones[0].descripcion%>">
+                                        <li> <label>Descripción:</label>
+                                          <textarea type="text" name="esp_descripcion"
+                                            value=""><%= bike[0].especificaciones[0].descripcion%></textarea>
                                           <% if (locals.errors && errors.esp_descripcion) { %>
                                             <p style="color: red;">
                                               <%= errors.esp_descripcion.msg %>
                                             </p>
                                             <% } %>
                                         </li>
-                                        <li>Nombre: <input type="text" name="esp_nombre2"
+                                        <li> <label>Nombre:</label> <input type="text" name="esp_nombre2"
                                             value="<%= bike[0].especificaciones[1].nombre %>">
                                           <% if (locals.errors && errors.esp_nombre2) { %>
                                             <p style="color: red;">
@@ -103,15 +104,16 @@
                                             </p>
                                             <% } %>
                                         </li>
-                                        <li>Descripción: <input type="text" name="esp_descripcion2"
-                                            value="<%= bike[0].especificaciones[1].descripcion%>">
+                                        <li> <label>Descripción:</label>
+                                          <textarea type="text" name="esp_descripcion2"
+                                            value=""><%= bike[0].especificaciones[1].descripcion%></textarea>
                                           <% if (locals.errors && errors.esp_descripcion2) { %>
                                             <p style="color: red;">
                                               <%= errors.esp_descripcion2.msg %>
                                             </p>
                                             <% } %>
                                         </li>
-                                        <li>Nombre: <input type="text" name="esp_nombre3"
+                                        <li> <label>Nombre:</label> <input type="text" name="esp_nombre3"
                                             value="<%= bike[0].especificaciones[2].nombre %>">
                                           <% if (locals.errors && errors.esp_nombre3) { %>
                                             <p style="color: red;">
@@ -119,8 +121,9 @@
                                             </p>
                                             <% } %>
                                         </li>
-                                        <li>Descripción: <input type="text" name="esp_descripcion3"
-                                            value="<%= bike[0].especificaciones[2].descripcion %>">
+                                        <li> <label>Descripción:</label>
+                                           <textarea type="text" name="esp_descripcion3"
+                                            value=""><%= bike[0].especificaciones[2].descripcion %></textarea>
                                           <% if (locals.errors && errors.esp_descripcion3) { %>
                                             <p style="color: red;">
                                               <%= errors.esp_descripcion3.msg %>
