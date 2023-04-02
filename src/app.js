@@ -1,4 +1,4 @@
-const Server = require('../src/models/server')
+const Server = require('../src/model/server')
 
 // Se inicializa la representación del modelo del servidor
 const server = new Server()
