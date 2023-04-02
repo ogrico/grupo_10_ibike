@@ -20,6 +20,9 @@ const crudProduct = {
                 error
             })
         }
+    },
+    createProduct: async (req, res) => {
+        
     }
 
 }
