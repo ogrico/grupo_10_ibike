@@ -9,11 +9,15 @@ const express = require('express'),
 /**
  * Se importan los mudulos de las rutas para el servidor
  */
-const serviceRoutesHome = require('../routes/home.routes'),
-    serviceRoutesBasket = require('../routes/basket.routes'),
-    serviceRoutesProducts = require('../routes/products.routes'),
-    serviceRoutesProfile = require('../routes/profile.routes'),
-    serviceRoutesLogin = require('../routes/sing_in_up.routes')
+const serviceRoutesHome = require('../app/routes/home.routes'),
+    serviceRoutesBasket = require('../app/routes/basket.routes'),
+    serviceRoutesProducts = require('../app/routes/products.routes'),
+    serviceRoutesProfile = require('../app/routes/profile.routes'),
+    serviceRoutesLogin = require('../app/routes/sing_in_up.routes'),
+    //Rutas generadas para el api
+    apiCrudRol = require('../api/routes/crudRol.routes'),
+    apiCrudCategory = require('../api/routes/crudCategory.routes'),
+    apiCrudAppauth = require('../api/routes/crud.Appauth.routes')
 
 
 /**
@@ -29,7 +33,7 @@ class Server {
         this.app = express()
         this.app.set("port", config.port)
         //Motor de plantillas
-        this.app.set('views', path.join(__dirname, '../views'))
+        this.app.set('views', path.join(__dirname, '../app/views'))
         this.app.set('view engine', 'ejs')
 
         this.middlewares()
@@ -43,7 +47,7 @@ class Server {
         //Lectura y parseo del body
         this.app.use(express.json())
         //Carpeta publica
-        this.app.use(express.static('src/public'))
+        this.app.use(express.static('src/app/public'))
         this.app.use(methodOverride('_method'))
         this.app.use(session({
             secret: "new session",
@@ -55,12 +59,21 @@ class Server {
 
     routes() {
 
-        // Se inicializan las rutas
+        /**
+         * Se inicializan las rutas expuestas para el servicio
+         * Front
+         */
         this.app.use(serviceRoutesHome)
         this.app.use(serviceRoutesBasket)
         this.app.use(serviceRoutesProducts)
         this.app.use(serviceRoutesProfile)
         this.app.use(serviceRoutesLogin)
+        /**
+         * Rutas expuestas para el api
+         */
+        this.app.use('/api', apiCrudRol)
+        this.app.use('/api', apiCrudCategory)
+        this.app.use('/api', apiCrudAppauth)
         this.app.use((_, res) => {
             res.status(404).redirect('/')
         })
