@@ -4,5 +4,8 @@ const { Router } = require('express'),
 const router = Router()
 
 router.get('/category', crudCategory.getAll)
+router.post('/category', crudCategory.createCategory)
+router.put('/category/:id', crudCategory.updateCategory)
+router.delete('/category/:id', crudCategory.deleteCategory)
 
 module.exports = router

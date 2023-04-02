@@ -17,7 +17,9 @@ const serviceRoutesHome = require('../app/routes/home.routes'),
     //Rutas generadas para el api
     apiCrudRol = require('../api/routes/crudRol.routes'),
     apiCrudCategory = require('../api/routes/crudCategory.routes'),
-    apiCrudAppauth = require('../api/routes/crud.Appauth.routes')
+    apiCrudAppauth = require('../api/routes/crudAppauth.routes'),
+    apiCrudUser = require('../api/routes/crudUser.routes'),
+    apiCrudProduct = require('../api/routes/crudProduct.routes')
 
 
 /**
@@ -74,6 +76,8 @@ class Server {
         this.app.use('/api', apiCrudRol)
         this.app.use('/api', apiCrudCategory)
         this.app.use('/api', apiCrudAppauth)
+        this.app.use('/api', apiCrudUser)
+        this.app.use('/api', apiCrudProduct)
         this.app.use((_, res) => {
             res.status(404).redirect('/')
         })

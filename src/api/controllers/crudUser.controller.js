@@ -1,15 +1,18 @@
-const { Rol } = require('../database/associations')
+const { User, Rol } = require('../database/associations'),
+    bcryptjs = require('../services/bcryptjs')
 
-const crudRol = {
-
+const crudUser = {
     getAll: async (_, res) => {
-
         try {
-            const rol = await Rol.findAll()
+            const user = await User.findAll({
+                include: [{
+                    model: Rol
+                }]
+            })
             res.status(200).json(
                 {
                     msg: "Ok",
-                    rol
+                    user
                 }
             )
         } catch (error) {
@@ -19,38 +22,43 @@ const crudRol = {
                 }
             )
         }
-
     },
-    createRol: async (req, res) => {
-
+    createUser: async (req, res) => {
         try {
-            const rol = await Rol.create(req.body)
-            res.status(201).json(
+            const newUser = {
+                "firstname": req.body.firstname,
+                "lastname": req.body.lastname,
+                "avatar": req.body.avatar,
+                "state": req.body.state,
+                "dni": req.body.dni,
+                "email": req.body.email,
+                "password": bcryptjs.hashSync(req.body.password),
+                "rol_id": req.body.rol_id
+            },
+                user = await User.create(newUser)
+            res.status(200).json(
                 {
                     msg: "Ok",
                     body: req.body,
-                    rol
+                    "user": user.id
                 }
             )
         } catch (error) {
             res.status(500).json(
-                {
-                    error
-                }
+                { error }
             )
         }
-
     },
-    updateRol: async (req, res) => {
+    updateUser: async (req, res) => {
         try {
-            const rol = await Rol.update(req.body, {
+            const user = await User.update(req.body, {
                 where: { id: req.params.id }
             })
             console.log(rol)
             res.status(201).json({
                 msg: "Ok",
                 body: req.body,
-                rol
+                user
             })
         } catch (error) {
             res.status(500).json(
@@ -60,15 +68,15 @@ const crudRol = {
             )
         }
     },
-    deleteRol: async (req, res) => {
+    deleteUser: async (req, res) => {
         try {
-            const rol = await Rol.destroy({
+            const user = await User.destroy({
                 where: { id: req.params.id }
             })
             res.status(201).json({
                 msg: "Ok",
                 id: req.params.id,
-                rol
+                user
             })
         } catch (error) {
             res.status(500).json(
@@ -80,4 +88,4 @@ const crudRol = {
     }
 }
 
-module.exports = crudRol 
+module.exports = crudUser
