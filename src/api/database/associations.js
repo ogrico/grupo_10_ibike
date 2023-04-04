@@ -3,7 +3,8 @@ const Rol = require('./models/Rol'),
     Category = require('./models/Category'),
     User = require('./models/User'),
     Product = require('./models/Product'),
-    Specification = require('./models/Specification')
+    Specification = require('./models/Specification'),
+    Size = require('./models/Size')
 
 /**
  * One-To-Many relationships Appauth to Rol
@@ -49,11 +50,23 @@ Specification.belongsTo(Product,{
     foreignKey: "product_id"
 })
 
+/**
+ * One-To-Many relationships Size to Product
+*/
+
+Product.hasMany(Size, {
+    foreignKey: "product_id"
+})
+Size.belongsTo(Product,{
+    foreignKey: "product_id"
+})
+
 module.exports = {
     Rol,
     Appauth,
     Category,
     User,
     Product,
-    Specification
+    Specification,
+    Size
 }

@@ -1,12 +1,13 @@
-const { Product, Category, Specification } = require('../database/associations')
+const { Product, Size } = require('../database/associations')
 
 const crudProduct = {
 
     getProducts: async (_, res) => {
+
         try {
             const products = await Product.findAll({
                 include: [{
-                    model: Specification, Category 
+                    model: Size
                 }]
             })
             res.status(200).json(
@@ -20,9 +21,10 @@ const crudProduct = {
                 error
             })
         }
+
     },
     createProduct: async (req, res) => {
-        
+
     }
 
 }

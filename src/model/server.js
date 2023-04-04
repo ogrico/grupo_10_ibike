@@ -4,8 +4,6 @@ const express = require('express'),
     methodOverride = require('method-override'),
     session = require('express-session');
 
-
-
 /**
  * Se importan los mudulos de las rutas para el servidor
  */
@@ -20,7 +18,6 @@ const serviceRoutesHome = require('../app/routes/home.routes'),
     apiCrudAppauth = require('../api/routes/crudAppauth.routes'),
     apiCrudUser = require('../api/routes/crudUser.routes'),
     apiCrudProduct = require('../api/routes/crudProduct.routes')
-
 
 /**
  * Se realiza la representación
@@ -78,6 +75,9 @@ class Server {
         this.app.use('/api', apiCrudAppauth)
         this.app.use('/api', apiCrudUser)
         this.app.use('/api', apiCrudProduct)
+        /**
+         * Error 404
+         */
         this.app.use((_, res) => {
             res.status(404).redirect('/')
         })
@@ -90,7 +90,6 @@ class Server {
             console.log('Servidor corriendo en el puerto ', this.app.get("port"))
         })
     }
-
 
 }
 

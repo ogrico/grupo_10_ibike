@@ -20,7 +20,8 @@ const User = sequelize.define('user',{
         type: DataTypes.DOUBLE
     },
     dni: {
-        type: DataTypes.NUMBER
+        type: DataTypes.NUMBER,
+        allowNull: true,
     },
     email: {
         type: DataTypes.STRING

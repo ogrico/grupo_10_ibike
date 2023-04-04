@@ -31,14 +31,11 @@ const Product = sequelize.define('product',{
     discount: {
         type: DataTypes.NUMBER
     },
-    size: {
-        type: DataTypes.STRING
-    },
     description: {
         type: DataTypes.STRING
     },
-    stock: {
-        type: DataTypes.NUMBER
+    featured: {
+        type: DataTypes.STRING
     }
 }, {
     tableName: 'product',

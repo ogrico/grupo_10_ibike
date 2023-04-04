@@ -85,6 +85,41 @@ const crudUser = {
                 }
             )
         }
+    },
+    verifyUser: async (req, res) => {
+        try {
+
+            const user = await User.findAll({ include: [{ model: Rol }], where: { email: req.body.email } })
+
+            if (user[0] == undefined) return res.status(200).json({ "msg": "Usuario o contraseña incorrecta" })
+            if (user[0].state == 0) return res.status(200).json({ "msg": "Usuario inhabilitado" })
+
+            let verifyPass = bcryptjs.compareSync(req.body.password, user[0].password)
+
+            if (verifyPass) {
+                return res.status(200).json({
+                    "msg": "ok",
+                    "User": {
+                        "userEmail": user[0].email,
+                        "rol": {
+                            "value": user[0].rol.value,
+                            "description": user[0].rol.description
+                        }
+                    }
+                })
+            }
+            res.status(200).json({
+                "msg": "Usuario o contraseña incorrecta"
+            })
+
+        } catch (error) {
+            console.log(error)
+            res.status(500).json(
+                {
+                    error
+                }
+            )
+        }
     }
 }
 
