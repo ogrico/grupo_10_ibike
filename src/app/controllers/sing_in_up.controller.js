@@ -1,7 +1,6 @@
-const session = require('express-session');
 const path = require('path'),
     userEntity = require('../services/data/UserEntity'),
-    bcryptEntity = require('../services/bcryptjs')
+    bcryptEntity = require('../../api/services/bcryptjs')
 
 // Objeto literar para definir los metodos a usar para la autenticación y regtistro de usuarios
 const login = {

@@ -1,13 +1,19 @@
-const { Category } = require('../database/associations')
+const { Product, Size } = require('../database/associations')
 
-const crudCategory = {
-    getAll: async (_, res) => {
+const crudProduct = {
+
+    getProducts: async (_, res) => {
+
         try {
-            const categorys = Category.findAll()
+            const products = await Product.findAll({
+                include: [{
+                    model: Size
+                }]
+            })
             res.status(200).json(
                 {
                     msg: "Ok",
-                    categorys
+                    products
                 }
             )
         } catch (error) {
@@ -15,37 +21,20 @@ const crudCategory = {
                 error
             })
         }
-    },
-    createCategory: async (req, res) => {
-
-        try {
-            const category = await Category.create(req.body)
-            res.status(201).json(
-                {
-                    msg: "Ok",
-                    body: req.body,
-                    category
-                }
-            )
-        } catch (error) {
-            res.status(500).json(
-                {
-                    error
-                }
-            )
-        }
 
     },
-    updateCategory: async (req, res) => {
+    createProduct: async (req, res) => {
+    },
+    updateProduct: async (req, res) => {
         try {
-            const category = await Category.update(req.body, {
+            const product = await Product.update(req.body, {
                 where: { id: req.params.id }
             })
             console.log(rol)
             res.status(201).json({
                 msg: "Ok",
                 body: req.body,
-                category
+                product
             })
         } catch (error) {
             res.status(500).json(
@@ -55,15 +44,15 @@ const crudCategory = {
             )
         }
     },
-    deleteCategory: async (req, res) => {
+    deleteProduct: async (req, res) => {
         try {
-            const category = await Category.destroy({
+            const product = await Product.destroy({
                 where: { id: req.params.id }
             })
             res.status(201).json({
                 msg: "Ok",
                 id: req.params.id,
-                category
+                product
             })
         } catch (error) {
             res.status(500).json(
@@ -73,7 +62,7 @@ const crudCategory = {
             )
         }
     }
-    
+
 }
 
-module.exports = crudCategory
+module.exports = crudProduct
