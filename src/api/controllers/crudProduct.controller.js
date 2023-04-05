@@ -24,7 +24,43 @@ const crudProduct = {
 
     },
     createProduct: async (req, res) => {
-
+    },
+    updateProduct: async (req, res) => {
+        try {
+            const product = await Product.update(req.body, {
+                where: { id: req.params.id }
+            })
+            console.log(rol)
+            res.status(201).json({
+                msg: "Ok",
+                body: req.body,
+                product
+            })
+        } catch (error) {
+            res.status(500).json(
+                {
+                    error
+                }
+            )
+        }
+    },
+    deleteProduct: async (req, res) => {
+        try {
+            const product = await Product.destroy({
+                where: { id: req.params.id }
+            })
+            res.status(201).json({
+                msg: "Ok",
+                id: req.params.id,
+                product
+            })
+        } catch (error) {
+            res.status(500).json(
+                {
+                    error
+                }
+            )
+        }
     }
 
 }
