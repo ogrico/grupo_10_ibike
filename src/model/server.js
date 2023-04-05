@@ -12,12 +12,15 @@ const serviceRoutesHome = require('../app/routes/home.routes'),
     serviceRoutesProducts = require('../app/routes/products.routes'),
     serviceRoutesProfile = require('../app/routes/profile.routes'),
     serviceRoutesLogin = require('../app/routes/sing_in_up.routes'),
-    //Rutas generadas para el api
+    //Rutas generadas para el back (api)
     apiCrudRol = require('../api/routes/crudRol.routes'),
     apiCrudCategory = require('../api/routes/crudCategory.routes'),
     apiCrudAppauth = require('../api/routes/crudAppauth.routes'),
     apiCrudUser = require('../api/routes/crudUser.routes'),
-    apiCrudProduct = require('../api/routes/crudProduct.routes')
+    apiCrudProduct = require('../api/routes/crudProduct.routes'),
+    apiCrudBuy = require('../api/routes/crudBuy.routes'),
+    apiCrudShoppinglist = require('../api/routes/crudShoppinglist.routes')
+
 
 /**
  * Se realiza la representación
@@ -68,13 +71,15 @@ class Server {
         this.app.use(serviceRoutesProfile)
         this.app.use(serviceRoutesLogin)
         /**
-         * Rutas expuestas para el api
+         * Rutas expuestas para el back (api)
          */
         this.app.use('/api', apiCrudRol)
         this.app.use('/api', apiCrudCategory)
         this.app.use('/api', apiCrudAppauth)
         this.app.use('/api', apiCrudUser)
         this.app.use('/api', apiCrudProduct)
+        this.app.use('/api', apiCrudBuy)
+        this.app.use('/api', apiCrudShoppinglist)
         /**
          * Error 404
          */
