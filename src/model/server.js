@@ -19,7 +19,9 @@ const serviceRoutesHome = require('../app/routes/home.routes'),
     apiCrudUser = require('../api/routes/crudUser.routes'),
     apiCrudProduct = require('../api/routes/crudProduct.routes'),
     apiCrudBuy = require('../api/routes/crudBuy.routes'),
-    apiCrudShoppinglist = require('../api/routes/crudShoppinglist.routes')
+    apiCrudShoppinglist = require('../api/routes/crudShoppinglist.routes'),
+    apiCrudSpecification = require('../api/routes/crudSpecification.routes'),
+    apiCrudSize = require('../api/routes/crudSize.router')
 
 
 /**
@@ -80,6 +82,8 @@ class Server {
         this.app.use('/api', apiCrudProduct)
         this.app.use('/api', apiCrudBuy)
         this.app.use('/api', apiCrudShoppinglist)
+        this.app.use('/api', apiCrudSpecification)
+        this.app.use('/api', apiCrudSize)
         /**
          * Error 404
          */
