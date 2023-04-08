@@ -2,7 +2,7 @@ const { Sequelize, DataTypes } = require('sequelize'),
 config = require('../../config')
 
 const sequelize = new Sequelize(
-    config.dbshema,
+    config.dbschema,
     config.dbuser,
     config.dbpass,
     {

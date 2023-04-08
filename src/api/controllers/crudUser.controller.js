@@ -99,7 +99,12 @@ const crudUser = {
             if (verifyPass) {
                 return res.status(200).json({
                     "msg": "ok",
-                    "User": {
+                    "user": {
+                        "id": user[0].id,
+                        "firstname": user[0].firstname,
+                        "lastname": user[0].lastname,
+                        "avatar": user[0].avatar,
+                        "dni": user[0].dni,
                         "userEmail": user[0].email,
                         "rol": {
                             "value": user[0].rol.value,
@@ -114,6 +119,25 @@ const crudUser = {
 
         } catch (error) {
             console.log(error)
+            res.status(500).json(
+                {
+                    error
+                }
+            )
+        }
+    },
+    verifyUserEmail: async (req, res) => {
+        try {
+            const user = await User.findAll({
+                where: { email: req.params.email }
+            })
+            return res.status(200).json(
+                {
+                    "msg": "ok",
+                    user
+                }
+            )
+        } catch (error) {
             res.status(500).json(
                 {
                     error

@@ -1,7 +1,9 @@
 const { check, validationResult } = require('express-validator'),
     fs = require('fs'),
     path = require('path'),
-    userEntity = require('../../services/data/UserEntity')
+    userEntity = require('../../services/data/UserEntity'),
+    axios = require('axios'),
+    config = require('../../../config')
 
 /**
  * Objeto literal para realizar las validaciones del formulario para crear el registro de una bicicleta
@@ -14,13 +16,14 @@ const createUsrValidator = [
 
     check('nombre').notEmpty().withMessage('Nombre vacio'),
     check('apellido').notEmpty().withMessage('Apellido vacio'),
-    check('email').notEmpty().withMessage('Email vacio').isEmail().withMessage('El campo debe ser de tipo email').custom(value => {
+    check('email').notEmpty().withMessage('Email vacio').isEmail().withMessage('El campo debe ser de tipo email').custom(async (value) => {
 
-        let emailCheck = userEntity.finByField('email', value)
-        if (emailCheck.length > 0) {
+        const response = await axios.get('http://localhost:' + config.port + '/api/user/verifyEmail/' + value)
+        if (response.data.user[0] != undefined) {
             throw new Error('Email ya registrado')
         }
         return true
+
     }),
     check('contrasena').notEmpty().withMessage('Contraseña requerida'),
     check('contrasena2').notEmpty().withMessage('Confirmación de lacontraseña requerida').custom((value, { req }) => {
@@ -74,6 +77,7 @@ const createUsrValidator = [
             // Se realaliza la continuidad de la ruta
             console.log('Next()', '\n')
             next()
+
         }
     }
 
