@@ -3,6 +3,7 @@ const { Rol } = require('../database/associations')
 const crudRol = {
 
     getAll: async (_, res) => {
+
         try {
             const rol = await Rol.findAll()
             res.status(200).json(
@@ -64,7 +65,6 @@ const crudRol = {
             const rol = await Rol.destroy({
                 where: { id: req.params.id }
             })
-            console.log(rol)
             res.status(201).json({
                 msg: "Ok",
                 id: req.params.id,
@@ -80,4 +80,4 @@ const crudRol = {
     }
 }
 
-module.exports = crudRol
+module.exports = crudRol 

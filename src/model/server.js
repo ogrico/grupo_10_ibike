@@ -4,8 +4,6 @@ const express = require('express'),
     methodOverride = require('method-override'),
     session = require('express-session');
 
-
-
 /**
  * Se importan los mudulos de las rutas para el servidor
  */
@@ -14,10 +12,16 @@ const serviceRoutesHome = require('../app/routes/home.routes'),
     serviceRoutesProducts = require('../app/routes/products.routes'),
     serviceRoutesProfile = require('../app/routes/profile.routes'),
     serviceRoutesLogin = require('../app/routes/sing_in_up.routes'),
-    //Rutas generadas para el api
+    //Rutas generadas para el back (api)
     apiCrudRol = require('../api/routes/crudRol.routes'),
     apiCrudCategory = require('../api/routes/crudCategory.routes'),
-    apiCrudAppauth = require('../api/routes/crud.Appauth.routes')
+    apiCrudAppauth = require('../api/routes/crudAppauth.routes'),
+    apiCrudUser = require('../api/routes/crudUser.routes'),
+    apiCrudProduct = require('../api/routes/crudProduct.routes'),
+    apiCrudBuy = require('../api/routes/crudBuy.routes'),
+    apiCrudShoppinglist = require('../api/routes/crudShoppinglist.routes'),
+    apiCrudSpecification = require('../api/routes/crudSpecification.routes'),
+    apiCrudSize = require('../api/routes/crudSize.router')
 
 
 /**
@@ -69,11 +73,20 @@ class Server {
         this.app.use(serviceRoutesProfile)
         this.app.use(serviceRoutesLogin)
         /**
-         * Rutas expuestas para el api
+         * Rutas expuestas para el back (api)
          */
         this.app.use('/api', apiCrudRol)
         this.app.use('/api', apiCrudCategory)
         this.app.use('/api', apiCrudAppauth)
+        this.app.use('/api', apiCrudUser)
+        this.app.use('/api', apiCrudProduct)
+        this.app.use('/api', apiCrudBuy)
+        this.app.use('/api', apiCrudShoppinglist)
+        this.app.use('/api', apiCrudSpecification)
+        this.app.use('/api', apiCrudSize)
+        /**
+         * Error 404
+         */
         this.app.use((_, res) => {
             res.status(404).redirect('/')
         })
@@ -86,7 +99,6 @@ class Server {
             console.log('Servidor corriendo en el puerto ', this.app.get("port"))
         })
     }
-
 
 }
 
