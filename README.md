@@ -80,7 +80,8 @@ Personas que toman este deporte como una forma de vida. Ofreciendoles una amplia
 
 ## Base de datos
 
-![image](https://user-images.githubusercontent.com/55674843/226210405-24016b81-65bd-46d7-b827-fa8274b77612.png)
+![image](https://user-images.githubusercontent.com/55674843/230798183-9fcb5d3c-192d-4b8c-99ba-5756f2233b39.png)
+[createTables.sql.txt](https://github.com/ogrico/grupo_10_ibike/files/11186382/createTables.sql.txt)
 
 ## Wireframes
 
