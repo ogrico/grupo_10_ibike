@@ -36,14 +36,14 @@
                 <section class="main-section">
                     <h1>Productos Destacados</h1>
                     <div class="products">
-                        <% allBikes.forEach(element=> {%>
+                        <% products.forEach(element=> {%>
 
                             <article class="product">
                                 <a href="/product/<%- element.referencia %>">
                                     <img class="product-img" src="/img/products/bikes/<%- element.imagen1 %>" alt="">
-                                    <h3><%- element.nombre %></h3>
+                                    <h3><%- element.name %></h3>
                                     <div class="price">
-                                        <h4>US $<%- element.valor %></h4>
+                                        <h4>US $<%- element.value %></h4>
                                         <button type="submit">Comprar</button>
                                     </div>
                                 </a>
@@ -53,117 +53,6 @@
                     </div>
 
                 </section>
-                <!-- <section class="product">
-
-            <h1>
-                Productos Destacados
-            </h1>
-            <article class="product-article">
-                <div class="product-img">
-                    <img src="/img/products/bikes/Bike1.jpg" alt="" srcset="">
-                </div>
-                <div class="product-description">
-                    <h2 class="product-title">
-                        Lorem ipsum adipisicing
-                    </h2>
-                    <h3>
-                       US$293
-                    </h3>
-                    <button class="button-buy" type="submit">Comprar</button>
-                </div>
-            </article>
-
-            <article>
-                <div class="product-img">
-                    <img src="/img/products/bikes/Bike1.jpg" alt="" srcset="">
-                </div>
-                <div class="product-description">
-                    <h2 class="product-title">
-                        Lorem ipsum adipisicing
-                    </h2>
-                    <h3>
-                       US$293
-                    </h3>
-                    <button class="button-buy" type="submit">Comprar</button>
-                </div>
-            </article>
-
-            <article>
-                <div class="product-img">
-                    <img src="/img/products/bikes/Bike1.jpg" alt="" srcset="">
-                </div>
-                <div class="product-description">
-                    <h2 class="product-title">
-                        Lorem ipsum adipisicing
-                    </h2>
-                    <h3>
-                       US$293
-                    </h3>
-                    <button class="button-buy" type="submit">Comprar</button>
-                </div>
-            </article>
-
-            <article>
-                <div class="product-img">
-                    <img src="/img/products/bikes/Bike1.jpg" alt="" srcset="">
-                </div>
-                <div class="product-description">
-                    <h2 class="product-title">
-                        Lorem ipsum adipisicing
-                    </h2>
-                    <h3>
-                       US$293
-                    </h3>
-                    <button class="button-buy" type="submit">Comprar</button>
-                </div>
-            </article>
-
-            <article>
-                <div class="product-img">
-                    <img src="/img/products/bikes/Bike1.jpg" alt="" srcset="">
-                </div>
-                <div class="product-description">
-                    <h2 class="product-title">
-                        Lorem ipsum adipisicing
-                    </h2>
-                    <h3>
-                       US$293
-                    </h3>
-                    <button class="button-buy" type="submit">Comprar</button>
-                </div>
-            </article>
-
-            <article>
-                <div class="product-img">
-                    <img src="/img/products/bikes/Bike1.jpg" alt="" srcset="">
-                </div>
-                <div class="product-description">
-                    <h2 class="product-title">
-                        Lorem ipsum adipisicing
-                    </h2>
-                    <h3>
-                       US$293
-                    </h3>
-                    <button class="button-buy" type="submit">Comprar</button>
-                </div>
-            </article>
-
-
-        </section> -->
-                <!-- <section class="main-section">
-            <h1>Productos Destacados</h1>
-            <div class="carrusel">
-                <div class="grande">
-                    <img src="#" alt="img 1" class="img">
-                    <img src="#" alt="img 2" class="img">
-                </div>
-                <ul class="puntos">
-                    <li class="punto"></li>
-                    <li class="punto"></li>
-                </ul>
-            </div>
-        </section>
- -->
             </main>
 
             <!-- footer -->

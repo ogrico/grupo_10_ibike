@@ -116,6 +116,19 @@ const crudProduct = {
                 }
             )
         }
+    },
+    rsgetProductFeatured: async (_, res) => {
+        try {
+            const products = await Product.findAll({
+                where: { featured: true }
+            })
+            res.status(200).json({
+                "msg": "ok",
+                products
+            })
+        } catch (error) {
+            res.status(500).json(error)
+        }
     }
 
 }
