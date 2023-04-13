@@ -1,7 +1,6 @@
-const path = require('path'),
-    axios = require('axios'),
+const axios = require('axios'),
     config = require('../../config')
-// Objeto literar para definir los metodos a usar para la autenticación y regtistro de usuarios
+    
 const login = {
 
     singIn: (req, res) => {
@@ -14,26 +13,26 @@ const login = {
     },
     createUser: async (req, res) => {
         try {
-            /**
-         * Se crean las variebales para capturar los datos enviados en el formulario
-         * Se crea un objeto literal para representar al usuario y registrarlo
-         */
-            let { nombre, apellido, email, contrasena } = req.body
+
+            let { nombre, apellido, email, contrasena } = req.body, avatar = req.file.originalname
 
             const response = await axios.post('http://localhost:' + config.port + '/api/user', {
                 firstname: nombre,
                 lastname: apellido,
-                avatar: req.file.originalname,
+                avatar: avatar,
                 state: true,
                 dni: null,
                 email: email,
                 password: contrasena,
                 rol_id: 3
-            });
+            })
 
-            res.redirect('/home')
+            console.log(response.data())
+            res.redirect('/sing_in')
+
         } catch (error) {
-            console.log(error);
+
+            console.log(error)
             res.redirect('/home')
         }
     },
