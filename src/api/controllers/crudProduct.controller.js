@@ -1,4 +1,4 @@
-const e = require('express')
+
 const { Product, Size, Specification } = require('../database/associations')
 
 const crudProduct = {
@@ -117,7 +117,7 @@ const crudProduct = {
             )
         }
     },
-    rsgetProductFeatured: async (_, res) => {
+    getProductFeatured: async (_, res) => {
         try {
             const products = await Product.findAll({
                 where: { featured: true }
@@ -129,7 +129,21 @@ const crudProduct = {
         } catch (error) {
             res.status(500).json(error)
         }
+    },
+  ProductReference : async (req,res) => {
+    try {
+        const product = await Product.findAll({
+            where : {referencia : req.params.referencia }
+        })
+        res.status(200).json({
+            "msg": "ok",
+            product
+        })
+    } catch (error) {
+        res.status(500).json(error)
     }
+  }
+
 
 }
 

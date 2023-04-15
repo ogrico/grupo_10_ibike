@@ -1,5 +1,5 @@
-const { check, validationResult } = require('express-validator'),
-    ProductEntity = require('../../services/data/ProductEntity')
+const { check, validationResult } = require('express-validator')
+  
 
 /**
  * Objeto literal para realizar las validaciones del formulario para la información de una bicicleta

@@ -1,17 +1,25 @@
-const ProductEntity = require('../services/data/ProductEntity')
+const axios = require('axios'),
+config = require('../../config')
 
 const products = {
 
-    getProducts: (_, res) => {
-        let bikes = ProductEntity.findAll()
-        res.render('products', { bikes })
+    getProducts: async (_, res) => {
+       try {
+        const products = await axios.get('http://localhost:'+ config.port + '/api/product')
+        res.render('products', products.data)
+       } catch (error) {
+        console.log(error)
+       }
 
     },
-    detail: (req, res) => {
-        // Do the magic
-        let allBikes = ProductEntity.finByField('categoria', 'Bike')
-        let bike = allBikes.filter(element => element.referencia == req.params.referencia)
-        res.render('product', { bike })
+    detail: async (req, res) => {
+        try {
+            const product = await axios.get('http://localhost:'+ config.port + '/api/product/' + req.params.referencia)
+            res.render('product', product.data)
+        } catch (error) {
+            console.log(error)
+        }
+        
     },
     formCreateProduct: (_, res) => {
         res.render("createProduct")
