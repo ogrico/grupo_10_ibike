@@ -6,7 +6,7 @@ const { Router } = require('express'),
 
 const router = Router()
 
-router.get('/products', productController.getProducts),
+router.get('/products/:id', productController.getProducts),
 router.get('/product/:referencia', productController.detail),
 router.get('/create', productController.formCreateProduct)
 router.post('/create', bikeImagValidator, createBikeValidator, productController.createBike)

@@ -130,21 +130,36 @@ const crudProduct = {
             res.status(500).json(error)
         }
     },
-  ProductReference : async (req,res) => {
-    try {
-        const product = await Product.findAll({
-            where : {referencia : req.params.referencia }
-        })
-        res.status(200).json({
-            "msg": "ok",
-            product
-        })
-    } catch (error) {
-        res.status(500).json(error)
+    ProductReference: async (req, res) => {
+        try {
+            const product = await Product.findAll({
+                where: { referencia: req.params.referencia }
+            })
+            res.status(200).json({
+                "msg": "ok",
+                product
+            })
+        } catch (error) {
+            res.status(500).json(error)
+        }
+    },
+    ProductsCategoria: async (req, res) => {
+
+        try {
+            const products = await Product.findAll({
+
+                where: { category_id: req.params.id }
+
+            })
+            res.status(200).json({
+                "msg": "ok",
+                products
+            })
+        } catch (error) {
+            res.status(500).json(error)
+        }
+
     }
-  }
-
-
 }
 
 module.exports = crudProduct
