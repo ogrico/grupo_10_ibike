@@ -1,9 +1,6 @@
-const session = require('express-session');
-const path = require('path'),
-    userEntity = require('../services/data/UserEntity'),
-    bcryptEntity = require('../services/bcryptjs')
-
-// Objeto literar para definir los metodos a usar para la autenticación y regtistro de usuarios
+const axios = require('axios'),
+    config = require('../../config')
+    
 const login = {
 
     singIn: (req, res) => {
@@ -14,44 +11,55 @@ const login = {
     singUp: (_, res) => {
         res.render('sing_up')
     },
-    createUser: (req, res) => {
-        /**
-         * Se crean las variebales para capturar los datos enviados en el formulario
-         * Se crea un objeto literal para representar al usuario y registrarlo
-         */
-        let { nombre, apellido, email, contrasena } = req.body,
-            passEncrypted = bcryptEntity.hashSync(contrasena),
-            newUser = {
-                "firstName": nombre,
-                "lastName": apellido,
-                "email": email,
-                "password": passEncrypted,
-                "admin": false,
-                "avatar": req.file.originalname
-            }
+    createUser: async (req, res) => {
+        try {
 
-        // Se instancia la entidad userEntity y se utiliza el metodo para crear un usuario
-        let register = userEntity.create(newUser)
-        if (register) console.log('Usuario registrado')
-        res.redirect('/home')
-    },
-    login: (req, res) => {
+            let { nombre, apellido, email, contrasena } = req.body, avatar = req.file.originalname
 
-        let { usuario, contrasena } = req.body,
-            user = userEntity.finByField('email', usuario),
-            error = 'usuario o contraseña incorrectos'
-        passVerified = bcryptEntity.compareSync(contrasena, user[0].password)
-        if (user[0].email === usuario && passVerified) {
-            delete user[0].id
-            delete user[0].password
-            req.session.userLogged = user[0]
-            return res.redirect('/acount')
+            const response = await axios.post('http://localhost:' + config.port + '/api/user', {
+                firstname: nombre,
+                lastname: apellido,
+                avatar: avatar,
+                state: true,
+                dni: null,
+                email: email,
+                password: contrasena,
+                rol_id: 3
+            })
+
+            console.log(response.data())
+            res.redirect('/sing_in')
+
+        } catch (error) {
+
+            console.log(error)
+            res.redirect('/home')
         }
-        res.render('sing_in', {
-            oldBody: req.body,
-            error
+    },
+    login: async (req, res) => {
 
-        })
+        try {
+            let { usuario, contrasena } = req.body
+
+            const response = await axios.post('http://localhost:' + config.port + '/api/user/auth', {
+                email: usuario,
+                password: contrasena
+            })
+            
+            if (response.data.msg != 'ok') {
+
+                return res.render('sing_in', {
+                    oldBody: req.body,
+                    error: response.data.msg
+                })
+
+            }
+            req.session.userLogged = response.data.user
+            return res.redirect('/acount')
+        } catch (error) {
+            console.log(error)
+            res.redirect('/')
+        }
     }
 
 }

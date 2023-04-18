@@ -82,10 +82,10 @@
                         <h1>Productos Destacados</h1>
                         <div class="products">
 
-                            <% bikes.forEach(element=> { %>
+                            <% products.forEach(element=> { %>
                                 <article class="product">
                                     <a href="/product/<%- element.referencia %>">
-                                        <img class="product-img" src="/img/products/bikes/<%- element.imagen1 %>"
+                                        <img class="product-img" src="/img/products/<%- element.imagen1 %>"
                                             alt="">
                                         <h3><%- element.nombre %></h3>
                                         <div class="price">

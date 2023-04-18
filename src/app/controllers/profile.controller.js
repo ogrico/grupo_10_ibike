@@ -1,4 +1,4 @@
-const userEntity = require('../services/data/UserEntity')
+
 
 const profile = {
 
@@ -28,7 +28,8 @@ const profile = {
           "password": (!contrasena) ? user.password : passEncrypted,
           "admin": false,
           "avatar": (!avatar) ? user.avatar : avatar,
-          "state": true
+          "state": true,
+          "rol_id": 2
         },
         update = userEntity.update(id, updateUser)
 

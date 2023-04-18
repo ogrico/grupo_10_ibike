@@ -10,7 +10,7 @@ const varaibles = {
     dbuser: process.env.DBUSER,
     dbpass: process.env.DBPASS,
     dbserver: process.env.DBSERVER,
-    dbshema: process.env.DBSHEMA
+    dbschema: process.env.DBSCHEMA
 }
 
 module.exports = varaibles
