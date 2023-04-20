@@ -1,4 +1,3 @@
-
 const { Product, Size, Specification } = require('../database/associations')
 
 const crudProduct = {
@@ -65,13 +64,13 @@ const crudProduct = {
             const product = await Product.update(req.body, {
                 where: { id: req.params.id }
             })
-            console.log(rol)
             res.status(201).json({
                 msg: "Ok",
                 body: req.body,
                 product
             })
         } catch (error) {
+            console.log(error)
             res.status(500).json(
                 {
                     error

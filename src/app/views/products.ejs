@@ -15,87 +15,90 @@
 
                     <article class="filter-products">
 
-                        <button type="button"> <a href="/create">Agregar</a></button>
-                        <article>
-                            <p>Tipo </p>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" href=""> Montaña </input>
-                                </li>
-                                <li>
-                                    <input type="checkbox" href=""> Ruta </input>
-                                </li>
-                                <li>
-                                    <input type="checkbox" href=""> Gravel </input>
-                                </li>
-                                <li>
-                                    <input type="checkbox" href=""> Electricas </input>
-                                </li>
-                            </ul>
-                        </article>
+                        <% if (userLogged) { %>
+                            <% if (userLogged.rol.value==0 || userLogged.rol.value==1) { %>
+                                <button type="button"> <a href="/create">Agregar</a></button>
+                                <%} %>
+                                    <% } %>
 
-                        <article>
-                            <p>Talla </p>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" href=""> XS </input>
-                                </li>
-                                <li>
-                                    <input type="checkbox" href=""> S </input>
-                                </li>
-                                <li>
-                                    <input type="checkbox" href=""> M </input>
-                                </li>
-                                <li>
-                                    <input type="checkbox" href=""> L </input>
-                                </li>
-                                <li>
-                                    <input type="checkbox" href=""> XL </input>
-                                </li>
-                            </ul>
-                        </article>
+                                        <article>
+                                            <p>Tipo </p>
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" href=""> Montaña </input>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" href=""> Ruta </input>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" href=""> Gravel </input>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" href=""> Electricas </input>
+                                                </li>
+                                            </ul>
+                                        </article>
 
-                        <article>
-                            <p>Color </p>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" href=""> Rojo </input>
-                                </li>
-                                <li>
-                                    <input type="checkbox" href=""> Negro </input>
-                                </li>
-                                <li>
-                                    <input type="checkbox" href=""> Gris </input>
-                                </li>
-                                <li>
-                                    <input type="checkbox" href=""> Blanco </input>
-                                </li>
-                                <li>
-                                    <input type="checkbox" href=""> Verde </input>
-                                </li>
-                            </ul>
-                        </article>
+                                        <article>
+                                            <p>Talla </p>
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" href=""> XS </input>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" href=""> S </input>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" href=""> M </input>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" href=""> L </input>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" href=""> XL </input>
+                                                </li>
+                                            </ul>
+                                        </article>
+
+                                        <article>
+                                            <p>Color </p>
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" href=""> Rojo </input>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" href=""> Negro </input>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" href=""> Gris </input>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" href=""> Blanco </input>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" href=""> Verde </input>
+                                                </li>
+                                            </ul>
+                                        </article>
 
                     </article>
 
                     <section class="main-section">
-                        <h1>Productos Destacados</h1>
                         <div class="products">
-
-                            <% products.forEach(element=> { %>
+                            <% products.forEach(element=> {%>
+    
                                 <article class="product">
                                     <a href="/product/<%- element.referencia %>">
-                                        <img class="product-img" src="/img/products/<%- element.imagen1 %>"
-                                            alt="">
-                                        <h3><%- element.nombre %></h3>
+                                        <img class="product-img" src="/img/products/<%- element.imagen1 %>" alt="">
+                                        <h3><%- element.name %></h3>
                                         <div class="price">
-                                            <h4>US $<%- element.valor %></h4>
+                                            <h4>US $<%- element.value %></h4>
                                             <button type="submit">Comprar</button>
                                         </div>
                                     </a>
                                 </article>
-                                <% }) %>
-
+    
+                                <%}); %>
                         </div>
 
                     </section>

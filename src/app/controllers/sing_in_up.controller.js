@@ -4,8 +4,9 @@ const axios = require('axios'),
 const login = {
 
     singIn: (req, res) => {
+        let userLogged = req.session.userLogged
         res.render('sing_in', {
-            error: ""
+            error: "", userLogged
         })
     },
     singUp: (_, res) => {
@@ -60,6 +61,10 @@ const login = {
             console.log(error)
             res.redirect('/')
         }
+    },
+    logout: async (req, res) => {
+        req.session.destroy()
+        return res.redirect('/')
     }
 
 }

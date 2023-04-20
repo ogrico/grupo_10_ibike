@@ -20,12 +20,18 @@
           </div>
 
           <div class="btn-comprar-top">
-            <button class="btn-top">
-              <a href="/<%- response.referencia %>/update">Editar</a>
-            </button>
-            <button class="btn-top">
-              Comprar
-            </button>
+
+            <% if (userLogged) { %>
+              <% if (userLogged.rol.value==0 || userLogged.rol.value==1) { %>
+                <button class="btn-top">
+                  <a href="/<%- response.referencia %>/update/<%- response.referencia %>">Editar</a>
+                </button>
+                
+                <%} %>
+                  <% } %>
+                    <button class="btn-top">
+                      Comprar
+                    </button>
           </div>
 
         </section>
@@ -43,7 +49,7 @@
             <samp>Ref. No <%- response.referencia %> </samp>
             <samp>$ <%- response.value %></samp>
             <div class="size">
-              
+
               <article class="btns">
                 <div>
                   <button class="btn-size">L</button>

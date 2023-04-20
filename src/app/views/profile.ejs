@@ -14,11 +14,12 @@
 </head>
 
 <body>
+
     <header>
         <logo class="logo">
             <div class="conten-logo">
                 <div class="img-logo">
-                    <img src="img/IBike.png" alt="" srcset="">
+                    <a href="/home"><img src="/img/IBike.png" alt="" srcset=""></a>
                 </div>
                 <h2>
                     IBike
@@ -32,9 +33,9 @@
 
         <nav>
             <ul>
-                <li><a href="/product">Bicicletas</a></li>
-                <li><a href="/products">Equipamentos</a></li>
-                <li><a href="/products">Suplementos</a></li>
+                <li><a href="/products/1">Bicicletas</a></li>
+                <li><a href="/products/2">Equipamentos</a></li>
+                <li><a href="/products/3">Suplementos</a></li>
             </ul>
         </nav>
 
@@ -44,7 +45,11 @@
         <div>
             <a href="#carrito"><i class="fa-solid fa-cart-shopping"></i>
             </a>
-            <a href="#login"><i class="fa-sharp fa-solid fa-user"></i></a>
+            <a href="/singIn"><i class="fa-sharp fa-solid fa-user"></i></a>
+            <% if (userLogged) { %>
+                <a href="/logout"><i class="fa-solid fa-right-from-bracket"></i></a>
+                <%} %>
+
         </div>
     </header>
 
@@ -57,7 +62,7 @@
             </div>
 
             <div>
-                <h4>Bienvenido, <%- user.firstname %>  <%- user.lastname %></h4>
+                <h4>Bienvenido, <%- user.firstname %> <%- user.lastname %></h4>
             </div>
 
             <div>
