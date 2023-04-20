@@ -21,7 +21,7 @@ const serviceRoutesHome = require('../app/routes/home.routes'),
     apiCrudBuy = require('../api/routes/crudBuy.routes'),
     apiCrudShoppinglist = require('../api/routes/crudShoppinglist.routes'),
     apiCrudSpecification = require('../api/routes/crudSpecification.routes'),
-    apiCrudSize = require('../api/routes/crudSize.router')
+    apiCrudSize = require('../api/routes/crudSize.routes')
 
 
 /**

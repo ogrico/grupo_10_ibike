@@ -3,12 +3,12 @@ const axios = require('axios'),
 
 const home = {
 
-  home: async (_, res) => {
+  home: async (req, res) => {
 
     try {
       let products = await axios.get('http://localhost:' + config.port + '/api/product/featured')
-      products = products.data.products
-      res.render('index', { products })
+      products = products.data.products, userLogged = req.session.userLogged
+      res.render('index', { products, userLogged })
     } catch (error) {
       console.log(error)
     }

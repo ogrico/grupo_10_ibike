@@ -16,9 +16,9 @@
 
     <nav>
         <ul>
-            <li><a href="/products">Bicicletas</a></li>
-            <li><a href="/products">Equipamentos</a></li>
-            <li><a href="/products">Suplementos</a></li>
+            <li><a href="/products/1">Bicicletas</a></li>
+            <li><a href="/products/2">Equipamentos</a></li>
+            <li><a href="/products/3">Suplementos</a></li>
         </ul>
     </nav>
 
@@ -29,5 +29,9 @@
         <a href="#carrito"><i class="fa-solid fa-cart-shopping"></i>
         </a>
         <a href="/singIn"><i class="fa-sharp fa-solid fa-user"></i></a>
+        <% if (userLogged) { %>
+            <a href="/logout"><i class="fa-solid fa-right-from-bracket"></i></a>
+            <%} %>
+        
     </div>
 </header>

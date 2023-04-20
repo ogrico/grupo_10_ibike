@@ -15,17 +15,23 @@
 
           <div class="navigate">
             <span>
-              IBike / Bicicletas / <%- bike[0].tipo %> / <%- bike[0].nombre %>
+              IBike / Bicicletas / <%- response.type %> / <%- response.name %>
             </span>
           </div>
 
           <div class="btn-comprar-top">
-            <button class="btn-top">
-              <a href="/<%- bike[0].referencia %>/update">Editar</a>
-            </button>
-            <button class="btn-top">
-              Comprar
-            </button>
+
+            <% if (userLogged) { %>
+              <% if (userLogged.rol.value==0 || userLogged.rol.value==1) { %>
+                <button class="btn-top">
+                  <a href="/<%- response.referencia %>/update/<%- response.referencia %>">Editar</a>
+                </button>
+                
+                <%} %>
+                  <% } %>
+                    <button class="btn-top">
+                      Comprar
+                    </button>
           </div>
 
         </section>
@@ -33,17 +39,17 @@
         <section class="product">
 
           <div class="img">
-            <img src="/img/products/bikes/<%- bike[0].imagen1 %>" alt="">
-            <img src="/img/products/bikes/<%- bike[0].imagen2 %>" alt="">
+            <img src="/img/products/<%- response.imagen1 %>" alt="">
+            <img src="/img/products/<%- response.imagen2 %>" alt="">
           </div>
 
           <div class="about">
 
-            <h2><%- bike[0].nombre %></h2>
-            <samp>Ref. No <%- bike[0].referencia %> </samp>
-            <samp>$ <%- bike[0].valor %></samp>
+            <h2><%- response.name %></h2>
+            <samp>Ref. No <%- response.referencia %> </samp>
+            <samp>$ <%- response.value %></samp>
             <div class="size">
-              <span>Size : <%- bike[0].talla %></span>
+
               <article class="btns">
                 <div>
                   <button class="btn-size">L</button>
@@ -56,7 +62,7 @@
             <div class="btn-basket">
               <button type="button" class="btn">Agregar al carrito</button>
             </div>
-            <p><%- bike[0].descripcion %></p>
+            <p><%- response.descripcion %></p>
           </div>
 
         </section>

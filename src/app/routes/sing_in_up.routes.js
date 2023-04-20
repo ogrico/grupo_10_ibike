@@ -11,5 +11,6 @@ router.get('/singIn', guestValidate, loguinController.singIn)
 router.get('/singUp', loguinController.singUp)
 router.post('/createUser', userImgMulter, createUserValidator, loguinController.createUser)
 router.post('/login', loginValidator, loguinController.login)
+router.get('/logout', loguinController.logout)
 
 module.exports = router

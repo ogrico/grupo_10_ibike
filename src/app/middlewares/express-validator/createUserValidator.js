@@ -1,7 +1,7 @@
 const { check, validationResult } = require('express-validator'),
     fs = require('fs'),
     path = require('path'),
-    userEntity = require('../../services/data/UserEntity'),
+    
     axios = require('axios'),
     config = require('../../../config')
 
