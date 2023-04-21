@@ -26,7 +26,7 @@
                 <button class="btn-top">
                   <a href="/<%- response.referencia %>/update/<%- response.referencia %>">Editar</a>
                 </button>
-                
+
                 <%} %>
                   <% } %>
                     <button class="btn-top">
@@ -62,7 +62,7 @@
             <div class="btn-basket">
               <button type="button" class="btn">Agregar al carrito</button>
             </div>
-            <p><%- response.descripcion %></p>
+            <p><%- response.description %></p>
           </div>
 
         </section>
@@ -70,30 +70,17 @@
         <section class="info">
 
           <h6>Especificaciones técnicas</h6>
-          <article>
-            <span>Marco</span>
-            <p>
-              Marco Specialized A1 Premium Aluminum, eje pasante de 148 mm, tubo de dirección cónico, enrutamiento
-              interno de cables Carpeta de asiento Aleación, 38,6 mm</p>
-          </article>
-          <hr>
-          <article>
-            <span>Suspensión</span>
-            <p>
-              Tenedor X-Fusion MIG 27.5, ajuste externo de rebote y compresión, muelle helicoidal, compensación de 46
-              mm, 130 mm de recorrido</p>
-          </article>
-          <hr>
-          <article>
-            <span>Frenos</span>
-            <p>
-              Freno frontal
-              Nivel SRAM, disco hidráulico, 180/160mm.
-              Freno trasero SRAM Level, pinza de 2 pistones, disco hidráulico, 180 mm. Freno frontal Nivel SRAM, disco
-              hidráulico, 180/160mm
-            </p>
-          </article>
-          <hr>
+
+          <% specificationsResponse.forEach(element=> {%>
+
+            <article>
+              <span><%- element.name %></span>
+              <p><%- element.description %></p>
+            </article>
+            <hr>
+
+            <%}); %>
+
         </section>
 
       </section>
