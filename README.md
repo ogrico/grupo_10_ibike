@@ -112,6 +112,17 @@ Se debe ejecutar ``` npm install ``` para instalar los modulos de Node utilizado
 Para inicializar los servicios se debe ejecutar ``` npm start ```
 
 ```
+Se debe crear un archivo  .env en la raiz del proyecto, y asiganar los valores correspondientes al entorno e información de la base de datos.
+
+##Contenido -env
+
+PORT=3010
+DBUSER=
+DBPASS=
+DBSERVER=
+DBSCHEMA=
+
+
 ## Scripts definidos
 
  "scripts": {
