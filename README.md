@@ -82,7 +82,21 @@ Personas que toman este deporte como una forma de vida. Ofreciendoles una amplia
 
 ![image](https://user-images.githubusercontent.com/55674843/230798183-9fcb5d3c-192d-4b8c-99ba-5756f2233b39.png)
 
-[createTables.sql.txt](https://github.com/ogrico/grupo_10_ibike/files/11186382/createTables.sql.txt)
+### Script para crear las tablas de la base de datos
+
+[CreateTables.txt](https://github.com/ogrico/grupo_10_ibike/files/11297483/CreateTables.txt)
+
+### Script para registras productos y datos basicos del sistema
+
+[Registros.txt](https://github.com/ogrico/grupo_10_ibike/files/11297679/Registros.txt)
+
+```
+## Usuarios para entrar al sistema 
+
+- Usuario Editor editor@correo.com pass: 123456
+- Usuario Customer pepito@correo.com pass : 123456
+
+```
 
 ## Wireframes
 
@@ -99,8 +113,10 @@ Personas que toman este deporte como una forma de vida. Ofreciendoles una amplia
 ## :hammer: Funcionalidades del proyecto
 
 
-- `Funcionalidad`: descripción de la funcionalidad
-- `Funcionalidad`: descripción de la funcionalidad
+- `Login`: El sistema permite iniciar sesion y cerrar sesion 
+- `Listado de prodcutos`: El sistema permite mostrar el listado de productos de acuerdo a sus categorias
+- `Registro de prodcutos`: El sistema permite realizar la creación de prodcutos 
+- `Edición de productos`: El sistema permite realizar la actualización de un producto
 
 
 ## Compilar e iniciar el proyecto

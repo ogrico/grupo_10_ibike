@@ -15,9 +15,11 @@ const products = {
     },
     detail: async (req, res) => {
         try {
-            const product = await axios.get('http://localhost:' + config.port + '/api/product/' + req.params.referencia)
-            let response = product.data.product[0], userLogged = req.session.userLogged
-            res.render('product', { response, userLogged })
+            const product = await axios.get('http://localhost:' + config.port + '/api/product/' + req.params.referencia),
+                response = product.data.product[0], userLogged = req.session.userLogged,
+                specifications = await axios.get('http://localhost:' + config.port + '/api/specification/byProduct/' + + response.id),
+                specificationsResponse = specifications.data.specifications
+            res.render('product', { response, userLogged, specificationsResponse })
         } catch (error) {
             console.log(error)
             res.redirect('/')
@@ -30,14 +32,23 @@ const products = {
     createProduct: async (req, res) => {
         try {
             let {
-                nombre, tipo, modelo, referencia, valor, descuento, talla, descripcion,
+                categoria, nombre, tipo, modelo, referencia, valor, descuento, talla, descripcion,
                 esp_nombre, esp_descripcion, esp_nombre2, esp_descripcion2,
                 esp_nombre3, esp_descripcion3
             } = req.body
+            console.log("Categoria : ", categoria)
+            let imagen1 = "bikes/" + req.files[0].originalname, imagen2 = "bikes/" + req.files[1].originalname
+            if (categoria == 2) {
+                imagen1 = "equipment/" + req.files[0].originalname
+                imagen2 = "equipment/" + req.files[1].originalname
+            } else if (categoria == 3) {
+                imagen1 = "supplements/" + req.files[0].originalname
+                imagen2 = "supplements/" + req.files[1].originalname
+            }
             const newProduct = {
-                "category_id": 3,
-                "imagen1": req.files[0].originalname,
-                "imagen2": req.files[1].originalname,
+                "category_id": categoria,
+                "imagen1": imagen1,
+                "imagen2": imagen2,
                 "type": tipo,
                 "model": modelo,
                 "referencia": referencia,
