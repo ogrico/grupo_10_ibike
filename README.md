@@ -132,7 +132,6 @@ Se debe crear un archivo  .env en la raiz del proyecto, y asiganar los valores c
 
 ##Contenido -env
 
-PORT=3010
 DBUSER=
 DBPASS=
 DBSERVER=
