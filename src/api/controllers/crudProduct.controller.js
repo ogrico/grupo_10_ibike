@@ -22,6 +22,21 @@ const crudProduct = {
             })
         }
 
+    }, getProduct: async (req, res) => {
+        try {
+            const product = await Product.findAll({
+                where: { id: req.params.id }
+            })
+            res.status(201).json({
+                msg: "Ok",
+                body: req.body,
+                product
+            })
+        } catch (error) {
+            res.status(500).json({
+                error
+            })
+        }
     },
     createProduct: async (req, res) => {
         try {
@@ -119,7 +134,7 @@ const crudProduct = {
     getProductFeatured: async (_, res) => {
         try {
             const products = await Product.findAll({
-                where: { featured: true }
+                /* where: { featured: true } */
             })
             res.status(200).json({
                 "msg": "ok",
