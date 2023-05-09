@@ -320,7 +320,7 @@ input[type="password"]:focus {
   box-shadow: 0 0 5px #00a8ff;
 }
 
-.btn {
+/* .btn {
   text-align: center;
 }
 
@@ -337,7 +337,7 @@ input[type="password"]:focus {
 
 .btn-primary:hover {
   background-color: #0077b6;
-}
+} */
 
 .forgot-password,
 .signup {
@@ -355,6 +355,7 @@ input[type="password"]:focus {
   display: inline-block;
   margin-right: 5
 }
+
 /* logIn End*/
 
 
@@ -396,6 +397,7 @@ input[type="password"]:focus {
   cursor: pointer;
   border-radius: 5px;
 }
+
 .mainProdcut .comprar .btn-top a {
   color: #ffffff;
 }
@@ -630,6 +632,7 @@ input[type="password"]:focus {
   padding-top: 80px;
   margin: 0 10vw 20px 10vw;
 }
+
 .formulario li {
   margin-bottom: 16px;
 }
@@ -768,7 +771,7 @@ input[type="submit"] {
 
 
 
-/* edit Form END*/
+  /* edit Form END*/
 
 }
 
