@@ -3,7 +3,8 @@ const { Router } = require('express'),
 
 const router = Router()
 
-router.get('/product', crudProduct.getProducts)
+router.get('/products', crudProduct.getProducts)
+router.get('/product/:id', crudProduct.getProduct)
 router.get('/product/featured', crudProduct.getProductFeatured)
 router.get('/product/:referencia',crudProduct.ProductReference)
 router.get('/product/category/:id',crudProduct.ProductsCategoria)
