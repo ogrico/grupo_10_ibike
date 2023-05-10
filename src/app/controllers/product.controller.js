@@ -15,7 +15,7 @@ const products = {
     },
     detail: async (req, res) => {
         try {
-            const product = await axios.get('http://localhost:' + config.port + '/api/product/' + req.params.referencia),
+            const product = await axios.get('http://localhost:' + config.port + '/api/product/reference/' + req.params.referencia),
                 response = product.data.product[0], userLogged = req.session.userLogged,
                 specifications = await axios.get('http://localhost:' + config.port + '/api/specification/byProduct/' + + response.id),
                 specificationsResponse = specifications.data.specifications

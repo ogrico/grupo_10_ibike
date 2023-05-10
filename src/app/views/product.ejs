@@ -20,7 +20,6 @@
           </div>
 
           <div class="btn-comprar-top">
-<<<<<<< HEAD
 
             <% if (userLogged) { %>
               <% if (userLogged.rol.value==0 || userLogged.rol.value==1) { %>
@@ -31,18 +30,9 @@
                 <%} %>
                   <% } %>
                     <button class="btn-top">
-                      Comprar
+                      <a href="/basket/<%- response.id %>">Comprar</a>
                     </button>
-=======
-            <button class="btn-top">
-              <a href="/<%- response.referencia %>/update">Editar</a>
-            </button>
 
-            <button class="btn-top">
-              <a href="/basket/<%- response.id %>">Comprar</a>
-
-            </button>
->>>>>>> origin/devaurian
           </div>
 
         </section>

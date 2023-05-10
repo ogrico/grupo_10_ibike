@@ -25,6 +25,9 @@ const crudProduct = {
     }, getProduct: async (req, res) => {
         try {
             const product = await Product.findAll({
+                include: [{
+                    model: Size
+                }],
                 where: { id: req.params.id }
             })
             res.status(201).json({
@@ -173,6 +176,25 @@ const crudProduct = {
             res.status(500).json(error)
         }
 
+    },
+    testPagination: async (req, res) => {
+        try {
+            const products = await Product.findAll({
+                include: [{
+                    model: Size
+                }],
+                limit: 5
+            })
+            res.status(200).json(
+                {
+                    msg: "Ok",
+                    products
+                }
+            )
+        } catch (error) {
+            console.log(error)
+            res.status(500).json(error)
+        }
     }
 }
 
