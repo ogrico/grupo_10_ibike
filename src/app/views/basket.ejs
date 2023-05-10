@@ -33,26 +33,11 @@
 
           <section class="products-bastek">
 
-            <h3 class="added"> <%- productsBasket.length %> Elementos agregados</h3>
+            <h3 class="added">Elementos agregados</h3>
 
-            <% productsBasket.forEach(element=> {%>
-              <article class="border-2">
-                <div class="border-2-box">
-                  <img src="/img/products/<%- element.imagen1 %>" alt="" />
-                </div>
-                <div>
-                  <h3 class="product-1"><%- element.name %></h3>
-                </div>
-                <div>
-                  <ul type="none">
-                    <li>US$ <%- element.value%> </li>
-                    <li>Eliminar</li>
-                    <li>Mover a Favoritos</li>
-                  </ul>
-                </div>
-              </article>
-              <% }) %>
+            <div id="basket">
 
+            </div>
 
           </section>
 
@@ -80,6 +65,8 @@
         </section>
         <button type="submit" class="button-2">Pagar</button>
       </main>
+
+      <script src="/js/basket/getItems.js"></script>
 
       <!-- footer -->
       <%- include('partials/footer') %>

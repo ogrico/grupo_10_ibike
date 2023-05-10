@@ -29,8 +29,9 @@
 
                 <%} %>
                   <% } %>
-                    <button class="btn-top">
-                      <a href="/basket/<%- response.id %>">Comprar</a>
+
+                    <button type="submit" class="btn-top" onclick="addToCart(event, '<%= JSON.stringify(response) %>')">
+                     Comprar
                     </button>
 
           </div>
@@ -85,6 +86,8 @@
         </section>
 
       </section>
+
+      <script src="/js/basket/addItem.js"></script>
 
       <!-- footer -->
       <%- include('partials/footer') %>

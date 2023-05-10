@@ -4,6 +4,6 @@ const { Router } = require('express'), basket = require('../controllers/basket.c
 
 const router = Router()
 
-router.get('/basket/:id', basket.basket)
+router.get('/basket', basket.basket)
 
 module.exports = router
