@@ -46,8 +46,10 @@ const login = {
                 email: usuario,
                 password: contrasena
             })
+
+            console.log('errores :' + response.data)
             
-            if (response.data.msg != 'ok') {
+            if (response.data.msg != 'ok') {                
 
                 return res.render('sing_in', {
                     oldBody: req.body,

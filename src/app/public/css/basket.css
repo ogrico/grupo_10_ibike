@@ -1,29 +1,31 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
-}
-
-main {
+.mainBasketb {
     display: flex;
     flex-direction: column;
 }
 
-.new-section {
+.new-sectionb {
     display: flex;
     background: white;
     flex-direction: row-reverse;
     justify-content: center;
-    margin: 10vh 20vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px;
+    margin-bottom: 50px;
 }
 
-.tittle {
+.tittleb {
     font-size: 16px;
     margin-top: 20px;
     margin-left: 15px;
 }
 
-.one {
+.addedb {
+    padding: 5px;
+}
+
+.oneb {
     margin-left: 15px;
     margin-top: 20px;
     font-size: 10px;
@@ -32,7 +34,7 @@ main {
     text-decoration-line: line-through;
 }
 
-.two {
+.twob {
     margin-top: 5px;
     margin-left: 15px;
     font-size: 10px;
@@ -40,7 +42,7 @@ main {
     text-align: left;
 }
 
-.new-button {
+.new-buttonb {
     background-color: #574f4f;
     border: 1px solid #574f4f;
     color: white;
@@ -50,7 +52,7 @@ main {
 
 }
 
-.n-button {
+.n-buttonb {
     background-color: #574f4f;
     border: 1px solid #574f4f;
     color: white;
@@ -63,90 +65,42 @@ main {
     margin-right: 15px;
 }
 
-/*@media (min-width: 679px) {
-    .tittle {
-        font-size: 16px;
-        margin-top: 20px;
-        margin-left: 15px;
-        margin-right: 15px;
-        text-align: right;
-    }
-    .one{
-        margin-left: 15px;
-        margin-top: 20px;
-        margin-right: 15px;
-    font-size: 10px;
-    color: grey;
-    text-align: right;
-    text-decoration-line: line-through;
-    }
-    
-    .two {
-        margin-top: 5px;
-    margin-left: 15px;
-    margin-right: 15px;
-    font-size: 10px;
-    color: grey;
-    text-align: right;
-    }
-
-    .border-1 {
-    
-     
-        margin-top: 60px;
-        border-top:solid 2px black;
-        border-bottom:solid 2px black;
-        margin-inline-start: 15px;
-        margin-inline-end: 300px;
-    }
-
-    .border-2 {
-        
-        border-bottom:solid 2px black;
-         margin-inline-start: 15px;
-         margin-inline-end: 300px;
-         margin-bottom: 15px;
-     }
-  }*/
-
 @media (max-width: 480px) {
 
-    main .new-section {
+    main .new-sectionb {
         flex-direction: column;
     }
 
-    .new-button {
+    .new-buttonb {
         display: none;
     }
 
-    .n-button {
+    .n-buttonb {
         display: none;
     }
 
-    .interes {
+    .interesb {
         display: none;
     }
 
-    .images-down .images-down-products article {
+    .images-downb .images-down-productsb article {
         display: none;
     }
 }
 
 @media (min-width: 679px) {
-    section .left {
+    section .leftb {
         margin-top: 50px;
     }
 
-    .promo {
+    .promob {
         border-top: solid 2px black;
         padding-top: 10px;
         margin-inline-end: 15px;
 
     }
 
-
-
-    .new-button {
+    .new-buttonb {
 
         display: contents;
         background-color: aqua;
@@ -157,52 +111,41 @@ main {
         width: 100%;
     }
 
-    /*.n-button{
-        display: contents;
-    }*/
-    .button-2 {
+    .button-2b {
         display: none;
     }
 }
 
-.promo {
+.promob {
     font-size: 14px;
     margin-top: 30px;
     margin-left: 15px;
 }
 
-.images-down {
+.images-downb {
     display: flex;
     flex-direction: column;
     width: 70%;
     margin: auto;
 }
 
-.images-down .images-down-products {
+.images-downb .images-down-productsb {
     display: flex;
 }
 
-.images-down .images-down-products article {
+.images-downb .images-down-productsb article {
     margin: auto;
     margin-top: 40px;
 }
 
-/*.last-image{
-    width: 20%;
-    margin-left: 15px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-
-}*/
-
-.cd {
+.cdb {
     font-size: 14px;
     font-weight: lighter;
     margin-left: 15px;
 
 }
 
-.var {
+.varb {
     margin-left: 15px;
     margin-top: 15px;
     background-color: rgb(233 235 235);
@@ -212,7 +155,7 @@ main {
     height: 25px;
 }
 
-.button {
+.buttonb {
     background-color: #574f4f;
     border: 1px solid #574f4f;
     color: white;
@@ -225,8 +168,7 @@ main {
 
 }
 
-
-.added {
+.addedb {
     font-size: 14px;
     margin-top: 30px;
     font-weight: bold;
@@ -239,7 +181,7 @@ main {
 
 }
 
-.border-2 {
+.border-2b {
 
     border-bottom: solid 2px black;
     margin-inline-start: 15px;
@@ -249,105 +191,45 @@ main {
     align-items: center
 }
 
-
-
-.border-2 .border-2-box {
+.border-2b .border-2-boxb {
     width: 32%;
     margin: auto;
 }
 
-.border-2 img {
+.border-2b img {
     width: 100px;
     height: 100px;
 }
 
-.image-art img {
+.image-artb img {
     width: 160px;
     height: 150px;
     border-radius: 10px;
 }
 
-.letf {
+.letfb {
     width: 70%;
 }
 
-/*.product-1 {
-    font-size: 14px;
-    font-weight: lighter;
-    margin-top: 40px;
-    text-align: center;
-    margin-bottom: 5px
-    
-}*/
-
-li {
+.products-bastekb li {
 
     font-size: 14px;
     font-weight: lighter;
     text-align: right;
 }
 
-/*img {
-    
-    width: 20%;
-    margin-left: 15px;
-    margin-top: -120px;
-    margin-bottom: 30px
-   
- }*/
-
-
-h4 {
+.products-bastekb h4 {
     font-size: 12px;
     font-weight: lighter;
 }
 
-p {
+.products-bastekb p {
     margin-top: -15px;
     text-align: right;
     margin-right: 15px;
 }
 
-.interes {
-    margin-right: 15px;
-    margin-left: -20px;
-}
-
-
-.bikes {
-    text-align: center;
-    font-size: 14px;
-    font-weight: bolder;
-}
-
-.bikes-p {
-    text-align: left;
-    margin-top: 15px;
-    font-weight: bolder;
-}
-
-.add-bu {
-
-    margin-left: 95px;
-    text-align: right;
-    font-size: 13px;
-    background-color: #574f4f;
-    border: 1px solid #574f4f;
-    color: white;
-    border-radius: 4px;
-    height: 25px;
-    min-width: 60px;
-    text-align: center;
-}
-
-footer {
-    background-color: grey;
-    width: 100%;
-    height: 100px;
-    margin-top: 284px
-}
-
-.button-2 {
+.button-2b {
 
     background-color: #574f4f;
 
@@ -364,8 +246,6 @@ footer {
     min-width: 150px;
 
     height: 60px;
-
-    /* margin-left: 110px; */
 
     margin: 10px;
 }

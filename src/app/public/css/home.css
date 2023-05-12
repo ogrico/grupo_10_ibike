@@ -319,26 +319,6 @@ input[type="password"]:focus {
   outline: none;
   box-shadow: 0 0 5px #00a8ff;
 }
-
-/* .btn {
-  text-align: center;
-}
-
-.btn-primary {
-  display: inline-block;
-  padding: 10px 30px;
-  color: #fff;
-  background-color: #00a8ff;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.btn-primary:hover {
-  background-color: #0077b6;
-} */
-
 .forgot-password,
 .signup {
   margin-top: 20px;
@@ -673,6 +653,10 @@ input[type="submit"] {
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* Basket */
+
+
 
 /* Tablet */
 @media screen and (min-width: 768px) {

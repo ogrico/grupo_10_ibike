@@ -62,7 +62,7 @@
               </article>
             </div>
             <div class="btn-basket">
-              <button type="button" class="btn">Agregar al carrito</button>
+              <button type="submit" class="btn" onclick="addToCart(event, '<%= JSON.stringify(response) %>')">Agregar al carrito</button>
             </div>
             <p><%- response.description %></p>
           </div>

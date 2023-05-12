@@ -17,7 +17,7 @@
 
                         <% if (userLogged) { %>
                             <% if (userLogged.rol.value==0 || userLogged.rol.value==1) { %>
-                                <button type="button"> <a href="/create">Agregar</a></button>
+                                <button type="submit" class="btn" onclick="addToCart(event, '<%= JSON.stringify(response) %>')"> <a href="/create">Agregar</a></button>
                                 <%} %>
                                     <% } %>
 

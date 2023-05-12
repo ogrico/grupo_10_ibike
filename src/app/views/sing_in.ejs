@@ -27,7 +27,7 @@
               </div>
               <div class="imput-registro">
                 <input type="password" name="contrasena" id="contrasena" placeholder="Ingresar contraseña"
-                  value="<%= locals.oldBody && oldBody.contrasena? oldBody.contrasena: "" %>" />
+                  value="" />
                 <% if (locals.errors && errors.contrasena) { %>
                   <p style="color: red;">
                     <%= errors.contrasena.msg %>
@@ -35,7 +35,7 @@
                   <% } %>
               </div>
 
-              <% if (error !='' ) { %>
+              <% if (error != '' ) { %>
                 <p style="color: red;">
                   <%= error %>
                 </p>

@@ -36,19 +36,10 @@ const products = {
                 esp_nombre, esp_descripcion, esp_nombre2, esp_descripcion2,
                 esp_nombre3, esp_descripcion3
             } = req.body
-            console.log("Categoria : ", categoria)
-            let imagen1 = "bikes/" + req.files[0].originalname, imagen2 = "bikes/" + req.files[1].originalname
-            if (categoria == 2) {
-                imagen1 = "equipment/" + req.files[0].originalname
-                imagen2 = "equipment/" + req.files[1].originalname
-            } else if (categoria == 3) {
-                imagen1 = "supplements/" + req.files[0].originalname
-                imagen2 = "supplements/" + req.files[1].originalname
-            }
             const newProduct = {
                 "category_id": categoria,
-                "imagen1": imagen1,
-                "imagen2": imagen2,
+                "imagen1": req.files[0].originalname,
+                "imagen2": req.files[1].originalname,
                 "type": tipo,
                 "model": modelo,
                 "referencia": referencia,

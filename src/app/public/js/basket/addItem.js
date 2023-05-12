@@ -25,8 +25,6 @@ const storage = (products) => {
     console.log("local", localStorage.getItem('cart'))
 }
 
-
-
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         products = getCart()
