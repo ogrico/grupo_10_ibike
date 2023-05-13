@@ -36,6 +36,12 @@ const Product = sequelize.define('product',{
     },
     featured: {
         type: DataTypes.STRING
+    },
+    publicimg1: {
+        type: DataTypes.STRING
+    },
+    publicimg2: {
+        type: DataTypes.STRING
     }
 }, {
     tableName: 'product',

@@ -28,6 +28,9 @@ const User = sequelize.define('user',{
     },
     password: {
         type: DataTypes.STRING
+    },
+    imgPublic: {
+        type: DataTypes.STRING
     }
 }, {
     tableName: 'user',

@@ -33,7 +33,8 @@ const crudUser = {
                 "dni": req.body.dni,
                 "email": req.body.email,
                 "password": bcryptjs.hashSync(req.body.password),
-                "rol_id": req.body.rol_id
+                "rol_id": req.body.rol_id,
+                "imgPublic": "https://imgdh.blob.core.windows.net/imgusers/" + req.body.avatar
             },
                 user = await User.create(newUser)
             res.status(200).json(
@@ -129,6 +130,9 @@ const crudUser = {
     verifyUserEmail: async (req, res) => {
         try {
             const user = await User.findAll({
+                include: [{
+                    model: Rol
+                }],
                 where: { email: req.params.email }
             })
             return res.status(200).json(

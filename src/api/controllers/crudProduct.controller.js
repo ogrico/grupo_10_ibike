@@ -22,7 +22,8 @@ const crudProduct = {
             })
         }
 
-    }, getProduct: async (req, res) => {
+    },
+    getProduct: async (req, res) => {
         try {
             const product = await Product.findAll({
                 include: [{
@@ -59,7 +60,9 @@ const crudProduct = {
                     discount: discount,
                     description: description,
                     featured: featured,
-                    category_id: category_id
+                    category_id: category_id,
+                    publicimg1: 'https://imgdh.blob.core.windows.net/imgproduct/' + imagen1,
+                    publicimg2: 'https://imgdh.blob.core.windows.net/imgproduct/' + imagen2
                 })
             size.forEach(async element => {
                 let size = await Size.create({ ...element, "product_id": product.id })
