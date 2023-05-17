@@ -1,11 +1,16 @@
-const clear = async (event) => {
-    event.preventDefault()
-    localStorage.clear()
-    console.log('Clear..')
-}
+let logout = document.getElementById('test')
 
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', () => {
     try {
+        if (logout) {
+            console.log('Yes')
+            logout.addEventListener('click', () => {
+                localStorage.clear()
+                console.log('Clear..')
+            })
+        } else {
+            console.log('No')
+        }
     } catch (error) {
         console.log(error)
     }

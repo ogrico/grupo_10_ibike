@@ -28,11 +28,11 @@ const listProducts = (products) => {
 
 const listPay = () => {
   let price = 0,
-   basket = getCart()
+    basket = getCart()
 
-   basket.forEach(element => {
+  basket.forEach(element => {
     price += element.value
-   })
+  })
 
   pay.innerHTML += `
         <h2 class="tittleb">Total: $US ${price}</h2>
@@ -57,7 +57,6 @@ const deleteItem = async (id) => {
 
 document.addEventListener('DOMContentLoaded', async () => {
   try {
-    console.log('Ready..')
     let products = getCart()
     listProducts(products)
     listPay(products)
