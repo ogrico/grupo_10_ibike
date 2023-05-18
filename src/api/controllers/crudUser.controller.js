@@ -23,6 +23,9 @@ const crudUser = {
             )
         }
     },
+    getUser: async (req, res) => {
+
+    },
     createUser: async (req, res) => {
         try {
             const newUser = {

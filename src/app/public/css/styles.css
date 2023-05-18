@@ -2,7 +2,7 @@
 Estilos para la sección de perfil de usuario
 */
 
-main {
+.mainProfile {
     padding-top: 80px;
     width: 80%;
     margin: auto;
@@ -56,12 +56,12 @@ main {
     display: none;
 }
 
-.sectionOpt-form article{
+.sectionOpt-form article {
     width: 95%;
     margin: auto;
 }
 
-.sectionOpt-form input{
+.sectionOpt-form input {
     margin: 5px 0 5px 0;
     padding: 5px;
 }
@@ -70,7 +70,7 @@ main {
     background: #fff;
 }
 
-.sectionOpt-form ul li{
+.sectionOpt-form ul li {
     padding: 5px;
 }
 
@@ -94,10 +94,37 @@ main {
 }
 
 .mail form .btn {
-    width: 60%;
-    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .mail form .btn button {
-    width: 100%;
+    width: 90%;
+    margin: auto;
+    padding: 8px;
+    color: #DCDCDC;
+    background-color: #414141;
+    border-radius: 5px;
+    border: none;
+}
+
+.sectionOpt-form .formProfile {
+    width: 70%;
+    margin: auto;
+    padding: 5px;
+}
+
+.sectionOpt-form .formProfile .divBtn {
+    display: flex;
+    justify-content: center;
+}
+
+.sectionOpt-form .formProfile .divBtn .btn-profile {
+    width: 90%;
+    margin: auto;
+    padding: 8px;
+    color: #DCDCDC;
+    background-color: #414141;
+    border-radius: 5px;
+    border: none;
 }

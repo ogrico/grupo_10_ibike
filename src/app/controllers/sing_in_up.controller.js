@@ -46,8 +46,6 @@ const login = {
                 email: usuario,
                 password: contrasena
             })
-
-            console.log('errores :' + response.data)
             
             if (response.data.msg != 'ok') {                
 
@@ -58,6 +56,7 @@ const login = {
 
             }
             req.session.userLogged = response.data.user
+            const user = axios
             return res.redirect('/acount')
         } catch (error) {
             console.log(error)
