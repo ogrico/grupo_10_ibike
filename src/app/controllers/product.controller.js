@@ -5,7 +5,7 @@ const products = {
 
     getProducts: async (req, res) => {
         try {
-            const response = await axios.get('http://localhost:' + config.port + '/api/product/category/' + req.params.id)
+            const response = await axios.get('http://localhost:' + config.port + '/api/product/category/' + req.params.category)
             let products = response.data.products, userLogged = req.session.userLogged
             res.render('products', { products, userLogged })
         } catch (error) {
@@ -110,7 +110,7 @@ const products = {
     deleteProduct: async (req, res) => {
         try {
             const deleteProduct = await axios.delete('http://localhost:' + config.port + '/api/product/' + req.params.id)
-            res.redirect('/home')
+            res.redirect('/products/' +req.params.category)
         } catch (error) {
             console.log(error)
             res.redirect('/')

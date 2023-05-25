@@ -58,7 +58,7 @@
     color: white;
     border-radius: 4px;
     font-size: 12px;
-    width: 100%;
+    width: 93%;
     height: 40px;
     margin-top: 15px;
     margin-left: 15px;
@@ -88,27 +88,9 @@
     }
 }
 
-@media (min-width: 679px) {
+@media (min-width: 481px) {
     section .leftb {
         margin-top: 50px;
-    }
-
-    .promob {
-        border-top: solid 2px black;
-        padding-top: 10px;
-        margin-inline-end: 15px;
-
-    }
-
-    .new-buttonb {
-
-        display: contents;
-        background-color: aqua;
-        border: 1px solid #574f4f;
-        color: white;
-        border-radius: 4px;
-        font-size: 12px;
-        width: 100%;
     }
 
     .button-2b {
@@ -151,7 +133,7 @@
     background-color: rgb(233 235 235);
     border-color: rgb(233 235 235);
     border-radius: 5px;
-    width: 215px;
+    width: 178px;
     height: 25px;
 }
 
@@ -231,21 +213,21 @@
 
 .button-2b {
 
-    background-color: #574f4f;
+background-color: #574f4f;
 
-    border: 1px solid #574f4f;
+border: 1px solid #574f4f;
 
-    color: white;
+color: white;
 
-    border-radius: 4px;
+border-radius: 4px;
 
-    font-size: 28px;
+font-size: 23px;
 
-    height: 25px;
+height: 25px;
 
-    min-width: 150px;
+min-width: 150px;
 
-    height: 60px;
+height: 46px;
 
-    margin: 10px;
+margin: 10px;
 }
