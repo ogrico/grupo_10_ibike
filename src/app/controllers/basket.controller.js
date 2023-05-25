@@ -13,7 +13,14 @@ const basket = {
             console.log(error)
             res.redirect('/home')
         }
+    },
+    session: (req, res) => {
+        if (!req.session.userLogged) {
+            return res.redirect('/singIn')
+        }
+        return res.redirect('/basket')
     }
+
 }
 
 module.exports = basket 

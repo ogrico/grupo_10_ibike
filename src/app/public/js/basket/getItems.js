@@ -37,7 +37,7 @@ const listPay = () => {
   pay.innerHTML += `
         <h2 class="tittleb">Total: $US ${price}</h2>
         <article>
-          <button type="submit" class="n-buttonb">PAGAR</button>
+          <button class="n-buttonb"><a href="/basket/session">PAGAR<a/></button>
         </article>
         <article class="border-1b">
           <h3 class="promob">Promociones</h3>
