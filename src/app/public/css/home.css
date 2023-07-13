@@ -288,6 +288,7 @@ header div img {
   background-color: #fff;
   padding: 30px;
   border-radius: 5px;
+  /* max-width: 200px; */
 }
 
 .form-group {
@@ -320,25 +321,6 @@ input[type="password"]:focus {
   box-shadow: 0 0 5px #00a8ff;
 }
 
-.btn {
-  text-align: center;
-}
-
-.btn-primary {
-  display: inline-block;
-  padding: 10px 30px;
-  color: #fff;
-  background-color: #00a8ff;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.btn-primary:hover {
-  background-color: #0077b6;
-}
-
 .forgot-password,
 .signup {
   margin-top: 20px;
@@ -355,6 +337,7 @@ input[type="password"]:focus {
   display: inline-block;
   margin-right: 5
 }
+
 /* logIn End*/
 
 
@@ -396,6 +379,7 @@ input[type="password"]:focus {
   cursor: pointer;
   border-radius: 5px;
 }
+
 .mainProdcut .comprar .btn-top a {
   color: #ffffff;
 }
@@ -501,7 +485,7 @@ input[type="password"]:focus {
 
 /* main singUp */
 .main-sinUp {
-  padding-top: 80px;
+  padding: 9% 10%;
   width: 60%;
   margin: auto;
 }
@@ -541,6 +525,7 @@ input[type="password"]:focus {
 .main-sinUp .btn {
   display: flex;
   justify-content: center;
+  margin: 41px;
 }
 
 .main-sinUp .btn>button {
@@ -596,30 +581,73 @@ input[type="password"]:focus {
   padding-top: 80px;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 2;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  margin-top: 120px;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal .modal-content .btn-top {
+  background-color: #2F2F2F;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 /* main singIn END */
 
 
 
-/* footer */
 
-.main-footer {
-  box-sizing: border-box;
-  width: 100%;
-  margin-top: 20px;
-  background-color: #ffffff;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.main-footer h3 {
-  box-sizing: border-box;
-  padding: 10px;
-  text-align: center;
-}
-
-/* footer END */
 
 
 
@@ -630,6 +658,7 @@ input[type="password"]:focus {
   padding-top: 80px;
   margin: 0 10vw 20px 10vw;
 }
+
 .formulario li {
   margin-bottom: 16px;
 }
@@ -670,6 +699,10 @@ input[type="submit"] {
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* Basket */
+
+
 
 /* Tablet */
 @media screen and (min-width: 768px) {
@@ -768,7 +801,7 @@ input[type="submit"] {
 
 
 
-/* edit Form END*/
+  /* edit Form END*/
 
 }
 

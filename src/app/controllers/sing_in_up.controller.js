@@ -47,7 +47,7 @@ const login = {
                 password: contrasena
             })
             
-            if (response.data.msg != 'ok') {
+            if (response.data.msg != 'ok') {                
 
                 return res.render('sing_in', {
                     oldBody: req.body,
@@ -56,6 +56,7 @@ const login = {
 
             }
             req.session.userLogged = response.data.user
+            const user = axios
             return res.redirect('/acount')
         } catch (error) {
             console.log(error)

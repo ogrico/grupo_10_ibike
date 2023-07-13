@@ -23,6 +23,25 @@ const crudProduct = {
         }
 
     },
+    getProduct: async (req, res) => {
+        try {
+            const product = await Product.findAll({
+                include: [{
+                    model: Size
+                }],
+                where: { id: req.params.id }
+            })
+            res.status(201).json({
+                msg: "Ok",
+                body: req.body,
+                product
+            })
+        } catch (error) {
+            res.status(500).json({
+                error
+            })
+        }
+    },
     createProduct: async (req, res) => {
         try {
             const {
@@ -41,7 +60,9 @@ const crudProduct = {
                     discount: discount,
                     description: description,
                     featured: featured,
-                    category_id: category_id
+                    category_id: category_id,
+                    publicimg1: 'https://imgdh.blob.core.windows.net/imgproduct/' + imagen1,
+                    publicimg2: 'https://imgdh.blob.core.windows.net/imgproduct/' + imagen2
                 })
             size.forEach(async element => {
                 let size = await Size.create({ ...element, "product_id": product.id })
@@ -158,6 +179,25 @@ const crudProduct = {
             res.status(500).json(error)
         }
 
+    },
+    testPagination: async (req, res) => {
+        try {
+            const products = await Product.findAll({
+                include: [{
+                    model: Size
+                }],
+                limit: 5
+            })
+            res.status(200).json(
+                {
+                    msg: "Ok",
+                    products
+                }
+            )
+        } catch (error) {
+            console.log(error)
+            res.status(500).json(error)
+        }
     }
 }
 

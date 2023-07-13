@@ -1,125 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-  <link rel="stylesheet" href="css/basket.css" />
-  <title>basket</title>
-</head>
+<%- include('partials/head')%>
 
-<body>
-  <header></header>
-  <main>
+  <body>
 
-    <section class="new-section">
+    <!-- Header -->
+    <%- include('partials/header') %>
 
-      <section class="left">
-        <h2 class="tittle">Total: 20.700 COL$</h2>
-        <ul type="none">
-          <li class="one">304.700 COL$</li>
-          <li class="two">66% de descuento</li>
-        </ul>
-        <article class="new-button">
-          <button type="submit" class="n-button">PAGAR</button>
-        </article>
-        <article class="border-1">
-          <h3 class="promo">Promociones</h3>
-          <h3 class="cd">X se han aplicado DES16COP</h3>
-          <input type="search" class="var" />
-          <button type="submit" class="button">Aplicar</button>
-        </article>
-      </section>
 
-      <section class="products-bastek">
 
-        <h3 class="added">3 Elementos agregados</h3>
+      <main class="mainBasketb">
 
-        <article class="border-2">
-          <div class="border-2-box">
-            <img src="./images/imagen1.png" alt="" />
+        <section class="new-sectionb">
+
+          <section class="leftb" id="left">
+
+          </section>
+
+          <section class="products-bastekb">
+
+            <h3 class="addedb">Elementos agregados</h3>
+
+            <div id="basket">
+
+            </div>
+
+          </section>
+
+          <button type="submit" class="button-2b">Pagar</button>
+        </section>
+        <section class="main-section">
+          <h1>Te puede interesar</h1>
+          <div class="products">
+            <% products.forEach(element=> {%>
+
+              <article class="product">
+                <a href="/product/<%- element.referencia %>">
+                  <img class="product-img" src="/img/products/<%- element.imagen1 %>" alt="">
+                  <h3><%- element.name %></h3>
+                  <div class="price">
+                    <h4>US $<%- element.value %></h4>
+                    <button type="submit">Agregar</button>
+                  </div>
+                </a>
+              </article>
+
+              <%}); %>
           </div>
-          <div>
-            <h3 class="product-1">Descripcion del producto</h3>
-          </div>
-          <div>
-            <ul type="none">
-              <li>20.700 COL$</li>
-              <li>Eliminar</li>
-              <li>Mover a Favoritos</li>
-            </ul>
-          </div>
-        </article>
-        <article class="border-2">
-          <div class="border-2-box">
-            <img src="./images/imagen1.png" alt="" />
-          </div>
-          <div>
-            <h3 class="product-1">Descripcion del producto</h3>
-          </div>
-          <div>
-            <ul type="none">
-              <li>20.700 COL$</li>
-              <li>Eliminar</li>
-              <li>Mover a Favoritos</li>
-            </ul>
-          </div>
-        </article>
-        <article class="border-2">
-          <div class="border-2-box">
-            <img src="./images/imagen1.png" alt="" />
-          </div>
-          <div>
-            <h3 class="product-1">Descripcion del producto</h3>
-          </div>
-          <div>
-            <ul type="none">
-              <li>20.700 COL$</li>
-              <li>Eliminar</li>
-              <li>Mover a Favoritos</li>
-            </ul>
-          </div>
-        </article>
 
-      </section>
 
-    </section>
+        </section>
 
-    <section class="images-down">
-      <h3 class="interes">Te puede interesar</h3>
-      <div class="images-down-products">
-        <article class="image-art">
-          <img src="/images/bike8.jpg" alt="">
-          <h4 class="bikes">Bici gris</h4>
-          <p class="bikes-p">600$ US</p>
-          
-          <button type="submit" class="add-bu">Agregar</button>
-        </article>
-    
-        <article class="image-art">
-          <img src="/images/Bike6.jpg" alt="">
-          <h4 class="bikes">Bici brown</h4>
-          <p class="bikes-p">600$ US</p>
-          <button type="submit" class="add-bu">Agregar</button>
-        </article>
-        <article class="image-art">
-          <img src="/images/Bike6.jpg" alt="">
-          <h4 class="bikes">Bici brown sport</h4>
-          <p class="bikes-p">600$ US</p>
-          <button type="submit" class="add-bu">Agregar</button>
-          
-        </article>
-      </div>      
-    </section>
+      </main>
 
-  </main>
+      <script src="/js/basket/getItems.js"></script>
 
-  <footer>
-    <button type="submit" class="button-2">Pagar</button>
-  </footer>
-</body>
+      <!-- footer -->
+      <%- include('partials/footer') %>
+
+  </body>
 
 </html>

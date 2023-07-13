@@ -17,13 +17,14 @@
 
                         <div>
                             <h1>
-                                Lorem ipsum dolor sit
+                                "IBike: Libertad sobre dos ruedas"
                             </h1>
                             <br>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus deserunt voluptatem
-                                voluptates
-                                incidunt maxime? Iure rem error est doloreque !
+                                En IBike, te brindamos la oportunidad de encontrar la bicicleta perfecta que impulse tu
+                                pasión por el ciclismo. Explora nuestro sitio web de Ecommerce y descubre una amplia
+                                gama de bicicletas diseñadas para satisfacer tus necesidades y superar tus expectativas.
+                                Pedalea hacia tus sueños con IBike.
                             </p>
                         </div>
                     </article>
@@ -44,7 +45,8 @@
                                     <h3><%- element.name %></h3>
                                     <div class="price">
                                         <h4>US $<%- element.value %></h4>
-                                        <button type="submit">Comprar</button>
+                                        <button type="submit" class="btn"
+                                            onclick="addToCart(event, '<%= JSON.stringify(element) %>')">Comprar</button>
                                     </div>
                                 </a>
                             </article>

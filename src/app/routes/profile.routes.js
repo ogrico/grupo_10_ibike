@@ -5,8 +5,7 @@ const { Router } = require('express'),
 
 const router = Router()
 
-router.get('/acount',authValidate, profileController.getProfile)
-router.put('/acount/:id/update', profileController.updateProfile)
-router.delete('/acount/:id/delete', profileController.deleteProfile)
+router.get('/acount', authValidate, profileController.getProfile)
+router.put('/acount/:id/update', authValidate, profileController.updateProfile)
 
 module.exports = router

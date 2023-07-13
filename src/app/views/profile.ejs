@@ -1,183 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/5df417a647.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="js/profile.js"></script>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/home.css">
-    <title>Document</title>
-</head>
+<%- include('partials/head')%>
 
-<body>
+    <body>
 
-    <header>
-        <logo class="logo">
-            <div class="conten-logo">
-                <div class="img-logo">
-                    <a href="/home"><img src="/img/IBike.png" alt="" srcset=""></a>
-                </div>
-                <h2>
-                    IBike
-                </h2>
-            </div>
-        </logo>
+        <!-- Header -->
+        <%- include('partials/header') %>
 
-        <a href="">
-            <i class="hambuerger-icon fa-solid fa-bars"></i>
-        </a>
+            <main class="mainProfile">
 
-        <nav>
-            <ul>
-                <li><a href="/products/1">Bicicletas</a></li>
-                <li><a href="/products/2">Equipamentos</a></li>
-                <li><a href="/products/3">Suplementos</a></li>
-            </ul>
-        </nav>
+                <section class="profile">
 
-        <form>
-            <input type="text" placeholder="Buscar">
-        </form>
-        <div>
-            <a href="#carrito"><i class="fa-solid fa-cart-shopping"></i>
-            </a>
-            <a href="/singIn"><i class="fa-sharp fa-solid fa-user"></i></a>
-            <% if (userLogged) { %>
-                <a href="/logout"><i class="fa-solid fa-right-from-bracket"></i></a>
-                <%} %>
-
-        </div>
-    </header>
-
-    <main>
-
-        <section class="profile">
-
-            <div class="div-img">
-                <img src="/img/users/<%= user.avatar %>" alt="Imagen de usuario">
-            </div>
-
-            <div>
-                <h4>Bienvenido, <%- user.firstname %> <%- user.lastname %></h4>
-            </div>
-
-            <div>
-                <p>
-                    Aqui puedes revisar tu infomarción de perfil y acualizarla,
-                    así como ver el historial de tus pedidos,
-                    metodos de pago agregados y gestionar tu contraseña de acceso
-                </p>
-            </div>
-
-            <div class="options">
-
-                <article class="sectionOpt">
-
-                    <div class="sectionOpt-main">
-                        <span>
-                            Datos personales
-                        </span>
-                        <i class="fa-sharp fa-solid fa-arrow-down" id="dp"></i>
+                    <div class="div-img">
+                        <img src="/img/users/<%= user.avatar %>" alt="Imagen de usuario">
                     </div>
-                    <div class="sectionOpt-form" id="personales">
 
-                        <article>
-                            <input type="text" name="inputname" value="Nombres" disabled>
+                    <div>
+                        <h4>Bienvenido, <%- user.firstname %> <%- user.lastname %></h4>
+                    </div>
+
+                    <div>
+                        <p>
+                            Aqui puedes revisar tu infomarción de perfil y acualizarla,
+                            así como ver el historial de tus pedidos,
+                            metodos de pago agregados y gestionar tu contraseña de acceso
+                        </p>
+                    </div>
+
+                    <div class="options">
+
+                        <article class="sectionOpt">
+
+                            <div class="sectionOpt-main">
+                                <span>
+                                    Datos personales
+                                </span>
+                                <i class="fa-sharp fa-solid fa-arrow-down" id="dp"></i>
+                            </div>
+                            <div class="sectionOpt-form" id="personales">
+                                <form class="formProfile">
+                                    <article>
+                                        <input type="text" name="firstname" value="<%- user.firstname %>" required>
+                                    </article>
+                                    <article>
+                                        <input type="text" name="lastname" value="<%- user.lastname %>" required>
+                                    </article>
+                                    <article>
+                                        <input type="text" name="rol" value="<%- user.rol.description %>" disabled>
+                                    </article>
+                                    <article>
+                                        <input type="email" name="userEmail" value="<%- user.userEmail %>" required>
+                                    </article>
+                                    <div class="divBtn">
+                                        <button class="btn-profile" type="button"> Actualizar </button>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+
                         </article>
-                        <article>
-                            <input type="text" name="inputname" value="Apellidos" disabled>
+
+                        <article class="sectionOpt">
+
+                            <div class="sectionOpt-main">
+                                <span>
+                                    Datos de facturación
+                                </span>
+                                <i class="fa-sharp fa-solid fa-arrow-down" id="df"></i>
+                            </div>
+                            <div class="sectionOpt-form" id="facturacion">
+
+                            </div>
+
                         </article>
-                        <article>
-                            <input type="text" name="inputname" value="Rol" disabled>
-                        </article>
-                        <article>
-                            <input type="text" name="inputname" value="Correo" disabled>
-                        </article>
-                        <article>
-                            <input type="text" name="inputname" value="contraseña" disabled>
+
+                        <article class="sectionOpt">
+
+                            <div class="sectionOpt-main">
+                                <span>
+                                    Historial de pedidos
+                                </span>
+                                <i class="fa-sharp fa-solid fa-arrow-down" id="hp"></i>
+                            </div>
+                            <div class="sectionOpt-form" id="pedidos">
+
+                                <ul>
+                                </ul>
+
+                            </div>
+
                         </article>
 
                     </div>
 
-                </article>
+                </section>
 
-                <article class="sectionOpt">
+                <section class="mail">
 
-                    <div class="sectionOpt-main">
-                        <span>
-                            Datos de facturación
-                        </span>
-                        <i class="fa-sharp fa-solid fa-arrow-down" id="df"></i>
-                    </div>
-                    <div class="sectionOpt-form" id="facturacion">
+                    <h4>Necesitas ayuda!</h4>
 
-                        <input type="text" name="inputname" value="Documento 564654855" disabled>
-                        <input type="text" name="inputname" value="Calle XXXX D Bis #73-55" disabled>
-                        <input type="text" name="inputname" value="Tarjeta # 7754" disabled>
+                    <form>
 
-                    </div>
-
-                </article>
-
-                <article class="sectionOpt">
-
-                    <div class="sectionOpt-main">
-                        <span>
-                            Historial de pedidos
-                        </span>
-                        <i class="fa-sharp fa-solid fa-arrow-down" id="hp"></i>
-                    </div>
-                    <div class="sectionOpt-form" id="pedidos">
-
-                        <ul>
-                            <li>Pedido #7577 - $ 750</li>
-                            <li>Pedido #7578 - $ 640</li>
-                            <li>Pedido #7579 - $ 200</li>
-                            <li>Pedido #7580 - $ 1200</li>
-                        </ul>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-        <section class="mail">
-
-            <h4>Necesitas ayuda!</h4>
-
-            <form>
-
-                <div class="textArea">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5">
+                        <div class="textArea">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5">
                     </textarea>
-                </div>
+                        </div>
 
-                <div class="btn">
-                    <button>
-                        Envia tus comentarios
-                    </button>
-                </div>
+                        <div class="btn">
+                            <button>
+                                Envia tus comentarios
+                            </button>
+                        </div>
 
 
-            </form>
+                    </form>
 
-        </section>
+                </section>
 
-    </main>
+            </main>
 
-    <footer>
-        <section class="main-footer">
-            <h3>Copyright © Todos los derechos reservados</h3>
-        </section>
-    </footer>
 
-</body>
+
+            <script src="/js/profile/profile.js"></script>
+
+            <!-- footer -->
+            <%- include('partials/footer') %>
+
+    </body>
 
 </html>

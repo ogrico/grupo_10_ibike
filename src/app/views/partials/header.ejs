@@ -17,21 +17,22 @@
     <nav>
         <ul>
             <li><a href="/products/1">Bicicletas</a></li>
-            <li><a href="/products/2">Equipamentos</a></li>
-            <li><a href="/products/3">Suplementos</a></li>
+            <li><a href="/products/3">Equipamentos</a></li>
+            <li><a href="/products/2">Suplementos</a></li>
         </ul>
     </nav>
 
     <form>
         <input type="text" placeholder="Buscar">
     </form>
+
     <div>
-        <a href="#carrito"><i class="fa-solid fa-cart-shopping"></i>
+        <a href="/basket"><i class="fa-solid fa-cart-shopping"></i>
         </a>
-        <a href="/singIn"><i class="fa-sharp fa-solid fa-user"></i></a>
-        <% if (userLogged) { %>
-            <a href="/logout"><i class="fa-solid fa-right-from-bracket"></i></a>
+        <a href="/singIn"><i class="fa-ssharp fa-solid fa-user"></i></a>
+        <% if (userLogged) { %>            
+            <a href="/logout" id="logout"><i class="fa-solid fa-right-from-bracket"></i></a>
             <%} %>
         
-    </div>
+    </div>    
 </header>

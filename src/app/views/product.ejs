@@ -11,6 +11,20 @@
       <!-- Main -->
       <section class="mainProdcut">
 
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Esta seguro en eleminar el articulo?..</p>
+            <button type="submit" class="btn-top">
+              <a href="/product/delete/ <%-response.id%>/<%-response.category_id%>">Eliminar</a>
+            </button>
+          </div>
+
+        </div>
+
         <section class="comprar">
 
           <div class="navigate">
@@ -24,14 +38,20 @@
             <% if (userLogged) { %>
               <% if (userLogged.rol.value==0 || userLogged.rol.value==1) { %>
                 <button class="btn-top">
-                  <a href="/<%- response.referencia %>/update/<%- response.referencia %>">Editar</a>
+                  <a href="/update/<%- response.id %>">Editar</a>
+                </button>
+
+                <button class="btn-top" id="btnEliminar">
+                  <a href="">Eliminar</a>
                 </button>
 
                 <%} %>
                   <% } %>
-                    <button class="btn-top">
+
+                    <button type="submit" class="btn-top" onclick="addToCart(event, '<%= JSON.stringify(response) %>')">
                       Comprar
                     </button>
+
           </div>
 
         </section>
@@ -60,7 +80,8 @@
               </article>
             </div>
             <div class="btn-basket">
-              <button type="button" class="btn">Agregar al carrito</button>
+              <button type="submit" class="btn" onclick="addToCart(event, '<%= JSON.stringify(response) %>')">Agregar al
+                carrito</button>
             </div>
             <p><%- response.description %></p>
           </div>
@@ -84,6 +105,9 @@
         </section>
 
       </section>
+
+      <script src="/js/basket/addItem.js"></script>
+      <script src="/js/product/modal.js"></script>
 
       <!-- footer -->
       <%- include('partials/footer') %>

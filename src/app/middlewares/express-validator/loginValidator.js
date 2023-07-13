@@ -12,8 +12,8 @@ const loginValidator = [
             console.log('errores: ', errors.mapped(), '\n')
             return res.render('sing_in', {
                 errors: errors.mapped(),
-                oldBody: body
-
+                oldBody: body,
+                error: ""
             })
         }
         next()

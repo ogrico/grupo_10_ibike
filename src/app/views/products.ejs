@@ -17,7 +17,7 @@
 
                         <% if (userLogged) { %>
                             <% if (userLogged.rol.value==0 || userLogged.rol.value==1) { %>
-                                <button type="button"> <a href="/create">Agregar</a></button>
+                                <button type="submit" class="btn" onclick="addToCart(event, '<%= JSON.stringify(products) %>')"> <a href="/create">Agregar</a></button>
                                 <%} %>
                                     <% } %>
 
@@ -25,16 +25,16 @@
                                             <p>Tipo </p>
                                             <ul>
                                                 <li>
-                                                    <input type="checkbox" href=""> Montaña </input>
+                                                    <input disabled type="checkbox" href=""> Montaña </input>
                                                 </li>
                                                 <li>
-                                                    <input type="checkbox" href=""> Ruta </input>
+                                                    <input disabled type="checkbox" href=""> Ruta </input>
                                                 </li>
                                                 <li>
-                                                    <input type="checkbox" href=""> Gravel </input>
+                                                    <input disabled type="checkbox" href=""> Gravel </input>
                                                 </li>
                                                 <li>
-                                                    <input type="checkbox" href=""> Electricas </input>
+                                                    <input disabled type="checkbox" href=""> Electricas </input>
                                                 </li>
                                             </ul>
                                         </article>
@@ -43,19 +43,19 @@
                                             <p>Talla </p>
                                             <ul>
                                                 <li>
-                                                    <input type="checkbox" href=""> XS </input>
+                                                    <input disabled type="checkbox" href=""> XS </input>
                                                 </li>
                                                 <li>
-                                                    <input type="checkbox" href=""> S </input>
+                                                    <input disabled type="checkbox" href=""> S </input>
                                                 </li>
                                                 <li>
-                                                    <input type="checkbox" href=""> M </input>
+                                                    <input disabled type="checkbox" href=""> M </input>
                                                 </li>
                                                 <li>
-                                                    <input type="checkbox" href=""> L </input>
+                                                    <input disabled type="checkbox" href=""> L </input>
                                                 </li>
                                                 <li>
-                                                    <input type="checkbox" href=""> XL </input>
+                                                    <input disabled type="checkbox" href=""> XL </input>
                                                 </li>
                                             </ul>
                                         </article>
@@ -64,19 +64,19 @@
                                             <p>Color </p>
                                             <ul>
                                                 <li>
-                                                    <input type="checkbox" href=""> Rojo </input>
+                                                    <input disabled type="checkbox" href=""> Rojo </input>
                                                 </li>
                                                 <li>
-                                                    <input type="checkbox" href=""> Negro </input>
+                                                    <input disabled type="checkbox" href=""> Negro </input>
                                                 </li>
                                                 <li>
-                                                    <input type="checkbox" href=""> Gris </input>
+                                                    <input disabled type="checkbox" href=""> Gris </input>
                                                 </li>
                                                 <li>
-                                                    <input type="checkbox" href=""> Blanco </input>
+                                                    <input disabled type="checkbox" href=""> Blanco </input>
                                                 </li>
                                                 <li>
-                                                    <input type="checkbox" href=""> Verde </input>
+                                                    <input disabled type="checkbox" href=""> Verde </input>
                                                 </li>
                                             </ul>
                                         </article>
